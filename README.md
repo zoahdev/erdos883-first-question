@@ -6,6 +6,10 @@ separate independent rebuild audit. The second question is outside this contribu
 
 Author: Yicheng Pan (潘奕成).
 
+GitHub: [zoahdev](https://github.com/zoahdev). Erdős Problems account:
+[yichengpan](https://www.erdosproblems.com/forum/user/yichengpan).
+These are Yicheng Pan's public accounts for this contribution.
+
 - [Manuscript (PDF)](paper/Erdos883_Lean_Aligned_Manuscript_20261005.pdf)
 - [Lean proof and original reproduction instructions](lean/README.md)
 - [Reproduction guide (PDF)](paper/Erdos883_Reproduction_Guide_20261005.pdf)
