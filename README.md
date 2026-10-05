@@ -35,6 +35,10 @@ axioms are `propext`, `Classical.choice`, and `Quot.sound`.
 The rebuilt final `.olean` SHA256 matches the submitted final-object record.
 No proof source was changed during the independent rebuild.
 
+The manuscript's audit description predates this independent rebuild. Its
+previously pending clean replay is now documented in the separate `audit/`
+records; the manuscript and original historical records have been preserved.
+
 The original `verify.sh` uses a 4096 MiB cap. One unchanged module,
 `Erdos883SmallCertificate117`, exceeded that cap and passed alone with an
 8192 MiB cap. Reproduction also requires Python ≥ 3.9. See the errata and
@@ -49,6 +53,11 @@ core proof construction. His missing-even surplus smoothing, totient
 profiles, prime-signature ordering, and Hall construction are explicitly
 credited. The prior-work comparison distinguishes the completion of the
 first question from the separate, already-solved second question.
+
+The [existing forum claim and discussion](https://www.erdosproblems.com/forum/thread/883/proof-claims)
+explicitly distinguish Della Pietra's asymptotic theorem from the remaining
+small cases. This contribution proves the all-n statement used by the canonical
+Lean target. It does not claim to originate the asymptotic resolution or its method.
 
 AI tools were substantially involved in developing, formalizing, and
 auditing the proof. This repository makes no claim of historical first
