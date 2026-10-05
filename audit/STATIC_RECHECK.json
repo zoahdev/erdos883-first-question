@@ -1,0 +1,94 @@
+{
+  "audit_kind": "independent static source and supplied-record checks; no Lean replay",
+  "checked_utc": "2026-10-05T08:53:10.536402+00:00",
+  "failures": [],
+  "checks": {
+    "source_modules": 6831,
+    "verification_modules": 1,
+    "all_manifest_source_hashes_match": true,
+    "safety_scan_hits": [],
+    "source_map_sha256": "00d6d094e6d6361ec3d4c60de630635f51023690be910610dc2c0ae2fa90b2c2",
+    "module_order_count": 6831,
+    "root_import_closure_modules": 6831,
+    "external_imports": [
+      "Init",
+      "Lean",
+      "Mathlib.Algebra.BigOperators.Intervals",
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+      "Mathlib.Algebra.Order.Field.Rat",
+      "Mathlib.Algebra.Order.Floor.Semifield",
+      "Mathlib.Algebra.Order.Floor.Semiring",
+      "Mathlib.Algebra.Order.Ring.Pow",
+      "Mathlib.Algebra.Ring.Parity",
+      "Mathlib.Analysis.Complex.Exponential",
+      "Mathlib.Analysis.Real.Sqrt",
+      "Mathlib.Analysis.SpecialFunctions.Log.Basic",
+      "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp",
+      "Mathlib.Combinatorics.Hall.Finite",
+      "Mathlib.Combinatorics.SimpleGraph.CycleGraph",
+      "Mathlib.Combinatorics.SimpleGraph.Paths",
+      "Mathlib.Data.Fin.SuccPred",
+      "Mathlib.Data.Finset.Card",
+      "Mathlib.Data.Fintype.Basic",
+      "Mathlib.Data.List.Nodup",
+      "Mathlib.Data.List.OfFn",
+      "Mathlib.Data.List.Sort",
+      "Mathlib.Data.List.TakeDrop",
+      "Mathlib.Data.Nat.Cast.Order.Field",
+      "Mathlib.Data.Nat.GCD.Basic",
+      "Mathlib.Data.Nat.GCD.BigOperators",
+      "Mathlib.Data.Nat.GCD.Prime",
+      "Mathlib.Data.Nat.Log",
+      "Mathlib.Data.Nat.Prime.Basic",
+      "Mathlib.Data.Nat.Totient",
+      "Mathlib.Data.Rat.Cast.Order",
+      "Mathlib.Data.Rat.Floor",
+      "Mathlib.Data.Real.Basic",
+      "Mathlib.NumberTheory.ArithmeticFunction.Moebius",
+      "Mathlib.Order.Interval.Finset.Nat",
+      "Mathlib.Order.Lattice.Nat",
+      "Mathlib.RingTheory.Radical.NatInt",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.FinCases",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.NormNum",
+      "Mathlib.Tactic.NormNum.Prime",
+      "Mathlib.Tactic.Positivity",
+      "Mathlib.Tactic.Ring"
+    ],
+    "actual_external_imports_match_FINAL_AUDIT": true,
+    "supplied_records_consistent": true,
+    "audit_checksum_mismatches": [],
+    "supplied_final_axiom_reports": [
+      [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    ],
+    "config_hashes_match_frozen_inputs": true,
+    "locked_dependency_count": 9,
+    "upstream_part_i_rhs_equal_ignoring_whitespace": true,
+    "canonical_cycle_definitions_equal_ignoring_whitespace": {
+      "cycleLengths": true,
+      "oddCycleLengths": true
+    }
+  },
+  "warnings": [
+    "PROVENANCE external_imports omits public imports; FINAL_AUDIT correctly includes: Mathlib.Combinatorics.SimpleGraph.Paths, Mathlib.Order.Lattice.Nat",
+    "verify.sh uses Python dictionary union; reproduction requires Python >= 3.9, while documentation says only Python 3."
+  ],
+  "status": "PASS_STATIC_CHECKS_WITH_METADATA_WARNINGS",
+  "limitations": [
+    "No Lean compiler was executed by this static audit.",
+    "The source archive contains no compiled local objects. Supplied object hashes cannot be rechecked here.",
+    "Supplied kernel logs and historical module compilation evidence are preserved, not independently regenerated.",
+    "Text scanning is supplementary and is not a substitute for a kernel rebuild or mathematical review."
+  ]
+}

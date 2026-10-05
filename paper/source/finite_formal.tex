@@ -1,0 +1,75 @@
+\section{Exact finite completion}\label{sec:finite}
+The finite computation is a collection of proofs of sufficient arithmetic conditions. It does not sample subsets $A$ and does not assume that behavior observed below a cutoff extrapolates above it. The exact interval criterion in Section~\ref{sec:criterion} is quantified over all permitted subsets and all target ranks.
+
+\subsection{Certificate semantics}
+For odd endpoints with profiles at least $t$, both the unstructured product bound and a same-signature tail bound are available. Their combination is
+\[
+ \rho(\operatorname{lcm}(u,v))\ge
+ g_s(t):=\max\{t^2,\eta_s(U)t\}.
+\]
+At interval endpoints $L\le U$, exact lower-degree functions can be formed from
+\[
+ \left\lfloor\lfloor L/2\rfloor\,g_s(\rho(v))-\Delta(U)\right\rfloor_+,
+ \qquad
+ \left\lfloor L\,g_s(\rho(v))-\Delta(U)\right\rfloor_+.
+\]
+Here $\lfloor y\rfloor_+=\max(0,\lfloor y\rfloor)$ is the natural-valued floor used by the formal degree function. Counting how many profile rows fail a degree threshold bounds the number of exceptional skeleton vertices. With $a=\lfloor(j-h_s-1)/2\rfloor$, the even resource alternative is sufficient if at most $b+a$ rows fail the target $b+j$; the whole resource alternative uses target $U-f(U)+m(U)+j$. Only prefixes with $h_s<j$ can be useful. The strict rank inequality and the distinction between ``less than a degree target'' and ``at most a degree target'' are retained in the certificate definitions.
+
+The Lean finite route checks more than a list of numerical PASS outputs. The certificate interfaces establish that profile metadata represents the actual totient density; that the odd-vertex rows form the full universe without duplication; that prime support and sharp tail witnesses are valid; that cached count-tree data has the required semantics; and that the rank witnesses satisfy the sufficient criterion. The span certificates compress intervals of profile-row ranks, with the span-checking soundness theorem proving the required coverage throughout each interval. These profile ranks are distinct from the Hall-rank parameter $j$. Consequently external generators and proposed square-root, factor or rank witnesses are outside the trusted proof boundary: their generated claims must be proved by the checked interfaces.
+
+Representative interfaces include \path{AdaptiveProfileRowsValid}, \path{SharpTailCertificate}, and \path{AdaptiveTreeRepresents}, together with rank and span soundness theorems. The files \path{Erdos883AdaptiveCertificateAssembly1226.lean} and \path{Erdos883AdaptiveSpanAssembly199999.lean} show the complete assembly at the first and last adaptive endpoints. At the latter endpoint the formal proof uses seven prime coordinates $3,5,7,11,13,17,19$ and a verified joint-prime-support bound of $9$. These finite coordinate lists should not be confused with the analytic coordinate construction for arbitrarily large $n$.
+
+\subsection{Coverage without gaps}
+There are $152$ nonvacuous finite certificate intervals: $64$ direct and $88$ adaptive. The frozen finite prefix proves the statement for $0\le n\le1211$. In the final root, a theorem through $680$ is joined with direct certificate intervals
+\[
+ [681,749],\ [750,825],\ [826,908],\ [909,999],\ [1000,1100],\ [1101,1211].
+\]
+The range $1212\le n\le199999$ is covered by $88$ adaptive intervals. Appendix~\ref{app:intervals} lists their upper endpoints; each lower endpoint is one more than its predecessor, starting at $1212$. The final theorem \code{firstQuestion\_verifiedPrefix} proves the canonical assertion on $[0,199999]$ by repeated interval composition.
+
+The analytic range begins at $200000$. Thus the completed partition is
+\[
+ [0,1211]\ \cup\ [1212,199999]\ \cup\ [200000,\infty).
+\]
+There is neither an omitted integer nor an unresolved tail. The final declaration applies the proved initial-interval-to-global theorem, whose other branch is the analytic result. This proves Theorem~\ref{thm:main}.
+
+\section{Formal statement and verification boundary}\label{sec:formal}
+The canonical target is the positive assertion in part (i) of the Formal Conjectures statement at revision \path{89294ea02bd7cd678d59984add52cb4baef3dbf4}~\cite{FC883}. The explicit checked type is
+\begin{quote}\small\ttfamily
+\ensuremath{\forall} (n : \ensuremath{\mathbb N}) (A : Finset \ensuremath{\mathbb N}),\par
+\quad A \ensuremath{\subseteq} Finset.Icc 1 n \ensuremath{\to}\par
+\quad n / 2 + n / 3 - n / 6 < A.card \ensuremath{\to}\par
+\quad \ensuremath{\forall} l : \ensuremath{\mathbb N}, Odd l \ensuremath{\to} 3 \ensuremath{\le} l \ensuremath{\to} l \ensuremath{\le} n / 3 + 1 \ensuremath{\to}\par
+\quad l \ensuremath{\in} ((SimpleGraph.fromRel Nat.Coprime).induce\par
+\qquad (A : Set \ensuremath{\mathbb N})).oddCycleLengths
+\end{quote}
+All divisions here are natural-number division. The induced graph enforces the vertex set $A$; the canonical cycle definition requires a genuine cycle. The statement check is separate from identifying the name of the theorem. It establishes that there is no additional endpoint, numerical-certificate, density-distribution or lower-bound hypothesis in the theorem's interface.
+
+\subsection{What was checked}
+The frozen local import closure has $6831$ source modules, totaling $144287247$ source bytes. The toolchain is Lean $4.33.1$ with mathlib revision \path{0df444a360eaa60ab8c11dca51a86af692955474}. The recorded audit combines modular source compilation, targeted recompilation of concrete source/object correspondence concerns, a fresh final-root compilation, explicit canonical-type checking, and source, object and configuration hash comparisons against the frozen snapshot. The final source scan found no admitted proof, custom axiom, native-evaluation proof shortcut or kernel-checking bypass in the local closure.
+
+The reported assumptions are exactly the three standard Lean axioms: \code{propext}, \code{Classical.choice} and \code{Quot.sound}. This is an ordinary Lean-kernel result relative to the pinned toolchain and dependencies; it is not a separately implemented kernel verification or a bootstrap of Lean and mathlib from source.
+
+\subsection{What is not claimed}
+The recorded audit is not a second clean rebuild of all $6831$ numerical and supporting modules. Some earlier successful compilations were observed during construction without durable per-module pre/post hash attestations. Empty logs, completion markers and timestamps alone are not represented as frozen-input proof of a successful rebuild. The audit records how concrete correspondence concerns were resolved. A full clean replay is a useful further reproducibility check and remains distinct from the checks already reported.
+
+Likewise, neither this manuscript nor the audit records independent human mathematical review. Kernel checking establishes the formal proposition, subject to the stated trusted dependencies. Human review still matters for the correspondence between the intended problem and its statement, intellectual attribution, intelligibility, author responsibility and publication standards. The accompanying reproduction guide separates these tasks.
+
+\subsection{Artifact identification and availability}
+The authoritative frozen formal artifact is
+\path{Erdos883_FirstQuestion_Lean_20261005.zip}, version 5, $20359760$ bytes, with SHA-256
+\begin{quote}\small\ttfamily
+8f017032cb93f2f0891f6f8200390c161aca\par
+bf112dac72567462e642b91ede95
+\end{quote}
+(the two displayed lines are one hash). It includes the exact source closure, pinned configuration, build order, verification script, canonical harness, provenance manifests, reports and logs. The archive is supplied with this research package; this manuscript does not represent it as already publicly deposited or submitted. A public immutable repository or archival identifier should be added only after an authorized release has occurred.
+
+The earlier journal-preparation manuscript and its historical informal certificate bundle remain prior versions. Their different thresholds and interval lists are not evidence for the new formal inventory. The new source package contains an explicit revision note so that an expert can distinguish the exposition's history from the final formal result.
+
+\section{Conclusion}
+The first question of Erdős Problem 883 is proved by the named Lean theorem with its exact canonical all-$n$ type. The proof combines an elementary endpoint lemma, Della Pietra's central smoothing and ordering architecture, exact resource criteria, a finite certificate cover and an analytic range beginning at $200000$. The mathematical and formal claims can be evaluated without assuming novelty, human peer review or a clean replay that has not been performed. The next scholarly steps are author approval of the attribution and contribution record, expert review, and a stable authorized public release of the frozen proof and its explanatory material.
+
+\clearpage
+\appendix
+\section{The adaptive interval endpoints}\label{app:intervals}
+Each row lists consecutive upper endpoints. Read left to right, then down. The first interval starts at $1212$; each subsequent interval starts one more than the preceding endpoint. The list is extracted from the $88$ adaptive pieces of \path{Erdos883VerifiedCoverage.lean}. The source package also includes a machine-readable CSV with both endpoints.
+\input{interval_table.tex}

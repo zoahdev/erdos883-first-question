@@ -1,0 +1,26 @@
+Formal-source-aligned edition, 5 October 2026
+
+This is a new edition. The earlier 17-page journal-preparation PDF and its clean research-source archive are preserved as prior versions; they have not been overwritten.
+
+Authoritative formal artifact
+Erdos883_FirstQuestion_Lean_20261005.zip, version 5
+20359760 bytes
+SHA-256 8f017032cb93f2f0891f6f8200390c161acabf112dac72567462e642b91ede95
+The Lean proof itself is a separate artifact and is not duplicated in this explanatory source archive. No Lean source was changed to prepare this edition.
+
+Substantive revisions
+1. State the proved canonical first-question theorem, with all natural n and no extra certificate or endpoint assumption.
+2. Replace the older 2000000 analytic starting point by the actual final n >= 200000 proof. Explain its refined CDF envelope, 2910 exact cells, improved common-neighbor bound, rounding constants and complete case split.
+3. Replace the external Ahlswede-Khachatrian endpoint input with the proved odd-triple pigeonhole lemma.
+4. Describe the actual coherent analytic divisor-coordinate family: 511 checked odd primes followed by consecutive odd integers. Do not substitute prime-growth asymptotics.
+5. Match the actual finite proof inventory: 64 direct and 88 adaptive intervals, the latter covering 1212-199999. Explain exact profile, permutation, cached-count and rank/span certificate semantics.
+6. Expand canonical-type, standard-axiom, trusted-dependency and verification-scope discussion. The evidence is modular source compilation and a fresh final root/raw-type check; a second complete clean numerical replay is not claimed.
+7. Credit Della Pietra's earlier asymptotic architecture in the abstract and introduction. Distinguish Erdős-Sárközy 1997, Sárközy 1999, the canonical statement and the separate public second-question Lean project.
+8. Retain candid substantial AI disclosure and do not invent the author's personal contribution or human review.
+9. Add reproduction guide, one-page expert contribution comparison and machine-readable adaptive interval list.
+
+Review and publication limits
+This edition has source-alignment review and complete rendered-page layout QA. It has not received external human mathematical review, does not perform another full Lean rebuild, and makes no worldwide priority claim. It is not a publication or submission. An immutable public deposit identifier has not been invented.
+
+Author information still needed
+Confirm preferred byline (existing manuscript: Yicheng Pan / 潘奕成), affiliation if any, contact, actual personal contributions, authorship responsibility, any coauthors/acknowledgments, precise AI model/tool usage, and extent of independent human review. No age is used as a scholarly claim.

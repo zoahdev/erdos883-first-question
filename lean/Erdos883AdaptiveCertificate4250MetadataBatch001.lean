@@ -1,0 +1,7 @@
+import Erdos883AdaptiveCertificate4250Data
+import Erdos883AdaptiveCertificateOrderCore
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+theorem adaptiveMetadata4250Chunk16 : coreProfileMetadataCheck adaptiveRows4250Chunk16 = true := by decide +kernel
+end Erdos883Verified

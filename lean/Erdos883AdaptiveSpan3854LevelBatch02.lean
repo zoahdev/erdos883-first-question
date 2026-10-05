@@ -1,0 +1,28 @@
+import Erdos883AdaptiveCertificate3854Data
+import Erdos883AdaptiveSpanCompactCore
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+def adaptiveNumericSpans3854_4Chunk0 : List AdaptiveNumericSpan := adaptivePackedNumericSpans 19 311471112513078419097677464029281997355789191841131359288394094924872481823684780287104283778870325167844614158772689147964946272565299098630815434115191037566868167708292379240129691669793485806376144984654524592433264114811593830751049056415133997154432852515333826428252440615111610563829805367591357317881310537094517902496143710264586372866411805425949618349232026515759769613472875203984924504168004678941826241927070725346720044188745410332245063499423423892997141012143619511825564293376960341981050755704863563481663403412223642478104978442701919466004125057152
+def adaptiveNumericSpans3854_4 : List AdaptiveNumericSpan := [adaptiveNumericSpans3854_4Chunk0].flatten
+def adaptiveSpanEven3854_4 := adaptiveSpanTreeOfSpans (coreEvenSpans 1927 0 adaptiveNumericSpans3854_4)
+def adaptiveSpanWhole3854_4 := adaptiveSpanTreeOfSpans (coreWholeSpans 0 adaptiveNumericSpans3854_4)
+theorem adaptiveSpanNumericCheck3854_4 : coreNumericSpansCheck 3671 7 192 221 adaptiveNumericSpans3854_4 adaptiveRows3854 = true := by decide +kernel
+theorem adaptiveSpanEvenCache3854_4 : adaptiveSpanEven3854_4.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanEvenDomain3854_4 : adaptiveSpanEven3854_4.domainCheck 1927 = true := by decide +kernel
+theorem adaptiveSpanEvenEntries3854_4 : adaptiveSpanEven3854_4.spans = coreEvenSpans 1927 0 adaptiveNumericSpans3854_4 := by decide +kernel
+theorem adaptiveSpanWholeCache3854_4 : adaptiveSpanWhole3854_4.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanWholeDomain3854_4 : adaptiveSpanWhole3854_4.domainCheck 1927 = true := by decide +kernel
+theorem adaptiveSpanWholeEntries3854_4 : adaptiveSpanWhole3854_4.spans = coreWholeSpans 0 adaptiveNumericSpans3854_4 := by decide +kernel
+def adaptiveNumericSpans3854_5Chunk0 : List AdaptiveNumericSpan := adaptivePackedNumericSpans 20 394836542730958231408594488107162423110933749247863931827355892658304060160741149814513458242478182176629911925014707903679887718544753488305012471082540747114017587394440609655259711008197109754621678137112518600339773298226314439188414829368769032735428290355791647093310204010086519822007289438827600699706321635815192095157851986422533363964735499429685354961799187361110644707306577594737975947534562814645872639290161662827724114632545409269467106472134030713612784056741294050184796928548160232672621490948599664146904749902473641964767193959158228496477934811888225842240430845707531048714368
+def adaptiveNumericSpans3854_5 : List AdaptiveNumericSpan := [adaptiveNumericSpans3854_5Chunk0].flatten
+def adaptiveSpanEven3854_5 := adaptiveSpanTreeOfSpans (coreEvenSpans 1927 0 adaptiveNumericSpans3854_5)
+def adaptiveSpanWhole3854_5 := adaptiveSpanTreeOfSpans (coreWholeSpans 0 adaptiveNumericSpans3854_5)
+theorem adaptiveSpanNumericCheck3854_5 : coreNumericSpansCheck 3671 7 288 323 adaptiveNumericSpans3854_5 adaptiveRows3854 = true := by decide +kernel
+theorem adaptiveSpanEvenCache3854_5 : adaptiveSpanEven3854_5.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanEvenDomain3854_5 : adaptiveSpanEven3854_5.domainCheck 1927 = true := by decide +kernel
+theorem adaptiveSpanEvenEntries3854_5 : adaptiveSpanEven3854_5.spans = coreEvenSpans 1927 0 adaptiveNumericSpans3854_5 := by decide +kernel
+theorem adaptiveSpanWholeCache3854_5 : adaptiveSpanWhole3854_5.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanWholeDomain3854_5 : adaptiveSpanWhole3854_5.domainCheck 1927 = true := by decide +kernel
+theorem adaptiveSpanWholeEntries3854_5 : adaptiveSpanWhole3854_5.spans = coreWholeSpans 0 adaptiveNumericSpans3854_5 := by decide +kernel
+end Erdos883Verified

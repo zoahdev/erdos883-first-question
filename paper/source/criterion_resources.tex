@@ -1,0 +1,260 @@
+\section{The exact interval criterion}\label{sec:criterion}
+
+\subsection{Notation and the elementary endpoint lemma}
+Let
+\[
+\begin{aligned}
+f(n)&=\lfloor n/2\rfloor+\lfloor n/3\rfloor-\lfloor n/6\rfloor,
+& m(n)&=\lfloor n/6\rfloor,\\
+H(n)&=\lceil n/2\rceil,
+& M(n)&=\lfloor n/3\rfloor-\lfloor n/6\rfloor+1.
+\end{aligned}
+\]
+Let $O_U$ be the odd integers in $[U]$, in any fixed total order (one may use decreasing $\phi(v)/v$). Write $P_k$ for its first $k$ members.
+
+The retained odd count has the useful identity
+\[
+ M(n)=\left\lfloor\frac{n+3}{6}\right\rfloor+1.
+\]
+Any set of $M(n)$ distinct odd integers in $[n]$, for $n\ge6$, contains a coprime pair. Here is a direct proof. If the set contains $1$, choose any other member; $M(n)\ge2$. Otherwise map every member $a$ to $\lfloor(a+3)/6\rfloor$. The image lies in $\{1,\ldots,\lfloor(n+3)/6\rfloor\}$, so two distinct members lie in one fibre. Each fibre consists of three consecutive odd integers, of the form $\{6k+3,6k+5,6k+7\}$. Their pairwise differences are $2$ or $4$; a common divisor of two odd members must therefore be $1$.
+
+This is the entire endpoint input in the formal proof: \texttt{oddEndpointPrinciple} in \path{Erdos883AKEndpoints.lean}. The historical filename is retained, but no Ahlswede--Khachatrian theorem is assumed. The argument replaces the external endpoint input used in the earlier informal manuscript and in the cited asymptotic architecture.
+
+Choose any ordered finite list of divisor coordinates $c_1,\ldots,c_t$. The $s$-signature of $v$ is $(1_{c_i\mid v})_{1\le i\le s}$. The graph-theoretic criterion does not require these coordinates to be prime. Set $h_0=0$ and $h_s=2^s+1$ for $s\ge1$.
+For integers $6\le L\le U$, define:
+\[
+\begin{aligned}
+e_s(k;L,U)
+&=\min_{\substack{u,v\in P_k,\ u\ne v\\\text{equal $s$-signature}}}
+\#\{w\in[L]:w\text{ even},\ \gcd(w,u)=\gcd(w,v)=1\};\\
+r_s(k;L,U)
+&=\text{the same minimum with all positive }w\le L.
+\end{aligned}
+\]
+If there is no such pair, set the corresponding minimum to $+\infty$. In Lean, \texttt{ExactIntervalCertificate} expresses the corresponding lower bound pointwise for every eligible pair, so it needs no infinite value or numerical sentinel.
+
+\subsection*{Exact interval criterion}
+Suppose for every integer
+\[
+0\le b\le H(U)-M(U),\qquad 1\le j\le m(U),
+\]
+there exist an $s\in\{0,\ldots,t\}$ and $k\in\{0,\ldots,H(U)\}$ such that
+\begin{equation}
+2\max(0,H(U)-k-b)+h_s<j, \tag{1}
+\end{equation}
+and at least one of
+\begin{align}
+e_s(k;L,U)&\ge b+j, \tag{2E}\\
+r_s(k;L,U)&\ge U-f(U)+m(U)+j. \tag{2R}
+\end{align}
+Then for every integer $n\in[L,U]$ and every $A\subseteq[n]$ with $|A|>f(n)$, $G(A)$ contains every odd cycle $C_{2\ell+1}$, $1\le\ell\le\lfloor n/6\rfloor$.
+
+\subsection*{Proof}
+Fix such $n,A$ and put $b=\#(\text{even integers in }[n]\text{ outside }A)$. There are at least $M(n)+b$ selected odds. Retain the first $M(n)$ of these in the fixed $O_U$ order, calling the resulting set $Y_0$. For every $k$,
+\begin{equation}
+|Y_0\setminus P_k|\le\max(0,H(U)-k-b). \tag{3}
+\end{equation}
+Indeed, if a retained odd lies after position $k$, every discarded selected odd lies after $k$ as well; there are at least $b$ discarded odds. Counting inside $O_U$ proves~(3). If no retained odd lies after $k$ the assertion is immediate.
+
+By the elementary endpoint lemma, choose coprime distinct $a,a'$ in $Y_0$. Since $M(n)\ge m(n)+1$, for each $1\le\ell\le m(n)$ choose $\ell-1$ other members of $Y_0$. Sort these middle vertices lexicographically by their full $t$-signatures, then place $a$ first and $a'$ last. Denote the result $o_0=a,\ldots,o_\ell=a'$. This is the construction in \texttt{exists\_divisor\_skeleton}.
+
+This one order has, simultaneously for every $1\le s\le t$, at most $h_s$ gaps joining different $s$-signatures: within the sorted middle, every prefix-signature occupies one block and there are at most $2^s-1$ transitions; adjoining the two prescribed endpoints adds at most two. This argument also covers an empty middle. For $s=0$ there are no transitions. At most twice the number in~(3) of the gaps touch an odd outside $P_k$.
+
+Let $R=A$ minus the skeleton and let
+\[
+D_i=\{w\in R:\gcd(w,o_{i-1})=\gcd(w,o_i)=1\}.
+\]
+For each rank $j\le\ell$ take $s,k$ from the criterion. Every gap except at most $2\max(0,H(U)-k-b)+h_s$ has both endpoints in $P_k$ and equal $s$-signature.
+
+If (2E) holds, that gap has at least $b+j$ common even neighbors in $[L]$. At most $b$ are missing from $A$, and no even vertex is in the odd skeleton, so $|D_i|\ge j$.
+
+If (2R) holds, it has at least $U-f(U)+m(U)+j$ common neighbors in $[L]$. Removing vertices outside $A$ and in the skeleton costs at most
+\[
+(n-|A|)+(\ell+1)\le n-f(n)+\ell\le U-f(U)+m(U),
+\]
+so again $|D_i|\ge j$. The last inequality follows from monotonicity of $n-f(n)+m(n)$; writing $n=6q+r$, it equals $3q+(0,1,1,1,1,2)_r$.
+Also $b\le H(n)-M(n)\le H(U)-M(U)$, since $H(n)-M(n)=2q+(-1,0,0,0,0,1)_r$ is nondecreasing.
+
+Consequently fewer than $j$ lists $D_i$ have size less than $j$. Sort the $\ell$ lists by increasing cardinality. The $j$th list has size at least $j$, so greedy selection supplies distinct representatives $w_i$. They all lie outside the skeleton. Hence
+\[
+o_0,w_1,o_1,\ldots,w_\ell,o_\ell,o_0
+\]
+is a simple coprime cycle of length $2\ell+1$, closing via $\gcd(a,a')=1$. Different ranks may use different $s,k$ or (2E)/(2R), because each bounds the same actual resource lists $D_i$. This proves the criterion.
+
+\section{Arithmetic resources}\label{sec:resources}
+
+\subsection*{Notation}
+$\rho(v)=\phi(v)/v$. Throughout this part, endpoint pairs $u,v$ are odd integers.
+For the initial tail estimates, specialize the coordinates to the first $s$ odd primes $p_1=3,\ldots,p_s$, and write $p=p_{s+1}$. The uniform construction below will instead use a specified coherent family of divisor-coordinate lists.
+For $s=0$, set $p_0=2$. The $0$-signature is empty, $p=p_1=3$, and the tail primes $r>p_0$ are exactly the odd primes; all endpoint pairs remain odd.
+Let $U$ be an integer upper bound on every skeleton vertex and let $L\le U$.
+Let
+\[
+\begin{aligned}
+H&=\lceil U/2\rceil,& q_L&=\lfloor L/2\rfloor,& m&=\lfloor U/6\rfloor,\\
+f&=\lfloor U/2\rfloor+\lfloor U/3\rfloor-\lfloor U/6\rfloor,
+& M&=f-\lfloor U/2\rfloor+1.
+\end{aligned}
+\]
+For $0<z\le1$ define the strict finite profile count
+\[
+R_U(z)=\#\{\text{odd }v\le U:\rho(v)<z\}.
+\]
+Strict inequality ensures that every remaining vertex has profile $\ge z$.
+Write $h_0=0$ and $h_s=2^s+1$ for $s\ge1$.
+
+\subsection*{1. Exact adaptive tail factor}
+Let $a$ be the greatest nonnegative integer with $p^a\le U$ and put
+\[
+\eta_s(U)=\left(\frac{p-1}{p}\right)^a.
+\]
+Every $v\le U$ has at most $a$ distinct prime divisors exceeding $p_s$. Each corresponding totient factor is at least $(p-1)/p$. Therefore
+\[
+\prod_{\substack{r\mid v,\ r>p_s\\r\text{ prime}}}\left(1-\frac1r\right)\ge\eta_s(U).
+\]
+All ingredients are integers or rational numbers; logarithms are unnecessary for computing $a$.
+
+If odd integers $u,v\le U$ share their first $s$ prime-divisibility signatures, every prime factor of $v$ absent from $u$ exceeds $p_s$. Hence
+\[
+\begin{aligned}
+\rho(\operatorname{lcm}(u,v))
+&=\rho(u)\prod_{\substack{r\mid v,\ r\nmid u\\r\text{ prime}}}\left(1-\frac1r\right)\\
+&\ge\rho(u)\eta_s(U).
+\end{aligned}
+\]
+Interchanging $u,v$ proves the slightly stronger bound
+\[
+\rho(\operatorname{lcm}(u,v))\ge\max(\rho(u),\rho(v))\eta_s(U).
+\]
+There is also the signature-free inequality
+\[
+ \rho(\operatorname{lcm}(u,v))\ge\rho(u)\rho(v),
+\]
+because the Euler factors at common prime divisors appear twice on the right and once on the left. Thus when both profiles are at least $z\ge0$ the useful combined bound is
+\[
+ B_s(z):=\max\{z^2,z\eta_s(U)\}\le\rho(\operatorname{lcm}(u,v)).
+\]
+The final finite adaptive certificates use this combined bound.
+
+One may sharpen $\eta_s(U)$ without changing the proof. Let $r$ be maximal such that the product of the first $r$ primes after $p_s$ is $\le U$. No integer $\le U$ has more than $r$ distinct tail prime factors. Among any $r$ such primes the smallest $r$ give the smallest totient-factor product; fewer factors give no smaller a product. Thus their factor product is a valid sharper rational $\eta_s(U)$. The formal \texttt{SharpTailCertificate} packages this argument as a finite set $Q$ and threshold $q$: all odd primes below $q$ belong either to the signature list or to $Q$, every $x\in Q$ satisfies $2\le x\le q$, and
+\[
+ U<q\prod_{x\in Q}x,\qquad
+ \eta_s(U)=\prod_{x\in Q}(1-1/x).
+\]
+A product-barrier lemma and an Euler-factor comparison prove the resulting tail bound. In the supplied certificates $Q$ consists of the initial primes beyond the signature prefix.
+
+\subsection*{2. Exact common-neighbor discrepancy}
+For odd squarefree $D$ with $w=\omega(D)\ge1$ and integer $X\ge0$,
+\[
+\begin{aligned}
+C_D(X)&=\#\{1\le a\le X:\gcd(a,D)=1\}\\
+&=\sum_{d\mid D}\mu(d)\lfloor X/d\rfloor.
+\end{aligned}
+\]
+Comparing with $X\phi(D)/D$, only the positive-$\mu$ terms can contribute negatively. There are $2^{w-1}$ such divisors, and $d=1$ has zero fractional part. Thus
+\[
+C_D(X)\ge X\rho(D)-(2^{w-1}-1).
+\]
+For $D=1$ the equality $C_1(X)=X$ holds.
+
+Define $W(U)$ as the greatest $w$ such that the product of the first $w$ odd primes is $\le U^2$, and $\Delta(U)=2^{W(U)-1}-1$ (take zero if $W(U)=0$).
+For $D=\operatorname{rad}(uv)$, $D\le uv\le U^2$, so the previous inequality gives
+\[
+\begin{aligned}
+\text{common even neighbors in }[L]&\ge q_L\rho(D)-\Delta(U),\\
+\text{common whole-pool neighbors in }[L]&\ge L\rho(D)-\Delta(U).
+\end{aligned}
+\]
+This does not require $D$ to divide $L$ and remains valid if an endpoint is $1$.
+
+\subsection*{3. Exact finite criterion using only a univariate profile}
+For every required pair $0\le b\le H-M$ and $1\le j\le m$, suppose one can choose a signature prefix $s$ and rational $z$ with
+\begin{equation}
+2\max(0,R_U(z)-b)+h_s<j, \tag{A}
+\end{equation}
+and either
+\begin{equation}
+q_LB_s(z)-\Delta(U)\ge b+j, \tag{$B_E$}
+\end{equation}
+or
+\begin{equation}
+LB_s(z)-\Delta(U)\ge U-f+m+j. \tag{$B_R$}
+\end{equation}
+Then the all-subsets conclusion of the finite interval criterion holds for every $n\in[L,U]$.
+
+\noindent\textit{Proof:} retain the best $M(n)$ selected odds as before. Among the $R_U(z)$ low profile odds, at most $\max(0,R_U(z)-b)$ can remain in that retained set, because at least $b$ selected odds worse than any retained low-profile odd were discarded. Choose a single full coordinate list containing all prefixes used in the certificate, sort the middle of the skeleton by its full signature, and adjoin its coprime endpoints. For any selected prefix $s$, all but the number in (A) of its gaps have equal signatures and both endpoint profiles $\ge z$. The tail and discrepancy bounds give at least $j$ resources for each such gap. The ordered-Hall proof applies unchanged.
+
+Different ranks may select different prefix lengths. A single ordering by the full list has all shorter prefix signatures contiguous in the middle, so there is no consistency problem.
+
+For the finite implementation, define integer lower degrees
+\[
+ E_s(v)=\lfloor q_LB_s(\rho(v))-\Delta(U)\rfloor_+,
+ \qquad
+ Q_s(v)=\lfloor LB_s(\rho(v))-\Delta(U)\rfloor_+,
+\]
+where $\lfloor y\rfloor_+=\max(0,\lfloor y\rfloor)$. Both are nondecreasing functions of the same profile $\rho(v)$. For each $(b,j)$ it suffices to select $s$ with $h_s<j$ and verify either
+\[
+ \#\{v\text{ odd}\le U:E_s(v)<b+j\}
+ \le b+\left\lfloor\frac{j-h_s-1}{2}\right\rfloor,
+\]
+or
+\[
+ \#\{v\text{ odd}\le U:Q_s(v)<U-f+m+j\}
+ \le b+\left\lfloor\frac{j-h_s-1}{2}\right\rfloor.
+\]
+One common decreasing-profile order turns each good-degree set into an initial segment. Its complementary low count gives the strict exceptional-gap budget, while the degree threshold gives the corresponding common-neighbor bound. This is \texttt{DegreeIntervalCertificate}; its reduction to the exact criterion is proved by \texttt{exact\_interval\_of\_degree\_certificate} in \path{Erdos883DegreeCriterion.lean}.
+
+\subsection*{4. A fully uniform tail bound with $O(\sqrt U)$ transitions}
+For every integer $U>1024$ choose the least $s$ with $U\le4^s$. Thus $s\ge6$ and $4^{s-1}<U$, whence $2^s<2\sqrt U$.
+
+Here the precise coordinate family matters. Let $\mathcal P$ be the checked list of the first $511$ odd primes, ending at $3671$. Define $\mathcal C_s$ to be the first $s$ entries of $\mathcal P$ when $s\le511$; for $s>511$, append $s-511$ consecutive odd integers beginning with $3673$. These appended coordinates need not be prime. The family has length $s$ and is coherent under taking prefixes. For $s\ge511$, it contains every odd prime below $2s+2651$. The source checks the coverage of the finite list by certifying that omitted integers in $[3,3671]$ have proper divisors.
+
+If $u,v$ share their $\mathcal C_s$-signatures, every prime factor of $v$ absent from $u$ is at least a suitable threshold $p$. Let $a$ count these missing prime factors; then $p^a\le v\le U\le4^s$.
+
+For $s\ge511$, take $p=2s+2651$, so $p\ge2s+3\ge1024$. If $10a\ge p$, then
+\[
+ 4^s=2^{2s}<2^{10a}\le p^a,
+\]
+a contradiction. Therefore $10a<p$, and Bernoulli's inequality gives
+\[
+ \prod_{\substack{r\mid v,\ r\nmid u\\r\text{ prime}}}\left(1-\frac1r\right)
+ \ge(1-1/p)^a\ge1-a/p>\frac9{10}.
+\]
+No estimate for the growth of primes is needed.
+
+For $9\le s<511$, let $p$ be entry $s+1$ of $\mathcal P$. The $502$ kernel-checked integer inequalities
+\[
+ 4^s<p^{\lceil p/10\rceil}
+\]
+again imply $10a<p$. For $s=6,7,8$, separate exact product barriers give the same strict Euler-product bound: at scale $6$ there are at most two missing primes, and if $19$ occurs the other is at least $23$; at scale $7$ there are at most two, all at least $23$; at scale $8$ there are at most three, all at least $29$. The inequalities $(18/19)(22/23)>9/10$, $(22/23)^2>9/10$, and $(28/29)^3>9/10$ complete these cases.
+
+Consequently,
+\[
+ h_s=2^s+1<2\sqrt U+1,\qquad
+ \rho(\operatorname{lcm}(u,v))>\frac9{10}\max(\rho(u),\rho(v))
+\]
+whenever $u,v\le U$ have equal full signatures. The declarations are \texttt{adaptiveTailCoordinates}, \texttt{uniformTailScale}, and \texttt{totientDensity\_lcm\_gt\_nine\_tenths\_uniform} in \path{Erdos883FiniteTailThresholds.lean}, with the elementary large-scale argument in \path{Erdos883UniformTail.lean} and the three small cases in \path{Erdos883SmallTailCertificates.lean}.
+
+A useful uniform discrepancy bound is also elementary. For odd squarefree $D$,
+\[
+\frac{(2^{\omega(D)})^4}{D}
+=\prod_{p\mid D}\frac{16}{p}
+\le\frac{16^5}{3\cdot5\cdot7\cdot11\cdot13}<81,
+\]
+since factors from primes $\ge17$ are $\le1$. Hence $2^{\omega(D)}<3D^{1/4}$.
+For $D\le U^2$, the actual discrepancy from the discrepancy bound is strictly less than $(3/2)\sqrt U$. Thus $(B_E)/(B_R)$ may use loss $(3/2)\sqrt U$ and factor $9/10$, without computing $W(U)$.
+
+This proves a universal numerical reduction for all $U>1024$:
+\[
+2\max(0,R_U(z)-b)+2^s+1<j,
+\]
+and either
+\[
+\frac9{10}q_Lz-\frac32\sqrt U\ge b+j,
+\]
+or
+\[
+\frac9{10}Lz-\frac32\sqrt U\ge U-f+m+j
+\]
+are sufficient. The exact integer $2^s+1$ is preferable to its displayed $2\sqrt U+1$ upper bound. Irrational square roots may be rounded upward in the subtracted error if a rational-only certificate is desired.
+

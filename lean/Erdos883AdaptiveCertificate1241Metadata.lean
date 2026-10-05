@@ -1,0 +1,14 @@
+import Erdos883AdaptiveCertificate1241MetadataChunk0000
+import Erdos883AdaptiveCertificate1241MetadataChunk0001
+import Erdos883AdaptiveCertificate1241MetadataChunk0002
+import Erdos883AdaptiveCertificate1241MetadataChunk0003
+import Erdos883AdaptiveCertificate1241MetadataChunk0004
+import Erdos883AdaptiveCertificate1241Order
+import Erdos883AdaptiveCertificate1241Permutation
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+theorem adaptiveMetadata1241 : coreProfileMetadataCheck adaptiveRows1241 = true := by
+  simp only [adaptiveRows1241, coreProfileMetadataCheck_flatten, List.all_cons, List.all_nil,
+    adaptiveMetadata1241Chunk0, adaptiveMetadata1241Chunk1, adaptiveMetadata1241Chunk2, adaptiveMetadata1241Chunk3, adaptiveMetadata1241Chunk4, Bool.true_and]
+end Erdos883Verified

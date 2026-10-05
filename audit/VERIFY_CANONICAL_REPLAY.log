@@ -1,0 +1,14 @@
+Erdos883Verified.erdos883_firstQuestion : Erdos883Target.FirstQuestion
+def Erdos883Target.FirstQuestion : Prop :=
+∀ (n : ℕ),
+  ∀ A ⊆ Finset.Icc 1 n,
+    n / 2 + n / 3 - n / 6 < A.card →
+      ∀ (l : ℕ),
+        Odd l → 3 ≤ l → l ≤ n / 3 + 1 → l ∈ (SimpleGraph.induce (↑A) Erdos883Target.coprimeGraph).oddCycleLengths
+def Erdos883Target.coprimeGraph : SimpleGraph ℕ :=
+SimpleGraph.fromRel Nat.Coprime
+def SimpleGraph.cycleLengths.{u_1} : {α : Type u_1} → SimpleGraph α → Set ℕ :=
+fun {α} G => {m | ∃ a w, w.IsCycle ∧ w.length = m}
+def SimpleGraph.oddCycleLengths.{u_1} : {α : Type u_1} → SimpleGraph α → Set ℕ :=
+fun {α} G => {m | m ∈ G.cycleLengths ∧ Odd m}
+'Erdos883Verified.erdos883_firstQuestion' depends on axioms: [propext, Classical.choice, Quot.sound]

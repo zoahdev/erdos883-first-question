@@ -1,0 +1,17 @@
+import Erdos883SmallCertificate999Data
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+
+theorem coreFlatten999_37 :
+    (List.ofFn coreChunks999_37).flatten =
+      (coreData999.take (coreResources999 37).q).drop 199 := by
+  decide +kernel
+
+theorem coreCheck999_37 :
+    ∀ c : Fin 1, (coreChunks999_37 c).all
+      (coreResourceRowCheck 909 coreData999 (coreResources999 37)) = true := by
+  decide +kernel
+#print axioms coreFlatten999_37
+#print axioms coreCheck999_37
+end Erdos883Verified

@@ -1,0 +1,17 @@
+import Erdos883AdaptiveCertificate4922Data
+import Erdos883AdaptiveSpanCompactCore
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+def adaptiveNumericSpans4922_6Chunk0 : List AdaptiveNumericSpan := adaptivePackedNumericSpans 20 506082779782963578888988679000591375663456139562511156658478268326995095693455451436706449231002997957480266936417917378991815866544711139014639472179869968734514505586883016325028172986136459902474687604889973199174382602239892916987789462650109985917983769954371933348550072651916278365273998997144744287288062374326982601372493991503369993051332901016852027848520168735174577150387118629204710526498775191556227416490533872969660644165184105285241649230023657225626497745600512990736496266239242037729260323591531407880318209841847151924410158222969275065753517961341092629119729842108588785401984
+def adaptiveNumericSpans4922_6 : List AdaptiveNumericSpan := [adaptiveNumericSpans4922_6Chunk0].flatten
+def adaptiveSpanEven4922_6 := adaptiveSpanTreeOfSpans (coreEvenSpans 2461 0 adaptiveNumericSpans4922_6)
+def adaptiveSpanWhole4922_6 := adaptiveSpanTreeOfSpans (coreWholeSpans 0 adaptiveNumericSpans4922_6)
+theorem adaptiveSpanNumericCheck4922_6 : coreNumericSpansCheck 4688 7 396 437 adaptiveNumericSpans4922_6 adaptiveRows4922 = true := by decide +kernel
+theorem adaptiveSpanEvenCache4922_6 : adaptiveSpanEven4922_6.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanEvenDomain4922_6 : adaptiveSpanEven4922_6.domainCheck 2461 = true := by decide +kernel
+theorem adaptiveSpanEvenEntries4922_6 : adaptiveSpanEven4922_6.spans = coreEvenSpans 2461 0 adaptiveNumericSpans4922_6 := by decide +kernel
+theorem adaptiveSpanWholeCache4922_6 : adaptiveSpanWhole4922_6.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanWholeDomain4922_6 : adaptiveSpanWhole4922_6.domainCheck 2461 = true := by decide +kernel
+theorem adaptiveSpanWholeEntries4922_6 : adaptiveSpanWhole4922_6.spans = coreWholeSpans 0 adaptiveNumericSpans4922_6 := by decide +kernel
+end Erdos883Verified

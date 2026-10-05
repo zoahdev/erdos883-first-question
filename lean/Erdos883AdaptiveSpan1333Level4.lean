@@ -1,0 +1,17 @@
+import Erdos883AdaptiveCertificate1333Data
+import Erdos883AdaptiveSpanCompactCore
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+def adaptiveNumericSpans1333_4Chunk0 : List AdaptiveNumericSpan := adaptivePackedNumericSpans 18 87012847437552501843094461533737216354534218039987413714326902835572720522282430413563558805643714429318783676923358186062008767728605263974466529373826263236273822112979352810436513263402278774705730673798416081574370881387615037332967027685238436150301462386066681273151832512401747904636822357445189949135862896164544943289541599551391820944409150615087644593630076687328200493439637178221752108263208290596943113440850030509154774862282053812549794049970171359943635106252977448190212733483463716858292906000916491763151803762142609472
+def adaptiveNumericSpans1333_4 : List AdaptiveNumericSpan := [adaptiveNumericSpans1333_4Chunk0].flatten
+def adaptiveSpanEven1333_4 := adaptiveSpanTreeOfSpans (coreEvenSpans 667 0 adaptiveNumericSpans1333_4)
+def adaptiveSpanWhole1333_4 := adaptiveSpanTreeOfSpans (coreWholeSpans 0 adaptiveNumericSpans1333_4)
+theorem adaptiveSpanNumericCheck1333_4 : coreNumericSpansCheck 1311 6 192 221 adaptiveNumericSpans1333_4 adaptiveRows1333 = true := by decide +kernel
+theorem adaptiveSpanEvenCache1333_4 : adaptiveSpanEven1333_4.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanEvenDomain1333_4 : adaptiveSpanEven1333_4.domainCheck 667 = true := by decide +kernel
+theorem adaptiveSpanEvenEntries1333_4 : adaptiveSpanEven1333_4.spans = coreEvenSpans 667 0 adaptiveNumericSpans1333_4 := by decide +kernel
+theorem adaptiveSpanWholeCache1333_4 : adaptiveSpanWhole1333_4.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanWholeDomain1333_4 : adaptiveSpanWhole1333_4.domainCheck 667 = true := by decide +kernel
+theorem adaptiveSpanWholeEntries1333_4 : adaptiveSpanWhole1333_4.spans = coreWholeSpans 0 adaptiveNumericSpans1333_4 := by decide +kernel
+end Erdos883Verified

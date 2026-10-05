@@ -1,0 +1,11 @@
+import Erdos883AdaptiveCertificate7244MetadataBatch000
+import Erdos883AdaptiveCertificate7244MetadataBatch001
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+theorem adaptiveOrder7244 : coreProfileOrderCheck adaptiveRows7244 = true := by decide +kernel
+theorem adaptivePermutation7244 : coreOrderPermutationCheck 7244 (coreProfileValues adaptiveRows7244) = true := by decide +kernel
+theorem adaptiveMetadata7244 : coreProfileMetadataCheck adaptiveRows7244 = true := by
+  simp only [adaptiveRows7244, coreProfileMetadataCheck_flatten, List.all_cons, List.all_nil,
+    adaptiveMetadata7244Chunk0, adaptiveMetadata7244Chunk1, adaptiveMetadata7244Chunk2, adaptiveMetadata7244Chunk3, adaptiveMetadata7244Chunk4, adaptiveMetadata7244Chunk5, adaptiveMetadata7244Chunk6, adaptiveMetadata7244Chunk7, adaptiveMetadata7244Chunk8, adaptiveMetadata7244Chunk9, adaptiveMetadata7244Chunk10, adaptiveMetadata7244Chunk11, adaptiveMetadata7244Chunk12, adaptiveMetadata7244Chunk13, adaptiveMetadata7244Chunk14, adaptiveMetadata7244Chunk15, adaptiveMetadata7244Chunk16, adaptiveMetadata7244Chunk17, adaptiveMetadata7244Chunk18, adaptiveMetadata7244Chunk19, adaptiveMetadata7244Chunk20, adaptiveMetadata7244Chunk21, adaptiveMetadata7244Chunk22, adaptiveMetadata7244Chunk23, adaptiveMetadata7244Chunk24, adaptiveMetadata7244Chunk25, adaptiveMetadata7244Chunk26, adaptiveMetadata7244Chunk27, adaptiveMetadata7244Chunk28, Bool.true_and]
+end Erdos883Verified

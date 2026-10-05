@@ -1,0 +1,81 @@
+{
+  "status": "PASS_INDEPENDENT_KERNEL_REPLAY",
+  "theorem": "Erdos883Verified.erdos883_firstQuestion",
+  "scope": "Exact canonical first question for all natural n; finite prefix through 199999 plus analytic proof from 200000.",
+  "local_modules_compiled_successfully": 6831,
+  "source_map_sha256": "00d6d094e6d6361ec3d4c60de630635f51023690be910610dc2c0ae2fa90b2c2",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "official_toolchain_sha256": "890afd185370f85666025b883914ab4f4b339136f8c96167b69cfb62aecaf235",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "commit": "0df444a360eaa60ab8c11dca51a86af692955474"
+    },
+    {
+      "name": "plausible",
+      "commit": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb"
+    },
+    {
+      "name": "LeanSearchClient",
+      "commit": "5f4d51b81cbd3f6b32b156bfad9056621a040404"
+    },
+    {
+      "name": "importGraph",
+      "commit": "16f02aa7642864af59f1ff0e384a015994db9118"
+    },
+    {
+      "name": "proofwidgets",
+      "commit": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    {
+      "name": "aesop",
+      "commit": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e"
+    },
+    {
+      "name": "Qq",
+      "commit": "92c15be17b7caf78c2ad767ec40f89052d908d81"
+    },
+    {
+      "name": "batteries",
+      "commit": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d"
+    },
+    {
+      "name": "Cli",
+      "commit": "6130a47896ce867c6a4a55373441e59e565bad0f"
+    }
+  ],
+  "default_memory_limit_MiB": 4096,
+  "module_memory_limit_overrides_MiB": {
+    "Erdos883SmallCertificate117": 8192
+  },
+  "canonical_harness_memory_limit_MiB": 4096,
+  "final_axiom_sets": [
+    [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  ],
+  "configuration_hashes_match_frozen_inputs": true,
+  "source_hashes_match_frozen_inputs": true,
+  "canonical_raw_statement_harness_passed": true,
+  "final_object_sha256": "9af042ff1142aead23cdaf22d1d995bacb8c8a04b2aed691b278ca76b57d7f70",
+  "supplied_final_object_sha256": "9af042ff1142aead23cdaf22d1d995bacb8c8a04b2aed691b278ca76b57d7f70",
+  "started_utc": "2026-10-05T09:34:48.375382+00:00",
+  "finished_utc": "2026-10-05T11:33:06.098283+00:00",
+  "reproduction_errata": [
+    "PROVENANCE external_imports omits public imports; FINAL_AUDIT correctly includes: Mathlib.Combinatorics.SimpleGraph.Paths, Mathlib.Order.Lattice.Nat",
+    "verify.sh uses Python dictionary union; reproduction requires Python >= 3.9, while documentation says only Python 3.",
+    "Original verify.sh -M4096 failed with a Lean memory exception for Erdos883SmallCertificate117; unchanged source passed alone with -M8192."
+  ],
+  "limitations": [
+    "Historical priority is not established by kernel verification.",
+    "This audit is not an independent human expert peer review."
+  ],
+  "method": "Every local module is compiled from frozen source in dependency order; no supplied project objects are reused. Standard library dependencies use the pinned official Mathlib cache."
+}

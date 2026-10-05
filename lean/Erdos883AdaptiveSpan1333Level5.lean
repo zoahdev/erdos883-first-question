@@ -1,0 +1,17 @@
+import Erdos883AdaptiveCertificate1333Data
+import Erdos883AdaptiveSpanCompactCore
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+def adaptiveNumericSpans1333_5Chunk0 : List AdaptiveNumericSpan := adaptivePackedNumericSpans 21 177248300633598446437650014802409277876207069128244655238741864579429804974897654481704726114730919076430093888175815503750890710689693286318581353115229323803303562348837768085598022750422094389720996030022345986381265444002031903969681089322920383327801378145702039313317347880984295238386230537879383754732573685814070525073574625209705377716666896509469074124980718697023266117428734131293838987573933970445807204826750082095647400803457167452423629410286162305376683587968799080759659230206011825217743424747978226407479973403940263627538666253598774495608659233520765975217194207520704780977289259423119402322975256175706176
+def adaptiveNumericSpans1333_5 : List AdaptiveNumericSpan := [adaptiveNumericSpans1333_5Chunk0].flatten
+def adaptiveSpanEven1333_5 := adaptiveSpanTreeOfSpans (coreEvenSpans 667 0 adaptiveNumericSpans1333_5)
+def adaptiveSpanWhole1333_5 := adaptiveSpanTreeOfSpans (coreWholeSpans 0 adaptiveNumericSpans1333_5)
+theorem adaptiveSpanNumericCheck1333_5 : coreNumericSpansCheck 1311 6 288 323 adaptiveNumericSpans1333_5 adaptiveRows1333 = true := by decide +kernel
+theorem adaptiveSpanEvenCache1333_5 : adaptiveSpanEven1333_5.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanEvenDomain1333_5 : adaptiveSpanEven1333_5.domainCheck 667 = true := by decide +kernel
+theorem adaptiveSpanEvenEntries1333_5 : adaptiveSpanEven1333_5.spans = coreEvenSpans 667 0 adaptiveNumericSpans1333_5 := by decide +kernel
+theorem adaptiveSpanWholeCache1333_5 : adaptiveSpanWhole1333_5.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanWholeDomain1333_5 : adaptiveSpanWhole1333_5.domainCheck 667 = true := by decide +kernel
+theorem adaptiveSpanWholeEntries1333_5 : adaptiveSpanWhole1333_5.spans = coreWholeSpans 0 adaptiveNumericSpans1333_5 := by decide +kernel
+end Erdos883Verified

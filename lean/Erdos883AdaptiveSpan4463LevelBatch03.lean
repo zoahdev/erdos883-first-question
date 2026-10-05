@@ -1,0 +1,17 @@
+import Erdos883AdaptiveCertificate4463Data
+import Erdos883AdaptiveSpanCompactCore
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+def adaptiveNumericSpans4463_6Chunk0 : List AdaptiveNumericSpan := adaptivePackedNumericSpans 22 736353259663730241314420419413257729133448292043380749712614920916435936828320460176447781464250515813864532009099165200436149150978445587760875643674557189481990311881586130623082582926033868960036032476129402713579875541671143407523424535372126199274238006042020549602330481799815753804604465373537977916751076369046383769845238627613882193389992805702804125902951554225482682213137766617395302026093515056775728887200068192887858046975914101907812642498729097916370063854665291289445115491136868262655073171708617191532577043512701834874013414851778779328241914433169484456786460357430949808555516685998363460714007724735326618687177915786195218581805858944
+def adaptiveNumericSpans4463_6 : List AdaptiveNumericSpan := [adaptiveNumericSpans4463_6Chunk0].flatten
+def adaptiveSpanEven4463_6 := adaptiveSpanTreeOfSpans (coreEvenSpans 2232 0 adaptiveNumericSpans4463_6)
+def adaptiveSpanWhole4463_6 := adaptiveSpanTreeOfSpans (coreWholeSpans 0 adaptiveNumericSpans4463_6)
+theorem adaptiveSpanNumericCheck4463_6 : coreNumericSpansCheck 4251 7 396 437 adaptiveNumericSpans4463_6 adaptiveRows4463 = true := by decide +kernel
+theorem adaptiveSpanEvenCache4463_6 : adaptiveSpanEven4463_6.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanEvenDomain4463_6 : adaptiveSpanEven4463_6.domainCheck 2232 = true := by decide +kernel
+theorem adaptiveSpanEvenEntries4463_6 : adaptiveSpanEven4463_6.spans = coreEvenSpans 2232 0 adaptiveNumericSpans4463_6 := by decide +kernel
+theorem adaptiveSpanWholeCache4463_6 : adaptiveSpanWhole4463_6.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanWholeDomain4463_6 : adaptiveSpanWhole4463_6.domainCheck 2232 = true := by decide +kernel
+theorem adaptiveSpanWholeEntries4463_6 : adaptiveSpanWhole4463_6.spans = coreWholeSpans 0 adaptiveNumericSpans4463_6 := by decide +kernel
+end Erdos883Verified

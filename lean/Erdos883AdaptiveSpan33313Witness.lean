@@ -1,0 +1,25 @@
+import Erdos883AdaptiveSpan33313Level0
+import Erdos883AdaptiveSpan33313Level1
+import Erdos883AdaptiveSpan33313Level2
+import Erdos883AdaptiveSpan33313Level3
+import Erdos883AdaptiveSpan33313Level4
+import Erdos883AdaptiveSpan33313Level5
+import Erdos883AdaptiveSpan33313Level6
+import Erdos883AdaptiveSpan33313Level7
+import Erdos883AdaptiveSpan33313Level8
+import Erdos883AdaptiveSpan33313Level9
+import Erdos883AdaptiveSpan33313WitnessBatch000
+import Erdos883AdaptiveSpan33313WitnessBatch001
+import Erdos883AdaptiveSpan33313WitnessBatch002
+import Erdos883AdaptiveSpan33313WitnessBatch003
+import Erdos883AdaptiveSpan33313WitnessBatch004
+import Erdos883AdaptiveSpan33313WitnessBatch005
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+theorem adaptiveSpanWitnessLength33313 : adaptiveSpanWitness33313.length = 5552 := by
+  simp only [adaptiveSpanWitness33313, List.length_flatten, List.map_cons, List.map_nil, adaptiveSpanWitness33313ChunkLength0, adaptiveSpanWitness33313ChunkLength1, adaptiveSpanWitness33313ChunkLength2, adaptiveSpanWitness33313ChunkLength3, adaptiveSpanWitness33313ChunkLength4, adaptiveSpanWitness33313ChunkLength5, List.sum_cons, List.sum_nil, Nat.reduceAdd]
+theorem adaptiveSpanWitnessCheck33313 : adaptiveSpanWitness33313.zipIdx.all (fun (w,i) => decide (w.s ≤ 9) && adaptiveSpanRankWitnessCheck 16657 11104 16657 (i+1) (coreSignatureBudget w.s) w (adaptiveSpanLevel33313 w.s).1 (adaptiveSpanLevel33313 w.s).2) = true := by
+  apply adaptiveSpanZipIdxChunksCheck_sound
+  simp only [adaptiveSpanZipIdxChunksCheck, adaptiveSpanWitness33313ChunkLength0, adaptiveSpanWitness33313ChunkLength1, adaptiveSpanWitness33313ChunkLength2, adaptiveSpanWitness33313ChunkLength3, adaptiveSpanWitness33313ChunkLength4, adaptiveSpanWitness33313ChunkLength5, Nat.reduceAdd, adaptiveSpanWitness33313ChunkCheck0, adaptiveSpanWitness33313ChunkCheck1, adaptiveSpanWitness33313ChunkCheck2, adaptiveSpanWitness33313ChunkCheck3, adaptiveSpanWitness33313ChunkCheck4, adaptiveSpanWitness33313ChunkCheck5, Bool.true_and]
+end Erdos883Verified

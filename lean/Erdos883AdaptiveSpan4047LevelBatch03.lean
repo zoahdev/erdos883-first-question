@@ -1,0 +1,17 @@
+import Erdos883AdaptiveCertificate4047Data
+import Erdos883AdaptiveSpanCompactCore
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+def adaptiveNumericSpans4047_6Chunk0 : List AdaptiveNumericSpan := adaptivePackedNumericSpans 21 525915281035680777740676093028165505824199685523083588966892136393881753804426806126952025354109104702821633093869604484248263877359352347425749375414799459036845641116104407135584883000497247300070471499550072920332463132217173164047191485117589682262456114386064364117311477464456893153666109819030921460551777796879270086891205335775568115063329333088579642559480827187065528519086906197827032764616516528358783287084064272117179040707612925806237075127112327325064789542346394668084351631440253749508239351209073028292655634044198603650914335921629627951290386738049907406822407650412627744374699307690807320709674210324119680
+def adaptiveNumericSpans4047_6 : List AdaptiveNumericSpan := [adaptiveNumericSpans4047_6Chunk0].flatten
+def adaptiveSpanEven4047_6 := adaptiveSpanTreeOfSpans (coreEvenSpans 2024 0 adaptiveNumericSpans4047_6)
+def adaptiveSpanWhole4047_6 := adaptiveSpanTreeOfSpans (coreWholeSpans 0 adaptiveNumericSpans4047_6)
+theorem adaptiveSpanNumericCheck4047_6 : coreNumericSpansCheck 3855 7 396 437 adaptiveNumericSpans4047_6 adaptiveRows4047 = true := by decide +kernel
+theorem adaptiveSpanEvenCache4047_6 : adaptiveSpanEven4047_6.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanEvenDomain4047_6 : adaptiveSpanEven4047_6.domainCheck 2024 = true := by decide +kernel
+theorem adaptiveSpanEvenEntries4047_6 : adaptiveSpanEven4047_6.spans = coreEvenSpans 2024 0 adaptiveNumericSpans4047_6 := by decide +kernel
+theorem adaptiveSpanWholeCache4047_6 : adaptiveSpanWhole4047_6.cacheCheck = true := by decide +kernel
+theorem adaptiveSpanWholeDomain4047_6 : adaptiveSpanWhole4047_6.domainCheck 2024 = true := by decide +kernel
+theorem adaptiveSpanWholeEntries4047_6 : adaptiveSpanWhole4047_6.spans = coreWholeSpans 0 adaptiveNumericSpans4047_6 := by decide +kernel
+end Erdos883Verified

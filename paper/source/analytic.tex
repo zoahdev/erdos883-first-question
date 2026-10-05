@@ -1,0 +1,201 @@
+\section{Finite distribution estimates}\label{sec:cdf}
+For $n>0$ and $t>0$ put
+\[
+ R_n(t)=\#\{v\le n:v\text{ odd},\ \rho(v)<t\},\qquad
+ F_n(t)=\frac2n R_n(t).
+\]
+The normalization is by $n/2$, not by the number of odd integers. This distinction matters when $n$ is odd. The formal development establishes the following three bounds:
+\begin{align}
+ F_n(t)&<22t^6 &&(n>0,\ t>0),\label{eq:moment}\\
+ F_n(t)&<\frac9{10}t-\frac16-\frac{11}{500}
+ &&\left(n\ge200000,\ \frac13\le t\le\frac34\right),\label{eq:cdfhigh}\\
+ F_n\left(\sqrt{\frac{\beta+9/125}{3}}\right)
+ &<\frac\beta3-\frac1{400}
+ &&\left(n\ge200000,\ \frac1{10}\le\beta\le\frac{201}{100}\right).
+ \label{eq:cdflow}
+\end{align}
+The sixth-moment statement is \code{odd\_totient\_cdf\_lt\_twenty\_two\_real\_uniform}; the latter two are \code{totientCdf\_refined\_high} and \code{totientCdf\_refined\_low}. The word ``finite'' here means estimates for each actual finite prefix of the integers. Replacing these by a limiting distribution without an explicit finite-prefix error would not justify the proof.
+
+\subsection{The global sixth moment}
+For an odd prime $p$ set $W_p=(p/(p-1))^6-1$. Expanding the finite divisor product for $\rho(v)^{-6}$ and bounding the number of multiples of each divisor by $n/d$ gives
+\[
+ \sum_{\substack{v\le n\\v\text{ odd}}}\rho(v)^{-6}
+ \le n\prod_{\substack{p\le n\\p\text{ odd prime}}}\left(1+\frac{W_p}{p}\right)<11n.
+\]
+The constant is certified as follows. The exact finite product over odd primes at most $200$, multiplied by $200/193$, is less than $11$. Beyond $200$, $W_p\le7/(p-1)$, so the sum of the positive product increments is at most $7/200$. The inequality $\prod(1+x_i)\le1/(1-\sum x_i)$ bounds the tail by $200/193$. All head arithmetic and tail inequalities are proved in the closure rooted at \path{Erdos883EulerBound.lean}. Each term with $\rho(v)<t$ exceeds $t^{-6}$, giving~\eqref{eq:moment}. This argument normalizes a bound by $n$, not an unjustified bound by the odd count $H(n)$.
+
+\subsection{An exact rational envelope}
+The refined envelope splits the odd integers by divisibility by $3,5,7,11$. Start with the state $(a,q,e)=(1,1,1/2)$. For each of these four primes $p$, replace every state by the two states
+\[
+ \left(a,q\frac{p-1}{p},2e\right),\qquad
+ \left(a\frac{p-1}{p},\frac qp,e\right).
+\]
+There are $16$ final states. Here $a$ is the head totient density, $q$ its normalized asymptotic mass, and $e$ its finite counting-error parameter. For each state define
+\[
+ c=q+\frac{2e}{200000},\qquad
+ d=\frac{47q}{2000}+\frac{991e}{100\cdot200000},
+\]
+and, for $t>0$,
+\[
+ B_{a,q,e}(t)=
+ \begin{cases}
+ c,&a\le t,\\
+ \min\left(c,\ d\dfrac{a+t}{2(a-t)}\right),&t<a.
+ \end{cases}
+\]
+Set
+\[
+ B(t)=\min\left(22t^6,\sum_{(a,q,e)}B_{a,q,e}(t)\right).
+\]
+The formal envelope theorem proves $F_n(t)\le B(t)$ for every $n\ge200000$ and $t>0$. The cap follows from finite residue-class counting. For $t<a$, a statewise logarithmic tail estimate and
+\[
+ \log(a/t)\ge\frac{2(a-t)}{a+t}
+\]
+give the rational second term. The finite-prefix logarithmic error is controlled uniformly by
+\[
+ \frac{\log(n/10)}n\le\frac{991/100}{200000},
+ \qquad n\ge200000.
+\]
+More explicitly, if $K_S$ counts a state and $K_{S,p}$ counts its members divisible by an additional prime $p>11$, residue-class inclusion--exclusion gives
+\[
+ |K_S-nq/2|\le e,\qquad |K_{S,p}-nq/(2p)|\le e.
+\]
+With $\lambda_p=\log(p/(p-1))$, summing the tail divisibility indicators bounds the normalized state log moment by
+\[
+ \frac{47q}{2000}+\frac{e\log(n/10)}{n}.
+\]
+The prime sum $\sum_{p>11}\lambda_p/p<47/2000$ follows from the rational majorant $1/p^2+1/(2p^2(p-1))$: the exact head through $2000$ is at most $22968311/10^9$, and the tail is at most $1/2000$. Dividing the log-moment bound by $\log(a/t)$ gives the state tail estimate. These arithmetic bounds and their finite counting interfaces are proved in the dependency closure, rather than imported as numerical assumptions. The global sixth-moment bound gives the other arm of the minimum. The formal bridge from the actual state counts to this envelope is in \path{Erdos883RefinedCdfEnvelope.lean}; the rational state definition is in \path{Erdos883RefinedCdfDefinitions.lean}.
+
+\subsection{What the finite CDF certificates check}
+The high-range certificate has $1000$ cells. With $t_i=1/3+i/2400$, it verifies, for $0\le i<1000$,
+\[
+ \frac9{10}t_i-\frac16-B(t_{i+1})>\frac{11}{500}.
+\]
+Monotonicity and endpoint handling then give~\eqref{eq:cdfhigh} on the entire closed interval, not just at sampled points.
+
+The low-range certificate has $1910$ cells. Put $\beta_i=1/10+i/1000$. For each $0\le i<1910$ the source supplies an integer $z_i$ and verifies, for $u_i=z_i/10^9$,
+\[
+ u_i\ge0,\quad
+ \frac{\beta_{i+1}+9/125}{3}\le u_i^2,\quad
+ \frac{\beta_i}3-B(u_i)>\frac1{400}.
+\]
+Thus the square-root upper witnesses are checked by exact squaring. Their origin need not be trusted. Monotonicity extends each cell inequality to the full interval and yields~\eqref{eq:cdflow}, including the endpoint $201/100$. In total these refined CDF checks comprise $2910$ rational cells. They are proved in the \code{Erdos883RefinedCdfCells*} modules and interpolated in \code{Erdos883RefinedCdfInterpolation*}. No floating-point pass criterion occurs in this interface.
+
+These finite inequalities form a numerical lemma with machine-readable proof, not a substitute for the reduction to them. The preceding envelope explains what is counted and why the cells control every real threshold needed below. An expert may review the conceptual reduction separately from replaying the exact certificates.
+
+\section{The analytic range starting at 200000}\label{sec:analytic}
+Fix $n\ge200000$ and put
+\[
+ m=\lfloor n/6\rfloor,\quad \delta=\frac32\sqrt n,\quad
+ \varepsilon=\frac{\delta+2}{m},\quad
+ \beta=\frac bm,\quad x=\frac jm.
+\]
+Here $0\le b\le H(n)-M(n)$ and $1\le j\le m$ are the missing-even and Hall-rank parameters. Let $s$ be the least integer with $n\le4^s$ and put $h=2^s+1$. The final accounting lemmas give
+\begin{align}
+ \varepsilon&<\frac{101}{5000},&
+ \frac hm&<\frac{269}{10000},&
+ \frac{n}{2m}&<\frac{37501}{12500},\label{eq:errors}\\
+ n-f(n)+m&\le3m+2,&
+ b&\le2m+1.\label{eq:rounding}
+\end{align}
+They retain all rounding errors. For example $6m\le n\le6m+5$, and the square-root bounds can be reduced to quadratic inequalities using $\sqrt n\ge447$.
+
+Write $r=R_n(t)/m$ at a selected threshold. Equations~\eqref{eq:moment} and~\eqref{eq:errors} imply
+\[
+ r<\frac{66003}{1000}t^6.\tag{M}
+\]
+Whenever $F_n(t)\le1$, the normalization also gives
+\[
+ r<3F_n(t)+\frac1{12500}.\tag{N}
+\]
+The resource estimates from Section~\ref{sec:resources} take particularly simple forms. For a same-signature pair with both profiles at least $t$, the even and whole-pool common-neighbor counts are respectively strictly greater than
+\[
+ \frac{27}{10}mt-\delta,\qquad
+ \frac{27}{5}mt-\delta.\tag{S}
+\]
+Without any signature condition they are strictly greater than
+\[
+ 3mt^2-\delta,\qquad6mt^2-\delta.\tag{U}
+\]
+The adaptive coordinate list used for (S) is a coherent family of divisibility signatures as described in Section~\ref{sec:resources}. Different rank choices therefore still act on one common skeleton order.
+
+\subsection{Large ranks}
+Suppose $x\ge1/20$ and choose
+\[
+ t=\min\left(\frac{\beta+x+\varepsilon}{27/10},
+              \frac{3+x+\varepsilon}{27/5}\right).
+\]
+Then $0<t<3/4$. One of the two arms in (S) supplies the corresponding resource target: the first arm gives more than $b+j$ even neighbors, while the second gives more than $n-f(n)+m+j$ whole-pool neighbors. The extra $2$ in $m\varepsilon=\delta+2$ accommodates~\eqref{eq:rounding}.
+
+It remains to prove the normalized rank budget
+\[
+ 2\pos{r-\beta}+h/m<x.\label{eq:budget}\tag{B}
+\]
+If $t\ge10/27$, use~\eqref{eq:cdfhigh} and (N), with $t\le(\beta+x+\varepsilon)/(27/10)$, to obtain
+\[
+ r<\beta+x+\varepsilon-\frac{7074}{12500}.
+\]
+If $r\le\beta$, (B) follows from $h/m<0.0269<0.05\le x$. Otherwise,
+\[
+ 2(r-\beta)+h/m
+ <2x+2\varepsilon-\frac{14148}{12500}+\frac{269}{10000}<x,
+\]
+since $x\le1$ and $\varepsilon<101/5000$.
+
+If $t<10/27$, the first arm of the minimum must be active. Let $y=\beta+x+\varepsilon$. Then $1/20\le y<1$ and (M) yields
+\[
+ r<\frac{171}{1000}y^6.
+\]
+The elementary inequality
+\[
+ \frac{171}{500}y^6-y+\frac{471}{10000}<0
+ \qquad(1/20\le y\le1)
+\]
+proves (B) using the same error bounds. To check this polynomial without differentiation, split at $y=1/10$: below that point bound $y^6\le10^{-6}$; above it use $y^6\le y$. This is the formal low-profile large-rank branch.
+
+\subsection{Small ranks with many missing evens}
+Now let $x<1/20$ and $\beta\ge1/10$. Put $\beta_0=\min(\beta,2)$ and choose no signature coordinates, so the transition cost is zero. Take
+\[
+ t=\sqrt{\frac{\beta_0+9/125}{3}}.
+\]
+Equations~\eqref{eq:cdflow} and (N) imply
+\[
+ r<\beta_0-\frac{371}{50000}<\beta,
+\]
+where the last strict inequality is understood via $\beta_0\le\beta$. Thus the exceptional-gap budget vanishes. Clipping loses at most one vertex because
+\[
+ 0\le m(\beta-\beta_0)\le1.
+\]
+The even resource bound (U) is sufficient: its main term is $m\beta_0+(9/125)m$, while $j\le m/20$, $\delta+2<(101/5000)m$, and the clipping loss is at most one. The remaining positive margin supplies $b+j$ neighbors. This branch is the reason the finite-prefix CDF bound is needed beyond the small-$\beta$ region.
+
+\subsection{Small ranks with few missing evens}
+Finally suppose $x<1/20$ and $\beta<1/10$. There are two subcases.
+
+If $b+j\le30\sqrt n$, no positive profile threshold is needed. The improved uniform neighbor lemma gives more than $30\sqrt n$ common even neighbors for every pair of positive odd integers at most $n$. Its proof uses
+\[
+ 8000\,\omega(\operatorname{lcm}(u,v))\le n
+\]
+and a finite-product inequality of Wallis type,
+\[
+ 3\le(4\omega(D)+3)\rho(D)^2\qquad(D\text{ positive and odd}).
+\]
+For completeness, the support bound is immediate if $\omega(D)\le25$. Otherwise use $3^{\omega(D)}\le D\le n^2$ and $(8000w)^2\le3^w$ for $w\ge25$, proved by induction. The density inequality gives $n\rho(D)^2\ge600000/103$. Since $\lfloor n/2\rfloor\ge49n/100$, the square of the even-neighbor main term is at least $(144060/103)n>(63/2)^2n$. Thus that main term exceeds $(63/2)\sqrt n$. Subtracting the discrepancy $\delta=(3/2)\sqrt n$ leaves the required strict $30\sqrt n$ bound. The source is \path{Erdos883ImprovedNeighbors.lean}.
+
+If $b+j>30\sqrt n$, take no signature coordinates and put
+\[
+ t=\sqrt{\frac7{20}(\beta+x)}.
+\]
+Now (M) gives
+\[
+ r<\frac{71}{25}(\beta+x)^3.
+\]
+Because $\beta+x<3/20$ and $x\le1/20$, this implies $2\pos{r-\beta}<x$. Indeed, if $x\le\beta$, then $(142/25)(\beta+x)^2<1$ gives $r<\beta$. If $\beta<x$, use $\beta+x<2x$ and $(1136/25)x^2<1$ to obtain $2r<x$.
+
+For the resource target, $\delta<(b+j)/20$, whereas
+\[
+ 3mt^2=\frac{21}{20}(b+j).
+\]
+Thus (U) supplies more than $b+j$ common even neighbors. This completes all rank and missing-even cases.
+
+\subsection{Closing the analytic argument}
+For each $(b,j)$ the selected threshold and coordinate prefix satisfy the exact profile criterion. The real-profile ordering lemma constructs a single decreasing profile order that works for every real threshold, so choices of $t$ do not require separate skeletons. The analytic certificate is \path{Improved.largeN_exact_interval_certificate}. The cycle conclusion is \path{Improved.firstQuestion_largeN}. Both appear in \path{Erdos883ImprovedLargeNCover.lean}. They hold for every $n\ge200000$ with no remaining numerical or distribution hypothesis.

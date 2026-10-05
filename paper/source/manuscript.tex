@@ -1,0 +1,78 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.9in,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setmonofont{Latin Modern Mono}[Scale=0.88]
+\newfontfamily\chinesefont{Noto Serif CJK SC}
+\usepackage{amsmath,amssymb,amsthm,booktabs,longtable,array}
+\usepackage[protrusion=false]{microtype}
+\usepackage{enumitem,fancyhdr,needspace,xurl}
+\usepackage[hidelinks,unicode]{hyperref}
+\hypersetup{pdftitle={A Lean verified finite completion of the odd cycle assertion in Erdos Problem 883},pdfauthor={Yicheng Pan},pdfsubject={Formal source aligned research manuscript, 5 October 2026}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Erdős 883\quad The first question}
+\fancyhead[R]{\small Formal source aligned edition}
+\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt plus 1pt minus 1pt}
+\setlength{\emergencystretch}{3em}\allowdisplaybreaks[1]
+\setlist{nosep,leftmargin=1.5em}
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\pos}[1]{\max(0,#1)}
+\newcommand{\code}[1]{\texttt{#1}}
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+{\LARGE\bfseries A Lean verified finite completion of the odd cycle assertion in Erdős Problem 883\par}
+\vspace{10pt}
+{\large Yicheng Pan ({\chinesefont 潘奕成})\par}
+\vspace{5pt}
+{5 October 2026\par}
+{\small Research manuscript for author and expert review\par}
+\end{center}
+\begin{abstract}
+For every natural number $n$, a subset of $\{1,\ldots,n\}$ with more than
+$\lfloor n/2\rfloor+\lfloor n/3\rfloor-\lfloor n/6\rfloor$ elements has a coprime graph containing every odd cycle of length $2k+1$, $1\le k\le\lfloor n/6\rfloor$.
+We describe a Lean 4 proof of this assertion, the first question of Erdős Problem 883. The argument adapts Della Pietra's surplus smoothing, totient profiles, signature ordering and ordered-Hall architecture. An exact all-subsets interval criterion, checked arithmetic certificates and an analytic theorem for $n\ge200000$ remove the unspecified starting threshold. An elementary odd-triple argument supplies the coprime endpoints. The formal conclusion is checked against the unabbreviated canonical statement with no additional hypotheses. This paper explains the proof and identifies its certificate interfaces; the accompanying frozen Lean source is the authoritative formal artifact. Neither external human review nor a second clean rebuild of every numerical certificate is claimed.
+\end{abstract}
+\textbf{Keywords:} coprime graph; odd cycles; extremal graph theory; exact certificates; Lean; formal verification.
+
+\section{Statement and contribution}\label{sec:main}
+Write $[n]=\{1,\ldots,n\}$, with $[0]=\varnothing$. Let $G(A)$ be the simple graph on $A$ whose distinct vertices $u,v$ are adjacent precisely when $\gcd(u,v)=1$.
+\begin{theorem}\label{thm:main}
+For every natural number $n$ and every $A\subseteq[n]$, if
+\[
+ |A|>f(n):=\left\lfloor\frac n2\right\rfloor+
+ \left\lfloor\frac n3\right\rfloor-\left\lfloor\frac n6\right\rfloor,
+\]
+then $G(A)$ contains a simple cycle of every odd length $l$ satisfying
+$3\le l\le\lfloor n/3\rfloor+1$.
+Equivalently, it contains $C_{2k+1}$ for every $1\le k\le\lfloor n/6\rfloor$.
+\end{theorem}
+The equivalence of the two length ranges is proved in the formal development. In particular there is no ambient-size hypothesis hidden in the statement. For $n<6$ the requested range is empty.
+
+Erdős and Sárközy proved a sufficiently-large-$n$ odd-cycle result with some positive linear half-length constant and proposed $1/6$ as the possible sharp value~\cite{ES97}. Della Pietra's pinned 27 July 2026 manuscript states the sharp half-length range for sufficiently large $n$~\cite{DP26}. Its surplus smoothing, totient-profile analysis, prime-signature ordering and Hall construction are central antecedents of the present argument. Those organizing ideas are not claimed here as new.
+
+The contribution described here is a fully specified finite completion and formal verification of the all-$n$ assertion: a uniform interval criterion for every permitted subset, an explicit analytic starting point of $200000$, exact certificates for the remaining range, and a kernel-checked assembly into the canonical first-question statement. The endpoint input is also replaced by an elementary pigeonhole proof. These are claims about the delivered proof and its refinements, not an assertion of worldwide priority. No exhaustive priority search or live-community verification is represented by this manuscript.
+
+The separate complete-tripartite question is outside Theorem~\ref{thm:main}. Sárközy's 1999 paper concerns that question~\cite{S99}; a public Lean project directed at that second question is likewise distinct~\cite{SecondLean}. Neither is a result of this work.
+
+\subsection{Status of the formal and written proofs}
+The principal declaration is
+\begin{quote}\small\ttfamily
+Erdos883Verified.erdos883\_firstQuestion :\par
+Erdos883Target.FirstQuestion
+\end{quote}
+in \path{Erdos883VerifiedCoverage.lean}. Its axiom report lists exactly \code{propext}, \code{Classical.choice} and \code{Quot.sound}. A separate check types the same theorem at the full canonical proposition, without the named abbreviation. The formal cycle notion uses the canonical graph-walk cycle definition, not a weaker closed-walk surrogate.
+
+This exposition is revised to follow the final formal interfaces. It supersedes the earlier informal draft's $2000000$ analytic threshold, external endpoint assumption and $71+84$ interval inventory. It does not assert that every proof step in the older manuscript is textually or mathematically identical to the final Lean route. Numerical claims below are exact rational inequalities; their large finite witnesses reside in Lean source rather than in rounded output tables.
+
+\subsection{AI assistance and responsibility}
+OpenAI generative AI systems were used substantially in mathematical development, proof and certificate programming, formalization, literature investigation, checking, and exposition. This was not limited to language editing. Automated and AI-assisted checks do not constitute independent human mathematical review. The precise tool and model record, the author's personal contributions, and the extent of the author's independent review must be finalized before submission; no unrecorded human contribution or review is asserted here.
+
+\input{criterion_resources.tex}
+\input{analytic.tex}
+\input{finite_formal.tex}
+\input{references.tex}
+\end{document}

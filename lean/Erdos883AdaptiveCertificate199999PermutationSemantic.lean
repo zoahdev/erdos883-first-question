@@ -1,0 +1,9 @@
+import Erdos883AdaptiveCertificate199999PermutationInverseCover
+import Erdos883AdaptiveInverseCoverage
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+theorem adaptivePermutationSemantics199999 : (coreProfileValues adaptiveRows199999).Nodup ∧ (coreProfileValues adaptiveRows199999).toFinset = oddUniverse 199999 :=
+  oddPermutation_of_coverage adaptivePermutation199999Length adaptivePermutation199999OddCoverage
+#print axioms adaptivePermutationSemantics199999
+end Erdos883Verified

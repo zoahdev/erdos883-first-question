@@ -1,0 +1,2 @@
+'Erdos883Verified.firstQuestion_verifiedPrefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Verified.erdos883_firstQuestion' depends on axioms: [propext, Classical.choice, Quot.sound]

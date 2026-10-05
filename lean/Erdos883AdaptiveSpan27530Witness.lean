@@ -1,0 +1,23 @@
+import Erdos883AdaptiveSpan27530Level0
+import Erdos883AdaptiveSpan27530Level1
+import Erdos883AdaptiveSpan27530Level2
+import Erdos883AdaptiveSpan27530Level3
+import Erdos883AdaptiveSpan27530Level4
+import Erdos883AdaptiveSpan27530Level5
+import Erdos883AdaptiveSpan27530Level6
+import Erdos883AdaptiveSpan27530Level7
+import Erdos883AdaptiveSpan27530Level8
+import Erdos883AdaptiveSpan27530WitnessBatch000
+import Erdos883AdaptiveSpan27530WitnessBatch001
+import Erdos883AdaptiveSpan27530WitnessBatch002
+import Erdos883AdaptiveSpan27530WitnessBatch003
+import Erdos883AdaptiveSpan27530WitnessBatch004
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+theorem adaptiveSpanWitnessLength27530 : adaptiveSpanWitness27530.length = 4588 := by
+  simp only [adaptiveSpanWitness27530, List.length_flatten, List.map_cons, List.map_nil, adaptiveSpanWitness27530ChunkLength0, adaptiveSpanWitness27530ChunkLength1, adaptiveSpanWitness27530ChunkLength2, adaptiveSpanWitness27530ChunkLength3, adaptiveSpanWitness27530ChunkLength4, List.sum_cons, List.sum_nil, Nat.reduceAdd]
+theorem adaptiveSpanWitnessCheck27530 : adaptiveSpanWitness27530.zipIdx.all (fun (w,i) => decide (w.s ≤ 8) && adaptiveSpanRankWitnessCheck 13765 9176 13765 (i+1) (coreSignatureBudget w.s) w (adaptiveSpanLevel27530 w.s).1 (adaptiveSpanLevel27530 w.s).2) = true := by
+  apply adaptiveSpanZipIdxChunksCheck_sound
+  simp only [adaptiveSpanZipIdxChunksCheck, adaptiveSpanWitness27530ChunkLength0, adaptiveSpanWitness27530ChunkLength1, adaptiveSpanWitness27530ChunkLength2, adaptiveSpanWitness27530ChunkLength3, adaptiveSpanWitness27530ChunkLength4, Nat.reduceAdd, adaptiveSpanWitness27530ChunkCheck0, adaptiveSpanWitness27530ChunkCheck1, adaptiveSpanWitness27530ChunkCheck2, adaptiveSpanWitness27530ChunkCheck3, adaptiveSpanWitness27530ChunkCheck4, Bool.true_and]
+end Erdos883Verified

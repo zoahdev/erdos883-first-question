@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": {
+    "bundle_sha256": {
+      "CODEX_HANDOFF.txt": true,
+      "Erdos883_Contribution_Comparison_20261005.pdf": true,
+      "Erdos883_FirstQuestion_Lean_20261005.zip": true,
+      "Erdos883_Lean_Aligned_Editable_Sources_20261005.zip": true,
+      "Erdos883_Lean_Aligned_Manuscript_20261005.pdf": true,
+      "Erdos883_Reproduction_Guide_20261005.pdf": true,
+      "START_HERE.txt": true
+    },
+    "editable_sha256": {
+      "README.txt": true,
+      "REVISION_NOTES.txt": true,
+      "adaptive_intervals.csv": true,
+      "analytic.tex": true,
+      "build.sh": true,
+      "contribution_comparison.tex": true,
+      "criterion_resources.tex": true,
+      "finite_formal.tex": true,
+      "interval_table.tex": true,
+      "manuscript.tex": true,
+      "references.tex": true,
+      "reproduction_guide.tex": true
+    },
+    "inner_zip_crc": {
+      "Erdos883_FirstQuestion_Lean_20261005.zip": true,
+      "Erdos883_Lean_Aligned_Editable_Sources_20261005.zip": true
+    },
+    "proof_zip_identical_to_original": true,
+    "root_intervals_681_to_199999_contiguous": true,
+    "adaptive_csv_matches_all_88_root_intervals": true
+  },
+  "limitation": "These checks verify package integrity and interval alignment; they do not execute Lean or establish historical priority."
+}

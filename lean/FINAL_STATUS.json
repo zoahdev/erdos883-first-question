@@ -1,0 +1,23 @@
+{
+  "status": "VERIFIED",
+  "problem": "Erdős 883",
+  "scope": "First question, all natural n; does not address the second question",
+  "full_first_question_proved": true,
+  "theorem": "Erdos883Verified.erdos883_firstQuestion",
+  "type": "Erdos883Target.FirstQuestion",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "lean_version": "4.33.1",
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "canonical_commit": "89294ea02bd7cd678d59984add52cb4baef3dbf4",
+  "source_modules": 6831,
+  "source_map_sha256": "00d6d094e6d6361ec3d4c60de630635f51023690be910610dc2c0ae2fa90b2c2",
+  "verification_method": "modular kernel source compilation, targeted frozen-input refreshes, and fresh final-root plus explicit canonical-type compilation",
+  "second_clean_full_rebuild": false,
+  "independent_human_review": false,
+  "automated_final_audit": "PASS"
+}

@@ -1,0 +1,29 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.78in]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}
+\usepackage{amsmath,enumitem,xurl}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}\setlength{\emergencystretch}{3em}
+\begin{document}
+\begin{center}{\Large\bfseries Contribution and prior work for Erdős 883\par}\vspace{5pt}First question only\quad 5 October 2026\end{center}
+\textbf{Result to evaluate.} For every $n$ and every $A\subseteq\{1,\ldots,n\}$ with $|A|>\lfloor n/2\rfloor+\lfloor n/3\rfloor-\lfloor n/6\rfloor$, the coprime graph on $A$ contains $C_{2k+1}$ for every $1\le k\le\lfloor n/6\rfloor$. The final Lean declaration is\par
+\texttt{Erdos883Verified.erdos883\_firstQuestion}.
+
+\textbf{Erdős and Sárközy 1997.} Their odd-cycle theorem establishes a positive linear range for sufficiently large $n$ and asks whether the half-length constant can be $1/6$. This is historical problem context, not a theorem assumed in the final proof. \href{https://emis.de/ft/6615}{Primary paper}.
+
+\textbf{Della Pietra July 2026.} The pinned manuscript states the sharp $1/6$ half-length range for all sufficiently large $n$. Missing-even surplus smoothing, totient profiles, prime-signature ordering and the Hall construction are central prior contributions. The present proof adapts that architecture and does not claim it as new. \href{https://github.com/donalddellapietra/erdos-883-proof/blob/1f26276d7850fc9afe68e9d7edecf24aa7cc597d/paper/main.tex}{Pinned manuscript at publication revision 1f26276}.
+
+\textbf{What this artifact adds.} An exact interval criterion covers all permitted subsets, rather than sampled examples. The finite proof covers $0\le n\le199999$, including $88$ adaptive intervals from $1212$ onward; a formal analytic proof covers every $n\ge200000$. Refined finite-prefix CDF certificates, exact rounding allowances and an improved universal common-neighbor estimate support that threshold. An elementary odd-triple pigeonhole argument supplies coprime endpoints without an external Ahlswede--Khachatrian assumption. The final canonical all-$n$ theorem joins the finite and analytic ranges.
+
+\textbf{Formal evidence.} Lean 4.33.1 and pinned mathlib check the final declaration and its unabbreviated canonical type. The reported assumptions are exactly \texttt{propext}, \texttt{Classical.choice}, \texttt{Quot.sound}. The frozen local closure contains $6831$ modules. The recorded verification combines modular source compilation, targeted correspondence checks, and a fresh final-root/raw-type check. It is not a second clean rebuild of every numerical certificate or independent human review.
+
+\textbf{What belongs to other work.} The complete-tripartite second question is separate: see \href{https://web.cs.wpi.edu/~gsarkozy/Cikkek/12.pdf}{Sárközy 1999} and the \href{https://github.com/baobingzhang/jsp-000734-erdos883-lean}{public second-question Lean project}. Neither result is attributed to this contribution. The \href{https://github.com/google-deepmind/formal-conjectures/blob/89294ea02bd7cd678d59984add52cb4baef3dbf4/FormalConjectures/ErdosProblems/883.lean}{canonical statement source} fixes the target; it is not the proof.
+
+\textbf{Attribution and readiness.} This is a source-specific contribution comparison, not an exhaustive priority determination. No first-ever claim is made. AI involvement was substantial in mathematical work, formalization, certificates, checking and writing. The existing byline is retained for author review; the author's actual personal contributions, tool/model record and independent review must be confirmed before submission. Public availability of the final artifact and external human review are not asserted.
+
+\textbf{Artifact identity.} Version 5 of \path{Erdos883_FirstQuestion_Lean_20261005.zip}, $20359760$ bytes. SHA-256:
+\begin{center}\small\ttfamily
+8f017032cb93f2f0891f6f8200390c161acabf112dac72567462e642b91ede95
+\end{center}
+The companion manuscript explains the proof, and the reproduction guide separates replay instructions from the evidence already obtained.
+\end{document}

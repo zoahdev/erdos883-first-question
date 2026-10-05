@@ -1,0 +1,11 @@
+import Erdos883AdaptiveCertificate6585MetadataBatch000
+import Erdos883AdaptiveCertificate6585MetadataBatch001
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+theorem adaptiveOrder6585 : coreProfileOrderCheck adaptiveRows6585 = true := by decide +kernel
+theorem adaptivePermutation6585 : coreOrderPermutationCheck 6585 (coreProfileValues adaptiveRows6585) = true := by decide +kernel
+theorem adaptiveMetadata6585 : coreProfileMetadataCheck adaptiveRows6585 = true := by
+  simp only [adaptiveRows6585, coreProfileMetadataCheck_flatten, List.all_cons, List.all_nil,
+    adaptiveMetadata6585Chunk0, adaptiveMetadata6585Chunk1, adaptiveMetadata6585Chunk2, adaptiveMetadata6585Chunk3, adaptiveMetadata6585Chunk4, adaptiveMetadata6585Chunk5, adaptiveMetadata6585Chunk6, adaptiveMetadata6585Chunk7, adaptiveMetadata6585Chunk8, adaptiveMetadata6585Chunk9, adaptiveMetadata6585Chunk10, adaptiveMetadata6585Chunk11, adaptiveMetadata6585Chunk12, adaptiveMetadata6585Chunk13, adaptiveMetadata6585Chunk14, adaptiveMetadata6585Chunk15, adaptiveMetadata6585Chunk16, adaptiveMetadata6585Chunk17, adaptiveMetadata6585Chunk18, adaptiveMetadata6585Chunk19, adaptiveMetadata6585Chunk20, adaptiveMetadata6585Chunk21, adaptiveMetadata6585Chunk22, adaptiveMetadata6585Chunk23, adaptiveMetadata6585Chunk24, adaptiveMetadata6585Chunk25, Bool.true_and]
+end Erdos883Verified

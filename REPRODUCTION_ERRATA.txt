@@ -1,0 +1,26 @@
+Erdos #883: first question, complete all-n proof and Lean formalization
+
+This package contains the unchanged submitted proof source and aligned
+manuscript, with an additional independent source rebuild audit.
+All 6831 local modules and the canonical-statement harness passed with
+Lean 4.33.1 and the frozen dependency revisions. No supplied local proof
+objects were reused. Standard dependencies used the pinned official cache.
+The final theorem has only propext, Classical.choice and Quot.sound as axioms.
+The rebuilt final object SHA256 matches the submitted final-object record.
+
+Reproduction errata, additional to the original guide:
+1. Python >= 3.9 is required by verify.sh, not merely Python 3.
+2. Erdos883SmallCertificate117 exceeded the original -M4096 memory cap.
+   Its unchanged source passed alone with -M8192. The independent scheduler
+   used three workers with memory-aware scheduling. Original verify.sh with
+   an unchanged 4096 cap must not be described as independently successful.
+3. PROVENANCE.json external_imports omits two public imports:
+   Mathlib.Combinatorics.SimpleGraph.Paths and Mathlib.Order.Lattice.Nat.
+   FINAL_AUDIT.json correctly records them and their pinned dependencies.
+
+The contribution concerns the first question only. Donald Della Pietra's
+sufficiently-large-n result and core construction are credited in the paper.
+Substantial AI involvement is disclosed in the manuscript. Historical first
+priority and independent human expert peer review are not established by
+this kernel audit. No expert endorsement or journal acceptance is claimed.
+The original reproduction guide is preserved; this note records the errata.

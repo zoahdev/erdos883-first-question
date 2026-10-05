@@ -1,0 +1,7 @@
+import Erdos883AdaptiveSpan10609NumericData
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+def adaptiveSpanEven10609_6 := adaptiveSpanTreeOfSpansLinearFuel (coreEvenSpans 5305 0 adaptiveNumericSpans10609_6)
+def adaptiveSpanWhole10609_6 := adaptiveSpanTreeOfSpansLinearFuel (coreWholeSpans 0 adaptiveNumericSpans10609_6)
+end Erdos883Verified

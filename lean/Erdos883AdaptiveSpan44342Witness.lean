@@ -1,0 +1,26 @@
+import Erdos883AdaptiveSpan44342Level0
+import Erdos883AdaptiveSpan44342Level1
+import Erdos883AdaptiveSpan44342Level2
+import Erdos883AdaptiveSpan44342Level3
+import Erdos883AdaptiveSpan44342Level4
+import Erdos883AdaptiveSpan44342Level5
+import Erdos883AdaptiveSpan44342Level6
+import Erdos883AdaptiveSpan44342Level7
+import Erdos883AdaptiveSpan44342Level8
+import Erdos883AdaptiveSpan44342WitnessBatch000
+import Erdos883AdaptiveSpan44342WitnessBatch001
+import Erdos883AdaptiveSpan44342WitnessBatch002
+import Erdos883AdaptiveSpan44342WitnessBatch003
+import Erdos883AdaptiveSpan44342WitnessBatch004
+import Erdos883AdaptiveSpan44342WitnessBatch005
+import Erdos883AdaptiveSpan44342WitnessBatch006
+import Erdos883AdaptiveSpan44342WitnessBatch007
+set_option maxHeartbeats 0
+set_option maxRecDepth 1000000
+namespace Erdos883Verified
+theorem adaptiveSpanWitnessLength44342 : adaptiveSpanWitness44342.length = 7390 := by
+  simp only [adaptiveSpanWitness44342, List.length_flatten, List.map_cons, List.map_nil, adaptiveSpanWitness44342ChunkLength0, adaptiveSpanWitness44342ChunkLength1, adaptiveSpanWitness44342ChunkLength2, adaptiveSpanWitness44342ChunkLength3, adaptiveSpanWitness44342ChunkLength4, adaptiveSpanWitness44342ChunkLength5, adaptiveSpanWitness44342ChunkLength6, adaptiveSpanWitness44342ChunkLength7, List.sum_cons, List.sum_nil, Nat.reduceAdd]
+theorem adaptiveSpanWitnessCheck44342 : adaptiveSpanWitness44342.zipIdx.all (fun (w,i) => decide (w.s ≤ 8) && adaptiveSpanRankWitnessCheck 22171 14780 22171 (i+1) (coreSignatureBudget w.s) w (adaptiveSpanLevel44342 w.s).1 (adaptiveSpanLevel44342 w.s).2) = true := by
+  apply adaptiveSpanZipIdxChunksCheck_sound
+  simp only [adaptiveSpanZipIdxChunksCheck, adaptiveSpanWitness44342ChunkLength0, adaptiveSpanWitness44342ChunkLength1, adaptiveSpanWitness44342ChunkLength2, adaptiveSpanWitness44342ChunkLength3, adaptiveSpanWitness44342ChunkLength4, adaptiveSpanWitness44342ChunkLength5, adaptiveSpanWitness44342ChunkLength6, adaptiveSpanWitness44342ChunkLength7, Nat.reduceAdd, adaptiveSpanWitness44342ChunkCheck0, adaptiveSpanWitness44342ChunkCheck1, adaptiveSpanWitness44342ChunkCheck2, adaptiveSpanWitness44342ChunkCheck3, adaptiveSpanWitness44342ChunkCheck4, adaptiveSpanWitness44342ChunkCheck5, adaptiveSpanWitness44342ChunkCheck6, adaptiveSpanWitness44342ChunkCheck7, Bool.true_and]
+end Erdos883Verified
