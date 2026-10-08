@@ -1,10 +1,14 @@
-# Erdős #883: complete first-question proof and Lean formalization
+# Erdős Problem 883: first-question all-n proof — Yicheng Pan (潘奕成, zoahdev)
 
 **The first question is proved for every natural number n.** This repository
 contains the unchanged Lean proof source, the aligned manuscript, and a
 separate independent rebuild audit. The second question is outside this contribution.
 
-Author: Yicheng Pan (潘奕成).
+Author: **Yicheng Pan (潘奕成), GitHub: zoahdev**.
+
+[English / 中文 author and contribution summary](https://zoahdev.github.io/erdos-883/) · [Public proof claim](https://www.erdosproblems.com/forum/thread/883/proof-claims)
+
+中文：潘奕成（zoahdev）在 Donald Della Pietra 的渐近工作基础上完成埃尔德什第 883 题第一问的全 n 证明与 Lean 形式化；第二问不属于此贡献。
 
 GitHub: [zoahdev](https://github.com/zoahdev). Erdős Problems account:
 [yichengpan](https://www.erdosproblems.com/forum/user/yichengpan).
