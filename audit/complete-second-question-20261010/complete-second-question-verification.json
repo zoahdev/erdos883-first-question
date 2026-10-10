@@ -16,7 +16,7 @@
     {
       "module": "Erdos883SecondPrimeSupport",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondPrimeSupport.log",
+      "log": "logs/Erdos883SecondPrimeSupport.log",
       "logSha256": "097970415273874de353b14df78cab1a72adf55045283d478a7e5a415a45b9f9",
       "printedAxioms": [
         "Classical.choice",
@@ -29,7 +29,7 @@
     {
       "module": "Erdos883SecondCounts",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondCounts.log",
+      "log": "logs/Erdos883SecondCounts.log",
       "logSha256": "b19151501922833b93424cb7c03d658a1b36350492cbb50fa4533e070b90c067",
       "printedAxioms": [
         "Classical.choice",
@@ -42,7 +42,7 @@
     {
       "module": "Erdos883SecondMoment",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondMoment.log",
+      "log": "logs/Erdos883SecondMoment.log",
       "logSha256": "d92bb416087b4bade2849095a4b148e9a13acfa32b7e9e4533a2f4dcb7db68eb",
       "printedAxioms": [
         "Classical.choice",
@@ -55,7 +55,7 @@
     {
       "module": "Erdos883SecondMomentBound",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondMomentBound.log",
+      "log": "logs/Erdos883SecondMomentBound.log",
       "logSha256": "8a713ef26b95b51da3486defa4e9ec916fdead3ef458d38d89bf0aba89e628b4",
       "printedAxioms": [
         "Classical.choice",
@@ -68,7 +68,7 @@
     {
       "module": "Erdos883SecondGoodProfiles",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondGoodProfiles.log",
+      "log": "logs/Erdos883SecondGoodProfiles.log",
       "logSha256": "be16daed16515df4da4bf8423166392594fd36a10aec2cf4d7d77d4fea925282",
       "printedAxioms": [
         "Classical.choice",
@@ -81,7 +81,7 @@
     {
       "module": "Erdos883SecondQuestion",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondQuestion.log",
+      "log": "logs/Erdos883SecondQuestion.log",
       "logSha256": "40cd9e5e14717af9868f9706029e3d76c33e3821c5bd40cf3754634b18aa7daf",
       "printedAxioms": [
         "Classical.choice",
@@ -94,7 +94,7 @@
     {
       "module": "Erdos883SecondQuestionFinsets",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondQuestionFinsets.log",
+      "log": "logs/Erdos883SecondQuestionFinsets.log",
       "logSha256": "f1630e99addbfeeec439ed16ced81d5abbfc19004efad06360504744f3555645",
       "printedAxioms": [
         "Classical.choice",
@@ -107,7 +107,7 @@
     {
       "module": "Erdos883SecondNearBase",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearBase.log",
+      "log": "logs/Erdos883SecondNearBase.log",
       "logSha256": "ebe9cf3d269de1beedbd53a65651e324440edf3a9a1497c819c61549016c665d",
       "printedAxioms": [
         "Classical.choice",
@@ -120,7 +120,7 @@
     {
       "module": "Erdos883SecondNearConstruction",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearConstruction.log",
+      "log": "logs/Erdos883SecondNearConstruction.log",
       "logSha256": "4d863bc8ee27eccfddad5b096bed846ab46cdbab5cabcce153706782338b53a2",
       "printedAxioms": [
         "Classical.choice",
@@ -133,7 +133,7 @@
     {
       "module": "Erdos883SecondNearParameters",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearParameters.log",
+      "log": "logs/Erdos883SecondNearParameters.log",
       "logSha256": "29633531b7784f49b9305b4ac035d0acfb2e329c59cc638826cc63c3b8ba3ba9",
       "printedAxioms": [
         "Classical.choice",
@@ -146,7 +146,7 @@
     {
       "module": "Erdos883SecondNearThreshold",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearThreshold.log",
+      "log": "logs/Erdos883SecondNearThreshold.log",
       "logSha256": "07b955252609ae9e04c58c11f21b6d4ea4f21edade3381f606b0d5c7654579e0",
       "printedAxioms": [
         "Classical.choice",
@@ -159,7 +159,7 @@
     {
       "module": "Erdos883SecondNearComplete",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearComplete.log",
+      "log": "logs/Erdos883SecondNearComplete.log",
       "logSha256": "197e44f4e6d78c57f85caa093a27ff834cc105cc620ef9b4ecb5f92d37b68f50",
       "printedAxioms": [
         "Classical.choice",
@@ -172,7 +172,7 @@
     {
       "module": "Erdos883SecondAssembly",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondAssembly.log",
+      "log": "logs/Erdos883SecondAssembly.log",
       "logSha256": "3a144346f326326ef3c0baea2eaf9d10d228216769d7b9ad06150c5fb7ad1ee1",
       "printedAxioms": [
         "Classical.choice",
@@ -185,7 +185,7 @@
     {
       "module": "Erdos883SecondFarBudgets",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondFarBudgets.log",
+      "log": "logs/Erdos883SecondFarBudgets.log",
       "logSha256": "333b4e8760ec3a459260deb7638c68ebc1c1f2d34cc214350b25fc7b15156bc6",
       "printedAxioms": [
         "Classical.choice",
@@ -198,7 +198,7 @@
     {
       "module": "Erdos883SecondSignatureCRT",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureCRT.log",
+      "log": "logs/Erdos883SecondSignatureCRT.log",
       "logSha256": "c30a7045b4c53294baab430d49710140bf35ed44c3583301a49e8d821df156a8",
       "printedAxioms": [
         "Classical.choice",
@@ -211,7 +211,7 @@
     {
       "module": "Erdos883SecondSpectralKernel",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralKernel.log",
+      "log": "logs/Erdos883SecondSpectralKernel.log",
       "logSha256": "9a6a91aaa64a22c2dd13c08cf42065cdbc06de34849a15f4ff9db3671699a925",
       "printedAxioms": [
         "Classical.choice",
@@ -224,7 +224,7 @@
     {
       "module": "Erdos883SecondSpectralBasis",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralBasis.log",
+      "log": "logs/Erdos883SecondSpectralBasis.log",
       "logSha256": "2f591a81ce601e9ed94cb925b3926ca467c9ca79c6c8523a7fd33b506685b468",
       "printedAxioms": [
         "Classical.choice",
@@ -237,7 +237,7 @@
     {
       "module": "Erdos883SecondSignatureWeights",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureWeights.log",
+      "log": "logs/Erdos883SecondSignatureWeights.log",
       "logSha256": "0541db19d84a167012bcea78a1d7a7ed7a84cb5a8a49ea3c9b86a8834f592437",
       "printedAxioms": [
         "Classical.choice",
@@ -250,7 +250,7 @@
     {
       "module": "Erdos883SecondSignaturePrefix",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignaturePrefix.log",
+      "log": "logs/Erdos883SecondSignaturePrefix.log",
       "logSha256": "e33c4c34285c5d7440730fa02756add7a44a8b6765a168a1beb295945bfc7d59",
       "printedAxioms": [
         "Classical.choice",
@@ -263,7 +263,7 @@
     {
       "module": "Erdos883SecondSignatureFrequency",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureFrequency.log",
+      "log": "logs/Erdos883SecondSignatureFrequency.log",
       "logSha256": "868444bc6f93a70c2703374247d0bfd48aa0d17245004434d1feb2234b478ea3",
       "printedAxioms": [
         "Classical.choice",
@@ -276,7 +276,7 @@
     {
       "module": "Erdos883SecondSpectralFourier",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralFourier.log",
+      "log": "logs/Erdos883SecondSpectralFourier.log",
       "logSha256": "87e40644e42543082423c0c2c13367c9093bd67cd276f5be2e79a381cd8b9f97",
       "printedAxioms": [
         "Classical.choice",
@@ -289,7 +289,7 @@
     {
       "module": "Erdos883SecondSpectralPair",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralPair.log",
+      "log": "logs/Erdos883SecondSpectralPair.log",
       "logSha256": "ae2545f3fc1efd28997cf237379e43fcc243691e7141ecd8eb7c41baac3df045",
       "printedAxioms": [
         "Classical.choice",
@@ -302,7 +302,7 @@
     {
       "module": "Erdos883SecondSpectralProduct",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralProduct.log",
+      "log": "logs/Erdos883SecondSpectralProduct.log",
       "logSha256": "7ec95063a2bf6c1e057b2e0672afa205e2fcf66202a99a2ef7c3ff334a6e1f5a",
       "printedAxioms": [
         "Classical.choice",
@@ -315,7 +315,7 @@
     {
       "module": "Erdos883SecondSpectralGap",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralGap.log",
+      "log": "logs/Erdos883SecondSpectralGap.log",
       "logSha256": "ab80b55e39eeb729ed8877a1a2d3e0ae93d399cf7ea7af827e14bf1823a7a205",
       "printedAxioms": [
         "Classical.choice",
@@ -328,7 +328,7 @@
     {
       "module": "Erdos883SecondStabilityBounds",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondStabilityBounds.log",
+      "log": "logs/Erdos883SecondStabilityBounds.log",
       "logSha256": "29af5bc79181fd34a5f7da589087fbe5786d9556b0068fb192c1ff4a7a26973e",
       "printedAxioms": [
         "Classical.choice",
@@ -341,7 +341,7 @@
     {
       "module": "Erdos883SecondSpectralStability",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralStability.log",
+      "log": "logs/Erdos883SecondSpectralStability.log",
       "logSha256": "bea6ab63595921a5c9ddcd8d4383059d47a340dc885ad0b677e5ff462441290f",
       "printedAxioms": [
         "Classical.choice",
@@ -354,7 +354,7 @@
     {
       "module": "Erdos883SecondSpectralConditional",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralConditional.log",
+      "log": "logs/Erdos883SecondSpectralConditional.log",
       "logSha256": "951ed4ab621f5ee75245aabfd11559bedc07f1dfd1ec85ad8b67c6e7992c0412",
       "printedAxioms": [
         "Classical.choice",
@@ -367,7 +367,7 @@
     {
       "module": "Erdos883SecondSpectralFull",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralFull.log",
+      "log": "logs/Erdos883SecondSpectralFull.log",
       "logSha256": "9bbb7a9edfdefb6a1b3989c2ac02ed06f1d67a54f306b6b5830a0a885f9114a6",
       "printedAxioms": [
         "Classical.choice",
@@ -380,7 +380,7 @@
     {
       "module": "Erdos883SecondSignatureFull",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureFull.log",
+      "log": "logs/Erdos883SecondSignatureFull.log",
       "logSha256": "11140f74839a84036901d62569aa68a8a8d5f393820c07fb88a0ce9687263021",
       "printedAxioms": [
         "Classical.choice",
@@ -393,7 +393,7 @@
     {
       "module": "Erdos883SecondSignatureOccupancy",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureOccupancy.log",
+      "log": "logs/Erdos883SecondSignatureOccupancy.log",
       "logSha256": "828b22d8730b292f69e7ba72061f4ac14f0db6d6c0efc7260c88a72199cbae40",
       "printedAxioms": [
         "Classical.choice",
@@ -406,7 +406,7 @@
     {
       "module": "Erdos883SecondSignatureOutside",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureOutside.log",
+      "log": "logs/Erdos883SecondSignatureOutside.log",
       "logSha256": "e5d742e22adc7a794f3e0a77c4b065b5c5c40c93ce89f2d2437d90895e9582a6",
       "printedAxioms": [
         "Classical.choice",
@@ -419,7 +419,7 @@
     {
       "module": "Erdos883SecondSignatureBounds",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureBounds.log",
+      "log": "logs/Erdos883SecondSignatureBounds.log",
       "logSha256": "3cd8ce379fc81b42a4bfd1f354158fd29622082c63f4cf119d345feecc0b9288",
       "printedAxioms": [
         "Classical.choice",
@@ -432,7 +432,7 @@
     {
       "module": "Erdos883SecondCouplingNorm",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondCouplingNorm.log",
+      "log": "logs/Erdos883SecondCouplingNorm.log",
       "logSha256": "5a2b35337ab79239e0501bbf3797b314c9eb724a93f2ee4fc9ee56885732db44",
       "printedAxioms": [
         "Classical.choice",
@@ -445,7 +445,7 @@
     {
       "module": "Erdos883SecondCouplingEstimate",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondCouplingEstimate.log",
+      "log": "logs/Erdos883SecondCouplingEstimate.log",
       "logSha256": "25d000dd9ca8886506052e84776d0d5cd1511f0ce1b7f85b64dc4e571183a630",
       "printedAxioms": [
         "Classical.choice",
@@ -458,7 +458,7 @@
     {
       "module": "Erdos883SecondSpectralTriple",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralTriple.log",
+      "log": "logs/Erdos883SecondSpectralTriple.log",
       "logSha256": "989563baccf553ae8c81f4d75745b3cfa165e3bd92c902cf16e7f727d80c9051",
       "printedAxioms": [
         "Classical.choice",
@@ -471,7 +471,7 @@
     {
       "module": "Erdos883SecondSpectralCoupling",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralCoupling.log",
+      "log": "logs/Erdos883SecondSpectralCoupling.log",
       "logSha256": "cc95adf3d29f3aaa9afb3cd367596c93a68b6cdc2187827dc6eeff6555632d7b",
       "printedAxioms": [
         "Classical.choice",
@@ -484,7 +484,7 @@
     {
       "module": "Erdos883SecondSpectralDensity",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralDensity.log",
+      "log": "logs/Erdos883SecondSpectralDensity.log",
       "logSha256": "7389e4c54ed032cca79bb3d4aa2dd9ee62548abb8a7d24f600f973e18c240179",
       "printedAxioms": [
         "Classical.choice",
@@ -497,7 +497,7 @@
     {
       "module": "Erdos883SecondProductError",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondProductError.log",
+      "log": "logs/Erdos883SecondProductError.log",
       "logSha256": "d8a68f66315839403de232860f0014b3a925fe726b1c0766a8bbc4ff39da7b2d",
       "printedAxioms": [
         "Classical.choice",
@@ -510,7 +510,7 @@
     {
       "module": "Erdos883SecondLinkCounts",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkCounts.log",
+      "log": "logs/Erdos883SecondLinkCounts.log",
       "logSha256": "fb783da1b85c113f4f635f27c88035dbfd371cdc0d5a8ae48213a8ee8f5ae552",
       "printedAxioms": [
         "Classical.choice",
@@ -523,7 +523,7 @@
     {
       "module": "Erdos883SecondLinkDensity",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkDensity.log",
+      "log": "logs/Erdos883SecondLinkDensity.log",
       "logSha256": "3c90a61540005d011e71df58c4edc9a332edaa8877a0b1da547b209328fa452e",
       "printedAxioms": [
         "Classical.choice",
@@ -536,7 +536,7 @@
     {
       "module": "Erdos883SecondLinkTripartite",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkTripartite.log",
+      "log": "logs/Erdos883SecondLinkTripartite.log",
       "logSha256": "a4e1eb89859f2462d869c0d7a72ef31a93f7060a7109c4baf3e303ed4ddb0346",
       "printedAxioms": [
         "Classical.choice",
@@ -549,7 +549,7 @@
     {
       "module": "Erdos883SecondLinkTriangles",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkTriangles.log",
+      "log": "logs/Erdos883SecondLinkTriangles.log",
       "logSha256": "c9f1fd05b0bef144b4cdbb0d0f09926d095343aa1e54970e51a2af431e8699bd",
       "printedAxioms": [
         "Classical.choice",
@@ -562,7 +562,7 @@
     {
       "module": "Erdos883SecondLinkTailPairs",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkTailPairs.log",
+      "log": "logs/Erdos883SecondLinkTailPairs.log",
       "logSha256": "f2a8438813280661c1d851df6da5bdb31a4ea46571bac2bf072725af385679b6",
       "printedAxioms": [
         "Classical.choice",
@@ -575,7 +575,7 @@
     {
       "module": "Erdos883SecondLinkRealDensity",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkRealDensity.log",
+      "log": "logs/Erdos883SecondLinkRealDensity.log",
       "logSha256": "38cb440ecb224a61f79ba89314648a0f65779052da3c271f28a337b5f2ad9a68",
       "printedAxioms": [
         "Classical.choice",
@@ -588,7 +588,7 @@
     {
       "module": "Erdos883SecondLinkTailTriangles",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkTailTriangles.log",
+      "log": "logs/Erdos883SecondLinkTailTriangles.log",
       "logSha256": "eb0c2c7e12993f0eb21593b9b105983f7f0d3879f74a675695b7a7fc86cc6e0c",
       "printedAxioms": [
         "Classical.choice",
@@ -601,7 +601,7 @@
     {
       "module": "Erdos883SecondSignatureTriangles",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureTriangles.log",
+      "log": "logs/Erdos883SecondSignatureTriangles.log",
       "logSha256": "954b5cbb0730603b4062eb690bd63aaa8a10b535b017eed2890a451385614215",
       "printedAxioms": [
         "Classical.choice",
@@ -614,7 +614,7 @@
     {
       "module": "Erdos883SecondSpectralOdd",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralOdd.log",
+      "log": "logs/Erdos883SecondSpectralOdd.log",
       "logSha256": "1889ffc17b0ccf815be45597ba730c404165cf0957f3e6cdc8e9837ddf0b3689",
       "printedAxioms": [
         "Classical.choice",
@@ -627,7 +627,7 @@
     {
       "module": "Erdos883SecondSixCoordinate",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixCoordinate.log",
+      "log": "logs/Erdos883SecondSixCoordinate.log",
       "logSha256": "0b4d8e47bb5ec3d8cfccbe00ac0f21146c6df498b71dea681eeb3a5219d7c09b",
       "printedAxioms": [
         "Classical.choice",
@@ -640,7 +640,7 @@
     {
       "module": "Erdos883SecondTensorPushforward",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondTensorPushforward.log",
+      "log": "logs/Erdos883SecondTensorPushforward.log",
       "logSha256": "4ad837d7de2ae3b638ef2ce075fcc8e3a5b1823030bc1157bcecd3634a6dc2b8",
       "printedAxioms": [
         "Classical.choice",
@@ -653,7 +653,7 @@
     {
       "module": "Erdos883SecondSixTensor",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixTensor.log",
+      "log": "logs/Erdos883SecondSixTensor.log",
       "logSha256": "0cdbf69fc7264edabccb7776e868d9e8e16aea4a82047c8202797aed81010c7e",
       "printedAxioms": [
         "Classical.choice",
@@ -666,7 +666,7 @@
     {
       "module": "Erdos883SecondSixBlock",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixBlock.log",
+      "log": "logs/Erdos883SecondSixBlock.log",
       "logSha256": "7a281e3ffef75e88c409feee16414fc6d9e101964c71efc60a34801cb8768706",
       "printedAxioms": [
         "Classical.choice",
@@ -679,7 +679,7 @@
     {
       "module": "Erdos883SecondSelectionMoments",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSelectionMoments.log",
+      "log": "logs/Erdos883SecondSelectionMoments.log",
       "logSha256": "26ddd4b1e13be8ba7dff0dca2b7a9b57798603cdfce69604b8f49bf923dec3c0",
       "printedAxioms": [
         "Classical.choice",
@@ -692,7 +692,7 @@
     {
       "module": "Erdos883SecondSixFractional",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixFractional.log",
+      "log": "logs/Erdos883SecondSixFractional.log",
       "logSha256": "a97793695ea58e1c5c659a79cea8f080afc13a4329cf40c7899e3ce583071f76",
       "printedAxioms": [
         "Classical.choice",
@@ -705,7 +705,7 @@
     {
       "module": "Erdos883SecondSixMean",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixMean.log",
+      "log": "logs/Erdos883SecondSixMean.log",
       "logSha256": "ba92cfb14562897281014ac1110540597e33289eb47f8d4eb02ca866833ae5dc",
       "printedAxioms": [
         "Classical.choice",
@@ -718,7 +718,7 @@
     {
       "module": "Erdos883SecondSpectralGlobal",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralGlobal.log",
+      "log": "logs/Erdos883SecondSpectralGlobal.log",
       "logSha256": "3bb25e30f58d41dea052abf0ba3cb0b36b15c3675c20a929548d7afa3c0601b4",
       "printedAxioms": [
         "Classical.choice",
@@ -731,7 +731,7 @@
     {
       "module": "Erdos883SecondFarComplete",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondFarComplete.log",
+      "log": "logs/Erdos883SecondFarComplete.log",
       "logSha256": "f8f1785098f527a3995b2330a7210f713347513266107e5ca1c766ba29c4ca40",
       "printedAxioms": [
         "Classical.choice",
@@ -744,7 +744,7 @@
     {
       "module": "Erdos883SecondCompleteAudit",
       "returnCode": 0,
-      "log": "logs/complete-second-question-20261010T110524Z/Erdos883SecondCompleteAudit.log",
+      "log": "logs/Erdos883SecondCompleteAudit.log",
       "logSha256": "6540269747c03cd8262ad6ce9c01d3af105249eeefa37e4029ae0d358f5aa969",
       "printedAxioms": [
         "Classical.choice",

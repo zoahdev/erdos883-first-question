@@ -4,7 +4,7 @@
   "file": "Erdos883FirstStatementAudit.lean",
   "sha256": "f89924863f4df10cc9b501fafec0fd474f5c752bae648d88f232f88cd713281c",
   "exit_code": 0,
-  "log": "logs/first-statement-audit-01.log",
+  "log": "independent-checks/first-statement-audit-01.log",
   "import": "Erdos883VerifiedCoverage",
   "verified_theorem": "Erdos883Verified.erdos883_firstQuestion",
   "verified_type": "Erdos883Target.FirstQuestion",

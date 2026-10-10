@@ -30,7 +30,7 @@
       "file": "Erdos883SecondSignatureCRT.lean",
       "sha256": "812c2eba1c5db38e83c4d44647e980ad41ba491a5a79bbda7c3e9d91c8ea7ade",
       "exit_code": 0,
-      "log": "logs/signature-crt-05.log",
+      "log": "../resumed-20261010/signature-crt-05.log",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -42,7 +42,7 @@
       "file": "Erdos883SecondSignatureWeights.lean",
       "sha256": "2458e1d1db0a8471e449cfb3916b7709bc09ccf312ca712332b663149f70fc1b",
       "exit_code": 0,
-      "log": "logs/signature-weights-02.log",
+      "log": "../resumed-20261010/signature-weights-02.log",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -54,7 +54,7 @@
       "file": "Erdos883SecondSignaturePrefix.lean",
       "sha256": "9d89b7fe83c5892e01641db784740ed931f23e4866e71f076c7b17bf6bcaad50",
       "exit_code": 0,
-      "log": "logs/signature-prefix-03.log",
+      "log": "../resumed-20261010/signature-prefix-03.log",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -66,7 +66,7 @@
       "file": "Erdos883SecondSignatureFrequency.lean",
       "sha256": "6abb0b35ffa926b8f922a50ee5956a9e07793cbdb93c8f7bc9a78a859d9809ab",
       "exit_code": 0,
-      "log": "logs/signature-frequency-03.log",
+      "log": "../resumed-20261010/signature-frequency-03.log",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -78,7 +78,7 @@
       "file": "Erdos883SecondSignatureFull.lean",
       "sha256": "836c240cc36c5a9442168dce2ae9adf83be4a934f30a9cc3158539c4bb8be3a7",
       "exit_code": 0,
-      "log": "logs/signature-full-05.log",
+      "log": "../resumed-20261010/signature-full-05.log",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -90,7 +90,7 @@
       "file": "Erdos883SecondSignatureOccupancy.lean",
       "sha256": "9d922eb789e3f49f8b51eb4c605d2f2ad87b66d2a9f7fb5debd3dca4a9982338",
       "exit_code": 0,
-      "log": "logs/signature-occupancy-01.log",
+      "log": "../resumed-20261010/signature-occupancy-01.log",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -102,7 +102,7 @@
       "file": "Erdos883SecondSignatureOutside.lean",
       "sha256": "f29eb1d40b7eb85545d305fee41e84b36a2e0dad70c37ba5b8647e0c86e69169",
       "exit_code": 0,
-      "log": "logs/signature-outside-01.log",
+      "log": "../resumed-20261010/signature-outside-01.log",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -114,7 +114,9 @@
       "file": "Erdos883SecondSignatureBounds.lean",
       "sha256": "3a9eca213cf931a68bb4dfd77996b06622d1ac53e3443ee069b8e207431a2d65",
       "exit_code": 0,
-      "log": "logs/signature-bounds-01.log",
+      "log": null,
+      "log_original_reference": "logs/signature-bounds-01.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -126,7 +128,9 @@
       "file": "Erdos883SecondSignatureAudit.lean",
       "sha256": "7d1575577f1d83764fdac416ac2b33ac34500aadad3d66113293dabaff2d5890",
       "exit_code": 0,
-      "log": "logs/signature-audit-01.log",
+      "log": null,
+      "log_original_reference": "logs/signature-audit-01.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -135,96 +139,126 @@
       "command": "wsl -d Ubuntu-24.04 -- bash <workspace>/work/run_lean.sh Erdos883SecondSignatureAudit.lean -o Erdos883SecondSignatureAudit.olean -M4096"
     }
   ],
-  "independent_audit_log": "logs/signature-audit-01.log",
+  "independent_audit_log": null,
+  "independent_audit_log_original_reference": "logs/signature-audit-01.log",
+  "independent_audit_log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
   "attempts": [
     {
-      "log": "logs/signature-audit-01.log",
+      "log": null,
+      "log_original_reference": "logs/signature-audit-01.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "passed"
     },
     {
-      "log": "logs/signature-bounds-01.log",
+      "log": null,
+      "log_original_reference": "logs/signature-bounds-01.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "passed"
     },
     {
-      "log": "logs/signature-crt-01.log",
+      "log": null,
+      "log_original_reference": "logs/signature-crt-01.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-crt-02.log",
+      "log": null,
+      "log_original_reference": "logs/signature-crt-02.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-crt-03.log",
+      "log": null,
+      "log_original_reference": "logs/signature-crt-03.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "interrupted; expansive simp rewrote products repeatedly, fixed by exact prod_coe_sort"
     },
     {
-      "log": "logs/signature-crt-04.log",
+      "log": null,
+      "log_original_reference": "logs/signature-crt-04.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-crt-05.log",
+      "log": "../resumed-20261010/signature-crt-05.log",
       "result": "passed"
     },
     {
-      "log": "logs/signature-frequency-01.log",
+      "log": null,
+      "log_original_reference": "logs/signature-frequency-01.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-frequency-02.log",
+      "log": "../resumed-20261010/signature-frequency-02.log",
       "result": "passed"
     },
     {
-      "log": "logs/signature-frequency-03.log",
+      "log": "../resumed-20261010/signature-frequency-03.log",
       "result": "passed"
     },
     {
-      "log": "logs/signature-full-01.log",
+      "log": null,
+      "log_original_reference": "logs/signature-full-01.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-full-02.log",
+      "log": null,
+      "log_original_reference": "logs/signature-full-02.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-full-03.log",
+      "log": null,
+      "log_original_reference": "logs/signature-full-03.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-full-04.log",
+      "log": "../resumed-20261010/signature-full-04.log",
       "result": "passed"
     },
     {
-      "log": "logs/signature-full-05.log",
+      "log": "../resumed-20261010/signature-full-05.log",
       "result": "passed"
     },
     {
-      "log": "logs/signature-occupancy-01.log",
+      "log": "../resumed-20261010/signature-occupancy-01.log",
       "result": "passed"
     },
     {
-      "log": "logs/signature-outside-01.log",
+      "log": "../resumed-20261010/signature-outside-01.log",
       "result": "passed"
     },
     {
-      "log": "logs/signature-prefix-01.log",
+      "log": null,
+      "log_original_reference": "logs/signature-prefix-01.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-prefix-02.log",
+      "log": null,
+      "log_original_reference": "logs/signature-prefix-02.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-prefix-03.log",
+      "log": "../resumed-20261010/signature-prefix-03.log",
       "result": "passed"
     },
     {
-      "log": "logs/signature-weights-01.log",
+      "log": null,
+      "log_original_reference": "logs/signature-weights-01.log",
+      "log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log.",
       "result": "failed intermediate attempt; see log"
     },
     {
-      "log": "logs/signature-weights-02.log",
+      "log": "../resumed-20261010/signature-weights-02.log",
       "result": "passed"
     }
   ],
-  "dependency_build_log": "logs/signature-mathlib-crt-build.log"
+  "dependency_build_log": null,
+  "dependency_build_log_original_reference": "logs/signature-mathlib-crt-build.log",
+  "dependency_build_log_publication_status": "Raw log not published in selected proof commit 92d8dedf3c2aca876a7e3e141aae874ac5669959; preserved historical result is not independently checkable from this raw log."
 }

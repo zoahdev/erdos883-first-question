@@ -1,0 +1,1058 @@
+{
+  "formatVersion": 1,
+  "date": "2026-10-10",
+  "repository": "zoahdev/erdos883-first-question",
+  "selectedProofCommit": "92d8dedf3c2aca876a7e3e141aae874ac5669959",
+  "selectedProofTree": "84ea128d940fc14ecbc07e91b4978a64c83a8e32",
+  "completeProofTreeEntries": 7047,
+  "originalFiles": [
+    {
+      "path": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "git_blob_sha1": "b47ef1a6e6fd22efb626f3c5dc20f0b26c5540af",
+      "sha256": "798edce64317bce2e3d4a5a6a61b6b05d22a04fac00f864ef862c9e31c916ebb",
+      "bytes": 28347
+    },
+    {
+      "path": "audit/complete-second-question-20261010/VALIDATION_FINAL_READONLY_20261010.json",
+      "git_blob_sha1": "f7c841bbc4bafd88377066e65618bf3e5f0acf97",
+      "sha256": "ae4ee1fe7ed75685f854783c3b666ad4d85b161f2093a125fe3e0b9ad76fcd46",
+      "bytes": 2953
+    },
+    {
+      "path": "audit/complete-second-question-20261010/VALIDATION_FIRST_STATEMENT_20261010.json",
+      "git_blob_sha1": "683507b009d98fdd712718e6596219adad2c52c9",
+      "sha256": "7b77c9c80d4fd2de5848277b5ed1c34127f6bdd36ff270ee67899b4543f3aa65",
+      "bytes": 2489
+    },
+    {
+      "path": "audit/complete-second-question-20261010/VALIDATION_NEAR_COMPLETE_20261010.json",
+      "git_blob_sha1": "0579232aaa2eea5aa789287c8e8be890f57f446f",
+      "sha256": "91f49f67b87b3b7927a085b42253edeaf7f3bb4d3d6c272cedc7af1c55a0b005",
+      "bytes": 2405
+    },
+    {
+      "path": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "git_blob_sha1": "4b34b599786b0b3fa7ee30966ca9efba270607b5",
+      "sha256": "38938125ab842248c48f581dbdd966e99788a8e830a580f2571e948aca3bf9ae",
+      "bytes": 8808
+    },
+    {
+      "path": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "git_blob_sha1": "8b831b486794b1f778a5970db46f0a1e36bc1d46",
+      "sha256": "6bff2b6662ba87a7e3f04a8d041f5eeb9bcc2b3fffc5db11a3b2e3b99c1864d7",
+      "bytes": 13615
+    }
+  ],
+  "changes": [
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/0/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondPrimeSupport.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondPrimeSupport.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondPrimeSupport.log",
+      "git_blob_sha1": "f478072e734949afa248e07424e13b0a856cc27c",
+      "sha256": "097970415273874de353b14df78cab1a72adf55045283d478a7e5a415a45b9f9"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/1/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondCounts.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondCounts.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondCounts.log",
+      "git_blob_sha1": "8f4355fa19b5a7d014e6e35355a1c28022239c8a",
+      "sha256": "b19151501922833b93424cb7c03d658a1b36350492cbb50fa4533e070b90c067"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/2/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondMoment.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondMoment.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondMoment.log",
+      "git_blob_sha1": "6b80f4b5e11359c17c95376ff3cb7efa77ed4673",
+      "sha256": "d92bb416087b4bade2849095a4b148e9a13acfa32b7e9e4533a2f4dcb7db68eb"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/3/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondMomentBound.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondMomentBound.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondMomentBound.log",
+      "git_blob_sha1": "872250313e2bc93ad090a18746d475e5ef2b6e1f",
+      "sha256": "8a713ef26b95b51da3486defa4e9ec916fdead3ef458d38d89bf0aba89e628b4"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/4/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondGoodProfiles.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondGoodProfiles.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondGoodProfiles.log",
+      "git_blob_sha1": "0adbcab3911c518618296f731b743eb941a0c6c6",
+      "sha256": "be16daed16515df4da4bf8423166392594fd36a10aec2cf4d7d77d4fea925282"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/5/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondQuestion.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondQuestion.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondQuestion.log",
+      "git_blob_sha1": "ca4afec74ab2464258df235bb6efde0df1c04795",
+      "sha256": "40cd9e5e14717af9868f9706029e3d76c33e3821c5bd40cf3754634b18aa7daf"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/6/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondQuestionFinsets.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondQuestionFinsets.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondQuestionFinsets.log",
+      "git_blob_sha1": "849bf6d68a42b5cc137f2399e4d66c86f9aa01b4",
+      "sha256": "f1630e99addbfeeec439ed16ced81d5abbfc19004efad06360504744f3555645"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/7/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearBase.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondNearBase.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondNearBase.log",
+      "git_blob_sha1": "3e8ec2e21204bbceef2df9926c383bb8eabe170f",
+      "sha256": "ebe9cf3d269de1beedbd53a65651e324440edf3a9a1497c819c61549016c665d"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/8/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearConstruction.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondNearConstruction.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondNearConstruction.log",
+      "git_blob_sha1": "6b6925f433ef2133fed535a4a3d6833864cb3a4a",
+      "sha256": "4d863bc8ee27eccfddad5b096bed846ab46cdbab5cabcce153706782338b53a2"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/9/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearParameters.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondNearParameters.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondNearParameters.log",
+      "git_blob_sha1": "1e2bb7782e39fbc2e28eba6503ec47f5a8032808",
+      "sha256": "29633531b7784f49b9305b4ac035d0acfb2e329c59cc638826cc63c3b8ba3ba9"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/10/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearThreshold.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondNearThreshold.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondNearThreshold.log",
+      "git_blob_sha1": "2e81962bed24196f6e96d696af3f0ca836a4c8b6",
+      "sha256": "07b955252609ae9e04c58c11f21b6d4ea4f21edade3381f606b0d5c7654579e0"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/11/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondNearComplete.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondNearComplete.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondNearComplete.log",
+      "git_blob_sha1": "f8f1865888bd70d14ba48dc94acb5db92e15f319",
+      "sha256": "197e44f4e6d78c57f85caa093a27ff834cc105cc620ef9b4ecb5f92d37b68f50"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/12/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondAssembly.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondAssembly.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondAssembly.log",
+      "git_blob_sha1": "48b037f5af8e80943c8d3ff5855fd399d694ea98",
+      "sha256": "3a144346f326326ef3c0baea2eaf9d10d228216769d7b9ad06150c5fb7ad1ee1"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/13/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondFarBudgets.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondFarBudgets.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondFarBudgets.log",
+      "git_blob_sha1": "c0dc540e6f16acfa8b6f148576e2704ab00c60b5",
+      "sha256": "333b4e8760ec3a459260deb7638c68ebc1c1f2d34cc214350b25fc7b15156bc6"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/14/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureCRT.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSignatureCRT.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSignatureCRT.log",
+      "git_blob_sha1": "d32ece73ea09c1f0c9c869da67a5ba08e7b065c0",
+      "sha256": "c30a7045b4c53294baab430d49710140bf35ed44c3583301a49e8d821df156a8"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/15/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralKernel.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralKernel.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralKernel.log",
+      "git_blob_sha1": "10141c5d3b6781676aae294d274eca317edbace4",
+      "sha256": "9a6a91aaa64a22c2dd13c08cf42065cdbc06de34849a15f4ff9db3671699a925"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/16/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralBasis.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralBasis.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralBasis.log",
+      "git_blob_sha1": "91d507c92324a05c84da31c23c662ae6548354db",
+      "sha256": "2f591a81ce601e9ed94cb925b3926ca467c9ca79c6c8523a7fd33b506685b468"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/17/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureWeights.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSignatureWeights.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSignatureWeights.log",
+      "git_blob_sha1": "6a92a55758b5da9ef6b1663f960ce9d2073a2a5b",
+      "sha256": "0541db19d84a167012bcea78a1d7a7ed7a84cb5a8a49ea3c9b86a8834f592437"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/18/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignaturePrefix.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSignaturePrefix.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSignaturePrefix.log",
+      "git_blob_sha1": "291c26a62656000625434f973d465cbb2c4d7fd9",
+      "sha256": "e33c4c34285c5d7440730fa02756add7a44a8b6765a168a1beb295945bfc7d59"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/19/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureFrequency.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSignatureFrequency.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSignatureFrequency.log",
+      "git_blob_sha1": "6cc1b4ef232d9c7a56f6a31462379c2faf7fc546",
+      "sha256": "868444bc6f93a70c2703374247d0bfd48aa0d17245004434d1feb2234b478ea3"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/20/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralFourier.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralFourier.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralFourier.log",
+      "git_blob_sha1": "daf0094574811138d44299159a82a2813f13cf6c",
+      "sha256": "87e40644e42543082423c0c2c13367c9093bd67cd276f5be2e79a381cd8b9f97"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/21/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralPair.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralPair.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralPair.log",
+      "git_blob_sha1": "cb8ba3ab18de38f3522ccfe734e39662d7726e7a",
+      "sha256": "ae2545f3fc1efd28997cf237379e43fcc243691e7141ecd8eb7c41baac3df045"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/22/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralProduct.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralProduct.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralProduct.log",
+      "git_blob_sha1": "d255f3fa28752e8152d4db4c71820b86b35fea50",
+      "sha256": "7ec95063a2bf6c1e057b2e0672afa205e2fcf66202a99a2ef7c3ff334a6e1f5a"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/23/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralGap.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralGap.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralGap.log",
+      "git_blob_sha1": "0c2934c836bfc467b3d7cc16a7f8b9c6c028032c",
+      "sha256": "ab80b55e39eeb729ed8877a1a2d3e0ae93d399cf7ea7af827e14bf1823a7a205"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/24/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondStabilityBounds.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondStabilityBounds.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondStabilityBounds.log",
+      "git_blob_sha1": "0aaa74891fad1dd131167bd092c3ea04309b32d8",
+      "sha256": "29af5bc79181fd34a5f7da589087fbe5786d9556b0068fb192c1ff4a7a26973e"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/25/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralStability.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralStability.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralStability.log",
+      "git_blob_sha1": "f92ecc0763b3ee22182d679f87bce43d91ee3107",
+      "sha256": "bea6ab63595921a5c9ddcd8d4383059d47a340dc885ad0b677e5ff462441290f"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/26/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralConditional.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralConditional.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralConditional.log",
+      "git_blob_sha1": "13a96f6779f1b5c681a158689fe2cbbab37ce50f",
+      "sha256": "951ed4ab621f5ee75245aabfd11559bedc07f1dfd1ec85ad8b67c6e7992c0412"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/27/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralFull.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralFull.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralFull.log",
+      "git_blob_sha1": "9423c2fac761a5186b987b3722a99d4ae0a2d4e3",
+      "sha256": "9bbb7a9edfdefb6a1b3989c2ac02ed06f1d67a54f306b6b5830a0a885f9114a6"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/28/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureFull.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSignatureFull.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSignatureFull.log",
+      "git_blob_sha1": "d74fe895b94c1f841ae7f6a6f22142e6003f9982",
+      "sha256": "11140f74839a84036901d62569aa68a8a8d5f393820c07fb88a0ce9687263021"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/29/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureOccupancy.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSignatureOccupancy.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSignatureOccupancy.log",
+      "git_blob_sha1": "edb94a2a3d40167530c03957f58dc1ef153791ef",
+      "sha256": "828b22d8730b292f69e7ba72061f4ac14f0db6d6c0efc7260c88a72199cbae40"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/30/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureOutside.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSignatureOutside.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSignatureOutside.log",
+      "git_blob_sha1": "6b69ad78de1ffc614b2db17e47e20cc834fbc623",
+      "sha256": "e5d742e22adc7a794f3e0a77c4b065b5c5c40c93ce89f2d2437d90895e9582a6"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/31/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureBounds.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSignatureBounds.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSignatureBounds.log",
+      "git_blob_sha1": "9258001ba16ef281b510d4e5222d01c894a0545e",
+      "sha256": "3cd8ce379fc81b42a4bfd1f354158fd29622082c63f4cf119d345feecc0b9288"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/32/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondCouplingNorm.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondCouplingNorm.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondCouplingNorm.log",
+      "git_blob_sha1": "2517271e2ba93241b7c9967c008e533a9e130aa5",
+      "sha256": "5a2b35337ab79239e0501bbf3797b314c9eb724a93f2ee4fc9ee56885732db44"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/33/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondCouplingEstimate.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondCouplingEstimate.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondCouplingEstimate.log",
+      "git_blob_sha1": "9c6223f06267811d65482473bfe02a9112b98c72",
+      "sha256": "25d000dd9ca8886506052e84776d0d5cd1511f0ce1b7f85b64dc4e571183a630"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/34/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralTriple.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralTriple.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralTriple.log",
+      "git_blob_sha1": "98f2697fa0d275d1259aabc299217e76703b7cb3",
+      "sha256": "989563baccf553ae8c81f4d75745b3cfa165e3bd92c902cf16e7f727d80c9051"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/35/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralCoupling.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralCoupling.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralCoupling.log",
+      "git_blob_sha1": "838fc9e72c6534a0a9346dcb80fd3ae92ce8a383",
+      "sha256": "cc95adf3d29f3aaa9afb3cd367596c93a68b6cdc2187827dc6eeff6555632d7b"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/36/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralDensity.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralDensity.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralDensity.log",
+      "git_blob_sha1": "27b0cdb17bd059d532bddf5fba7671ab24fc2486",
+      "sha256": "7389e4c54ed032cca79bb3d4aa2dd9ee62548abb8a7d24f600f973e18c240179"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/37/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondProductError.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondProductError.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondProductError.log",
+      "git_blob_sha1": "6e596d4ace3a47d63c44cb1bf2ff0fab2369a1df",
+      "sha256": "d8a68f66315839403de232860f0014b3a925fe726b1c0766a8bbc4ff39da7b2d"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/38/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkCounts.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondLinkCounts.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondLinkCounts.log",
+      "git_blob_sha1": "669f1fcc42d5b7fb8559317a506a3770fe97b64f",
+      "sha256": "fb783da1b85c113f4f635f27c88035dbfd371cdc0d5a8ae48213a8ee8f5ae552"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/39/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkDensity.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondLinkDensity.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondLinkDensity.log",
+      "git_blob_sha1": "6f7e287772a4e207d9ede5ade64b1d8801a6692f",
+      "sha256": "3c90a61540005d011e71df58c4edc9a332edaa8877a0b1da547b209328fa452e"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/40/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkTripartite.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondLinkTripartite.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondLinkTripartite.log",
+      "git_blob_sha1": "acb205432542e189383f5605a706f74aca680451",
+      "sha256": "a4e1eb89859f2462d869c0d7a72ef31a93f7060a7109c4baf3e303ed4ddb0346"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/41/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkTriangles.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondLinkTriangles.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondLinkTriangles.log",
+      "git_blob_sha1": "2f1cee01914754aeda2cc879feb1b94d02b3b043",
+      "sha256": "c9f1fd05b0bef144b4cdbb0d0f09926d095343aa1e54970e51a2af431e8699bd"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/42/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkTailPairs.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondLinkTailPairs.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondLinkTailPairs.log",
+      "git_blob_sha1": "0541e00cefe34b9a01ad2938102cc4308b76e2a2",
+      "sha256": "f2a8438813280661c1d851df6da5bdb31a4ea46571bac2bf072725af385679b6"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/43/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkRealDensity.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondLinkRealDensity.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondLinkRealDensity.log",
+      "git_blob_sha1": "20658490fec4fd3352c192112a9bc27d1a2ccc16",
+      "sha256": "38cb440ecb224a61f79ba89314648a0f65779052da3c271f28a337b5f2ad9a68"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/44/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondLinkTailTriangles.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondLinkTailTriangles.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondLinkTailTriangles.log",
+      "git_blob_sha1": "baefcbc7397ae0cd4e0a069619961ca25ff1dbc3",
+      "sha256": "eb0c2c7e12993f0eb21593b9b105983f7f0d3879f74a675695b7a7fc86cc6e0c"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/45/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSignatureTriangles.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSignatureTriangles.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSignatureTriangles.log",
+      "git_blob_sha1": "3a75d06d896ad24ca3b43cb06e4f75e63e55172f",
+      "sha256": "954b5cbb0730603b4062eb690bd63aaa8a10b535b017eed2890a451385614215"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/46/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralOdd.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralOdd.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralOdd.log",
+      "git_blob_sha1": "7e1270c4ff44632ecd67fc7d9c5a4179ff85794e",
+      "sha256": "1889ffc17b0ccf815be45597ba730c404165cf0957f3e6cdc8e9837ddf0b3689"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/47/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixCoordinate.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSixCoordinate.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSixCoordinate.log",
+      "git_blob_sha1": "ab3eca7fb19af7d3214302790c02b16c076cdf36",
+      "sha256": "0b4d8e47bb5ec3d8cfccbe00ac0f21146c6df498b71dea681eeb3a5219d7c09b"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/48/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondTensorPushforward.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondTensorPushforward.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondTensorPushforward.log",
+      "git_blob_sha1": "8bbf20d2fe0a4bb0f083fd566502e67150dab7b0",
+      "sha256": "4ad837d7de2ae3b638ef2ce075fcc8e3a5b1823030bc1157bcecd3634a6dc2b8"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/49/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixTensor.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSixTensor.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSixTensor.log",
+      "git_blob_sha1": "84bee1da6c575e0a4e164842c25d80d49da565eb",
+      "sha256": "0cdbf69fc7264edabccb7776e868d9e8e16aea4a82047c8202797aed81010c7e"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/50/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixBlock.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSixBlock.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSixBlock.log",
+      "git_blob_sha1": "01ed89eb7497f5145e0733677769b36f0efc12d5",
+      "sha256": "7a281e3ffef75e88c409feee16414fc6d9e101964c71efc60a34801cb8768706"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/51/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSelectionMoments.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSelectionMoments.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSelectionMoments.log",
+      "git_blob_sha1": "a2bbb02175ced9338882964d8e4ea79650a349f9",
+      "sha256": "26ddd4b1e13be8ba7dff0dca2b7a9b57798603cdfce69604b8f49bf923dec3c0"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/52/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixFractional.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSixFractional.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSixFractional.log",
+      "git_blob_sha1": "2d97ee760b400da0c82db30a8f4f8a84aa08c21b",
+      "sha256": "a97793695ea58e1c5c659a79cea8f080afc13a4329cf40c7899e3ce583071f76"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/53/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSixMean.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSixMean.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSixMean.log",
+      "git_blob_sha1": "b24f51951fa269523e608ad7044a8be748288f80",
+      "sha256": "ba92cfb14562897281014ac1110540597e33289eb47f8d4eb02ca866833ae5dc"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/54/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondSpectralGlobal.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondSpectralGlobal.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondSpectralGlobal.log",
+      "git_blob_sha1": "552e4796ed65c8263e3cc1cc2cc6f9d5deb25c24",
+      "sha256": "3bb25e30f58d41dea052abf0ba3cb0b36b15c3675c20a929548d7afa3c0601b4"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/55/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondFarComplete.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondFarComplete.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondFarComplete.log",
+      "git_blob_sha1": "ff8e995a9e007242c901648e096938a3c9651d02",
+      "sha256": "f8f1785098f527a3995b2330a7210f713347513266107e5ca1c766ba29c4ca40"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/complete-second-question-verification.json",
+      "pointer": "/modules/56/log",
+      "original_reference": "logs/complete-second-question-20261010T110524Z/Erdos883SecondCompleteAudit.log",
+      "status": "corrected published location",
+      "corrected_reference": "logs/Erdos883SecondCompleteAudit.log",
+      "proof_a_path": "audit/complete-second-question-20261010/logs/Erdos883SecondCompleteAudit.log",
+      "git_blob_sha1": "9ec8e46aa652998607ffc32109cd94a4cefda05a",
+      "sha256": "6540269747c03cd8262ad6ce9c01d3af105249eeefa37e4029ae0d358f5aa969"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_FINAL_READONLY_20261010.json",
+      "pointer": "/log",
+      "original_reference": "logs/final-readonly-audit-01.log",
+      "status": "corrected published location",
+      "corrected_reference": "independent-checks/final-readonly-audit-01.log",
+      "proof_a_path": "audit/complete-second-question-20261010/independent-checks/final-readonly-audit-01.log",
+      "git_blob_sha1": "c25ceebceb076d7d0974e62ef3f7361db2c28c15",
+      "sha256": "a11f9503f79b0dccdd6f5876385abe5bfd4caeea1c39bf039e7789410fcbe4f7"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_FIRST_STATEMENT_20261010.json",
+      "pointer": "/log",
+      "original_reference": "logs/first-statement-audit-01.log",
+      "status": "corrected published location",
+      "corrected_reference": "independent-checks/first-statement-audit-01.log",
+      "proof_a_path": "audit/complete-second-question-20261010/independent-checks/first-statement-audit-01.log",
+      "git_blob_sha1": "11c690d2c2f6c2fc663e2dedfd0db19e2668452e",
+      "sha256": "62ca3d81958d2c5f61b69fa640b5cabb305011821cfafa714e6bcbf02cbdec35"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_NEAR_COMPLETE_20261010.json",
+      "pointer": "/modules/0/log",
+      "original_reference": "logs/near-complete-attempt-01.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/near-complete-attempt-01.log",
+      "proof_a_path": "audit/resumed-20261010/near-complete-attempt-01.log",
+      "git_blob_sha1": "81810c21dfafad8a9aea1a19d25b5e30469dfb99",
+      "sha256": "2afb6a5a2ee7fd087c74f2a4a3f81f82541610bedaba21e4cbac1ca010adde69"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_NEAR_COMPLETE_20261010.json",
+      "pointer": "/modules/1/log",
+      "original_reference": "logs/near-complete-audit-01.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/near-complete-audit-01.log",
+      "proof_a_path": "audit/resumed-20261010/near-complete-audit-01.log",
+      "git_blob_sha1": "41ad7bca0adea78112afb28879530faa3e4c2560",
+      "sha256": "1149e190af4e74ab06fdc0d93205aca69a57633178ff5de751d4e370cae3bcfb"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/modules/0/log",
+      "original_reference": "logs/signature-crt-05.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-crt-05.log",
+      "proof_a_path": "audit/resumed-20261010/signature-crt-05.log",
+      "git_blob_sha1": "d32ece73ea09c1f0c9c869da67a5ba08e7b065c0",
+      "sha256": "c30a7045b4c53294baab430d49710140bf35ed44c3583301a49e8d821df156a8"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/modules/1/log",
+      "original_reference": "logs/signature-weights-02.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-weights-02.log",
+      "proof_a_path": "audit/resumed-20261010/signature-weights-02.log",
+      "git_blob_sha1": "6a92a55758b5da9ef6b1663f960ce9d2073a2a5b",
+      "sha256": "0541db19d84a167012bcea78a1d7a7ed7a84cb5a8a49ea3c9b86a8834f592437"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/modules/2/log",
+      "original_reference": "logs/signature-prefix-03.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-prefix-03.log",
+      "proof_a_path": "audit/resumed-20261010/signature-prefix-03.log",
+      "git_blob_sha1": "291c26a62656000625434f973d465cbb2c4d7fd9",
+      "sha256": "e33c4c34285c5d7440730fa02756add7a44a8b6765a168a1beb295945bfc7d59"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/modules/3/log",
+      "original_reference": "logs/signature-frequency-03.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-frequency-03.log",
+      "proof_a_path": "audit/resumed-20261010/signature-frequency-03.log",
+      "git_blob_sha1": "6cc1b4ef232d9c7a56f6a31462379c2faf7fc546",
+      "sha256": "868444bc6f93a70c2703374247d0bfd48aa0d17245004434d1feb2234b478ea3"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/modules/4/log",
+      "original_reference": "logs/signature-full-05.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-full-05.log",
+      "proof_a_path": "audit/resumed-20261010/signature-full-05.log",
+      "git_blob_sha1": "d74fe895b94c1f841ae7f6a6f22142e6003f9982",
+      "sha256": "11140f74839a84036901d62569aa68a8a8d5f393820c07fb88a0ce9687263021"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/modules/5/log",
+      "original_reference": "logs/signature-occupancy-01.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-occupancy-01.log",
+      "proof_a_path": "audit/resumed-20261010/signature-occupancy-01.log",
+      "git_blob_sha1": "edb94a2a3d40167530c03957f58dc1ef153791ef",
+      "sha256": "828b22d8730b292f69e7ba72061f4ac14f0db6d6c0efc7260c88a72199cbae40"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/modules/6/log",
+      "original_reference": "logs/signature-outside-01.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-outside-01.log",
+      "proof_a_path": "audit/resumed-20261010/signature-outside-01.log",
+      "git_blob_sha1": "6b69ad78de1ffc614b2db17e47e20cc834fbc623",
+      "sha256": "e5d742e22adc7a794f3e0a77c4b065b5c5c40c93ce89f2d2437d90895e9582a6"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/modules/7/log",
+      "original_reference": "logs/signature-bounds-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/modules/8/log",
+      "original_reference": "logs/signature-audit-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/independent_audit_log",
+      "original_reference": "logs/signature-audit-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/0/log",
+      "original_reference": "logs/signature-audit-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/1/log",
+      "original_reference": "logs/signature-bounds-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/2/log",
+      "original_reference": "logs/signature-crt-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/3/log",
+      "original_reference": "logs/signature-crt-02.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/4/log",
+      "original_reference": "logs/signature-crt-03.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/5/log",
+      "original_reference": "logs/signature-crt-04.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/6/log",
+      "original_reference": "logs/signature-crt-05.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-crt-05.log",
+      "proof_a_path": "audit/resumed-20261010/signature-crt-05.log",
+      "git_blob_sha1": "d32ece73ea09c1f0c9c869da67a5ba08e7b065c0",
+      "sha256": "c30a7045b4c53294baab430d49710140bf35ed44c3583301a49e8d821df156a8"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/7/log",
+      "original_reference": "logs/signature-frequency-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/8/log",
+      "original_reference": "logs/signature-frequency-02.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-frequency-02.log",
+      "proof_a_path": "audit/resumed-20261010/signature-frequency-02.log",
+      "git_blob_sha1": "ce36fcd31c6f3f9e1ba55ea657a495f185d3e62b",
+      "sha256": "dd2cb9b333d80697cdeff7c0574887f3a3b919bc1b926511c205428f9a312676"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/9/log",
+      "original_reference": "logs/signature-frequency-03.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-frequency-03.log",
+      "proof_a_path": "audit/resumed-20261010/signature-frequency-03.log",
+      "git_blob_sha1": "6cc1b4ef232d9c7a56f6a31462379c2faf7fc546",
+      "sha256": "868444bc6f93a70c2703374247d0bfd48aa0d17245004434d1feb2234b478ea3"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/10/log",
+      "original_reference": "logs/signature-full-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/11/log",
+      "original_reference": "logs/signature-full-02.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/12/log",
+      "original_reference": "logs/signature-full-03.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/13/log",
+      "original_reference": "logs/signature-full-04.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-full-04.log",
+      "proof_a_path": "audit/resumed-20261010/signature-full-04.log",
+      "git_blob_sha1": "d74fe895b94c1f841ae7f6a6f22142e6003f9982",
+      "sha256": "11140f74839a84036901d62569aa68a8a8d5f393820c07fb88a0ce9687263021"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/14/log",
+      "original_reference": "logs/signature-full-05.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-full-05.log",
+      "proof_a_path": "audit/resumed-20261010/signature-full-05.log",
+      "git_blob_sha1": "d74fe895b94c1f841ae7f6a6f22142e6003f9982",
+      "sha256": "11140f74839a84036901d62569aa68a8a8d5f393820c07fb88a0ce9687263021"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/15/log",
+      "original_reference": "logs/signature-occupancy-01.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-occupancy-01.log",
+      "proof_a_path": "audit/resumed-20261010/signature-occupancy-01.log",
+      "git_blob_sha1": "edb94a2a3d40167530c03957f58dc1ef153791ef",
+      "sha256": "828b22d8730b292f69e7ba72061f4ac14f0db6d6c0efc7260c88a72199cbae40"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/16/log",
+      "original_reference": "logs/signature-outside-01.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-outside-01.log",
+      "proof_a_path": "audit/resumed-20261010/signature-outside-01.log",
+      "git_blob_sha1": "6b69ad78de1ffc614b2db17e47e20cc834fbc623",
+      "sha256": "e5d742e22adc7a794f3e0a77c4b065b5c5c40c93ce89f2d2437d90895e9582a6"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/17/log",
+      "original_reference": "logs/signature-prefix-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/18/log",
+      "original_reference": "logs/signature-prefix-02.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/19/log",
+      "original_reference": "logs/signature-prefix-03.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-prefix-03.log",
+      "proof_a_path": "audit/resumed-20261010/signature-prefix-03.log",
+      "git_blob_sha1": "291c26a62656000625434f973d465cbb2c4d7fd9",
+      "sha256": "e33c4c34285c5d7440730fa02756add7a44a8b6765a168a1beb295945bfc7d59"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/20/log",
+      "original_reference": "logs/signature-weights-01.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/attempts/21/log",
+      "original_reference": "logs/signature-weights-02.log",
+      "status": "corrected published location",
+      "corrected_reference": "../resumed-20261010/signature-weights-02.log",
+      "proof_a_path": "audit/resumed-20261010/signature-weights-02.log",
+      "git_blob_sha1": "6a92a55758b5da9ef6b1663f960ce9d2073a2a5b",
+      "sha256": "0541db19d84a167012bcea78a1d7a7ed7a84cb5a8a49ea3c9b86a8834f592437"
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SIGNATURE_20261010.json",
+      "pointer": "/dependency_build_log",
+      "original_reference": "logs/signature-mathlib-crt-build.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "pointer": "/modules/0/log",
+      "original_reference": "logs/Erdos883SecondSpectralStability-final.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "pointer": "/modules/1/log",
+      "original_reference": "logs/Erdos883SecondSpectralConditional-final.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "pointer": "/modules/2/log",
+      "original_reference": "logs/Erdos883SecondSpectralTriple-final.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "pointer": "/modules/3/log",
+      "original_reference": "logs/Erdos883SecondSpectralCoupling-final.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "pointer": "/modules/4/log",
+      "original_reference": "logs/Erdos883SecondSpectralFull-final.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "pointer": "/modules/5/log",
+      "original_reference": "logs/Erdos883SecondSpectralDensity-final.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "pointer": "/modules/6/log",
+      "original_reference": "logs/Erdos883SecondSpectralOdd-final.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "pointer": "/modules/7/log",
+      "original_reference": "logs/Erdos883SecondSpectralGlobal-final.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    },
+    {
+      "file": "audit/complete-second-question-20261010/VALIDATION_SPECTRAL_GLOBAL_20261010.json",
+      "pointer": "/modules/8/log",
+      "original_reference": "logs/Erdos883SecondSpectralMeasure-final.log",
+      "status": "raw log not published in selected proof commit",
+      "corrected_reference": null,
+      "proof_a_path": null,
+      "availability_basis": "No matching filename in the complete 7047-entry proof-A Git tree."
+    }
+  ],
+  "scope": "Evidence-path corrections and raw-log availability labels only. No Lean source, proof commit, result, exit code, timestamp, source hash, object hash, log hash or axiom assertion changed.",
+  "limitations": [
+    "No Lean build, mathematical review, authorship review or organizer verification was performed for this correction.",
+    "Missing historical raw logs were not reconstructed or replaced by later module logs; embedded historical output and results remain as originally published.",
+    "The existing 57-module compilation record reused pinned standard dependencies and earlier first-question objects; its original trust limits remain applicable."
+  ]
+}

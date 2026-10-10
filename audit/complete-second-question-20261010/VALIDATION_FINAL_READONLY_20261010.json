@@ -5,7 +5,7 @@
   "audited_module": "Erdos883FinalReadOnlyAudit.lean",
   "sha256": "5fd9538c24fd6d16e2e799a362e7d8d0bcf272e7de3cfc3dbf483ca52194a50d",
   "exit_code": 0,
-  "log": "logs/final-readonly-audit-01.log",
+  "log": "independent-checks/final-readonly-audit-01.log",
   "claim_checked": "Erdos883Verified.erdos883_bothQuestions : Erdos883Target.FirstQuestion and Erdos883Second.SecondQuestion",
   "theorem_axioms": [
     "propext",

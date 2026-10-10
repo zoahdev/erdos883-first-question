@@ -19,7 +19,7 @@
       "sha256": "3a0a7f96e9d585d76bdcc894b1f8d30686c5c5cd6ce4b4250b8356d2dcd34f63",
       "command": "wsl -d Ubuntu-24.04 -- bash <workspace>/work/run_lean.sh Erdos883SecondNearComplete.lean -o Erdos883SecondNearComplete.olean -M4096",
       "exit_code": 0,
-      "log": "logs/near-complete-attempt-01.log",
+      "log": "../resumed-20261010/near-complete-attempt-01.log",
       "axioms": [
         "propext",
         "Classical.choice",
@@ -36,7 +36,7 @@
       "sha256": "cd791ff1ff286c3aa12de8eef99bf41bf4bafb915308a4295cdc1fbce5becdc2",
       "command": "wsl -d Ubuntu-24.04 -- bash <workspace>/work/run_lean.sh Erdos883SecondNearCompleteAudit.lean -o Erdos883SecondNearCompleteAudit.olean -M4096",
       "exit_code": 0,
-      "log": "logs/near-complete-audit-01.log",
+      "log": "../resumed-20261010/near-complete-audit-01.log",
       "axioms": [
         "propext",
         "Classical.choice",
