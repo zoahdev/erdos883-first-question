@@ -38,7 +38,8 @@ historical credits, or the pending award status.
 - Whole sandbox command wall time: **35.06 seconds**.
 - Inner GNU time reported maximum RSS **2,374,716 KiB** (about **2.26 GiB**).
 - The shell set an **8 GiB virtual address-space limit** and a **90-second
-  deadline**. Read-only input mounts, an empty environment and a separate
+  deadline**. Read-only input mounts, a cleared environment with explicitly
+  supplied runtime variables and a separate
   network namespace were used; the only host directory mounted writable was
   the audit scratch directory. The sandbox also had private `/tmp` and `/dev`.
 
@@ -61,7 +62,8 @@ not be used as the checker's peak memory. No physical 1 GiB cap is claimed.
   The inner runner is retained to disclose the monitor limitation, not as a
   recommendation to rely on that monitor.
 - Only absolute host-location strings were replaced by symbolic placeholders
-  in the archived outer script, run log and input-identity JSON. The successful
+  in the archived outer script, run log, outer resource record and input-identity
+  JSON. The successful
   checker output and inner resource records are unchanged.
 - For full source reproduction, use `lean/verify-second-question.sh` and its
   build guide at the selected complete-proof commit. A normal module replay
