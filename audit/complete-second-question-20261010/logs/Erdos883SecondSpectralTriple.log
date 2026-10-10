@@ -1,0 +1,6 @@
+'Erdos883.SecondSpectral.tensorTripleWeight_pair_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.tensorTripleWeight_third_expectation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos883.SecondSpectral.tensorTripleL2_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.tensorTripleL2_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

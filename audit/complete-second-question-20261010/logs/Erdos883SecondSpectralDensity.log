@@ -1,0 +1,13 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Erdos883SecondSpectralDensity.lean:86:1: warning: automatically included section variable(s) unused in theorem `Erdos883.SecondSpectral.splitFullTriple_weight`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'Erdos883.SecondSpectral.fullTriangleDensity_fixed_slice' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'Erdos883.SecondSpectral.coordinateKernel_centered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.coordinateKernel_reversible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.coordinatePair_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.coordinateEigenvalue_ge_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]

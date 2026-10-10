@@ -1,0 +1,3 @@
+'Erdos883.SecondSpectral.tensorPairCorrelation_spectral_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.tensorFractionalDefect_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.tensorResidual_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,1 @@
+'Erdos883Second.Near.finite_tripartite_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]

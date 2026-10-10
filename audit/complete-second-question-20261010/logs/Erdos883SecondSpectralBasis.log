@@ -1,0 +1,2 @@
+'Erdos883.SecondSpectral.tensorBasis_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.tensorBasis_resolution' depends on axioms: [propext, Classical.choice, Quot.sound]

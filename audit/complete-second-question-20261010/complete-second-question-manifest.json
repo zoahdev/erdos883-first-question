@@ -1,0 +1,894 @@
+{
+  "formatVersion": 1,
+  "generatedAtUtc": "2026-10-10T11:05:24.515405+00:00",
+  "roots": [
+    "Erdos883SecondCompleteAudit"
+  ],
+  "endpointSelection": "final joint audit",
+  "scope": "Only the Erdos883Second*.lean source dependency closure of the selected endpoint(s).",
+  "excludedLocalSources": [
+    "Erdos883SecondFiniteConstruction",
+    "Erdos883SecondNearCompleteAudit",
+    "Erdos883SecondQuestionOne",
+    "Erdos883SecondQuestionOneVerified",
+    "Erdos883SecondSignatureAudit",
+    "Erdos883SecondSignatureTrianglesAudit",
+    "Erdos883SecondSpectralCheck",
+    "Erdos883SecondSpectralMeasure"
+  ],
+  "pinnedEnvironment": {
+    "leanVersion": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "mathlibCommit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "runtime": "/var/tmp/erdos883-toolchain-20261005/lean-4.33.1-linux/bin",
+    "baseline": "/var/tmp/erdos883-replay-20261005",
+    "runner": "/mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh",
+    "runnerSha256": "50d3f9ac085a97e4c60f7be9298282601911ecd4466fa0e2b1b1e23c42933194"
+  },
+  "dependencyLimitations": [
+    "Mathlib and its transitive dependencies are reused compiled caches; no fresh full Mathlib rebuild is performed.",
+    "CanonicalTarget, Erdos883VerifiedCoverage, and other first-question dependencies are reused independent-objects caches; no fresh first-question source rebuild is performed.",
+    "The local QII modules are recompiled from source only in --compile mode, in the source-derived topological order below.",
+    "A plan manifest alone is not a successful compilation or proof verification result."
+  ],
+  "externalCachedDirectImports": [
+    {
+      "module": "CanonicalTarget",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/independent-objects/CanonicalTarget.olean",
+      "cachedObjectSha256": "45952d952c6e316f36a39441cea87bf7ecb925d326f328f3549a1f98c65aba89"
+    },
+    {
+      "module": "Erdos883NeighborDiscrepancy",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/independent-objects/Erdos883NeighborDiscrepancy.olean",
+      "cachedObjectSha256": "e9daf511ae3aa27a7d0ad8399a6201ffcdbaefa1da7ad749e1e5b43c6554623f"
+    },
+    {
+      "module": "Erdos883TotientDensity",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/independent-objects/Erdos883TotientDensity.olean",
+      "cachedObjectSha256": "e19595cf447fdbac09ae6c1cf70920509d272dd657d1caec912681345d6becc1"
+    },
+    {
+      "module": "Erdos883TotientMoment",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/independent-objects/Erdos883TotientMoment.olean",
+      "cachedObjectSha256": "efde54941b32cc79c9ec3551bfc5e3db25a8b9eff34a374ea30b79fd010c802d"
+    },
+    {
+      "module": "Erdos883VerifiedCoverage",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/independent-objects/Erdos883VerifiedCoverage.olean",
+      "cachedObjectSha256": "9af042ff1142aead23cdaf22d1d995bacb8c8a04b2aed691b278ca76b57d7f70"
+    },
+    {
+      "module": "Lean.Elab.Tactic.Omega",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-toolchain-20261005/lean-4.33.1-linux/lib/lean/Lean/Elab/Tactic/Omega.olean",
+      "cachedObjectSha256": "280aa742e537120eb8e2f436fdc8417e2482b173262df6f88bddfbaea87c770c"
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Fin",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Fin.olean",
+      "cachedObjectSha256": "b154c4875df6ff8d8c146e4424195b2c80b4c065ba31bc2ce28122ad039aecaa"
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Group/Finset/Basic.olean",
+      "cachedObjectSha256": "5b6daf8fb8a469491a156cf9cee931c7f13411a4b9193bf4dc2d40d23d79f615"
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Group/Finset/Piecewise.olean",
+      "cachedObjectSha256": "11fc4ab7dc006ee0468127e552d050272fe81f85eb024939cea94ad8a1d7f1aa"
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Group/Finset/Sigma.olean",
+      "cachedObjectSha256": "c080cdbb8aff2de7eb601acfe76a015d10bd5dc160ead019b1ef08ae2a6083cb"
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Intervals",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Intervals.olean",
+      "cachedObjectSha256": "c533fe245053373b319b30a66cb0a89b7cf2ab706e2ca54d8db57f049989bec5"
+    },
+    {
+      "module": "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Ring/Finset.olean",
+      "cachedObjectSha256": "5613bc8df4c5c18fae2618177b5c3019bc6d278c41fe8789bd7d721ab60be156"
+    },
+    {
+      "module": "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Order/Archimedean/Real/Basic.olean",
+      "cachedObjectSha256": "d689792f6f28228195f1ddc4008aba9ab999620f49cd70c6db2a7ec3c304f9ec"
+    },
+    {
+      "module": "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Order/BigOperators/Group/Finset.olean",
+      "cachedObjectSha256": "deef5869524e749a7fdc811e9a0860b9174a143f204eea0b345adf2dab511987"
+    },
+    {
+      "module": "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Order/BigOperators/GroupWithZero/Finset.olean",
+      "cachedObjectSha256": "a9b0c1dd9a4544bb6e65fd83f2740e2a165726ce1ca2209de900225421453738"
+    },
+    {
+      "module": "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Order/BigOperators/Ring/Finset.olean",
+      "cachedObjectSha256": "da60955e03f1e7fec7c14df0d701537a13b307d9f36d5f3f1187f8a66ff3e6cc"
+    },
+    {
+      "module": "Mathlib.Algebra.Order.Ring.Pow",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Order/Ring/Pow.olean",
+      "cachedObjectSha256": "f43daaa5e6e73289caf27eb3a3598331fb8482190c9ebd4b9d55c0875cf45ced"
+    },
+    {
+      "module": "Mathlib.Analysis.Real.Sqrt",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Real/Sqrt.olean",
+      "cachedObjectSha256": "2fe25b99eee8ed6abe2c640c973778ef93990f04977c75895426fabe4f34cf2f"
+    },
+    {
+      "module": "Mathlib.Combinatorics.SimpleGraph.Maps",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Combinatorics/SimpleGraph/Maps.olean",
+      "cachedObjectSha256": "2e790dbdec4a0344025085198e0e097ab30b143f784139c8800b4bd16a8a8393"
+    },
+    {
+      "module": "Mathlib.Data.Finset.Card",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Card.olean",
+      "cachedObjectSha256": "edd8cceabe354df48b891a4afb211a1201b9283ed9c274e226ac5b2855a4da0a"
+    },
+    {
+      "module": "Mathlib.Data.Finset.Powerset",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Powerset.olean",
+      "cachedObjectSha256": "667384a87b942d6084148a18e1e026c9243eb5e8334db6c996161a68b301897e"
+    },
+    {
+      "module": "Mathlib.Data.Finset.Prod",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Prod.olean",
+      "cachedObjectSha256": "5bf757030e3ca63a10eac3b6b9e2ef2e0235ee75692eedcbf4ef5d9581aeac0c"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.BigOperators",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/BigOperators.olean",
+      "cachedObjectSha256": "b8e090b03ee21561d4a6b8467c161afac29ad8383d90926af40af15a95aa6105"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.EquivFin",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/EquivFin.olean",
+      "cachedObjectSha256": "0ee87166db1662cd2d24ff99d57bccdf109c20fd0f0e38c35320d71f772a7391"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.Option",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Option.olean",
+      "cachedObjectSha256": "3bc9975565849db93d8911782868ed1c9e954df28d84d1f209bce9d0a413f385"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.Pi",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Pi.olean",
+      "cachedObjectSha256": "55c681afa836ac6f76616566ed7f46042648ecf6e7fb0b6813acc120b8e5f539"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.Prod",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Prod.olean",
+      "cachedObjectSha256": "bef38af97e89d7c55fed96860a30bbb07abb2f3e998a627a98a47b1b7f766096"
+    },
+    {
+      "module": "Mathlib.Data.Fintype.Sum",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Sum.olean",
+      "cachedObjectSha256": "3dd774a167e8512ecb4aee0b65f0bbb40ac66dae1ac713c6b531f8fece0298d6"
+    },
+    {
+      "module": "Mathlib.Data.Nat.ChineseRemainder",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/ChineseRemainder.olean",
+      "cachedObjectSha256": "f3f289745e3ce5f4bc5dddf70b1c037022c8f71b4b1854a9551a4af342b6d867"
+    },
+    {
+      "module": "Mathlib.Data.Nat.Periodic",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/Periodic.olean",
+      "cachedObjectSha256": "8ea84d931315db8679d0b44abfaec1688296c621233e511e8a5d9dde831452a2"
+    },
+    {
+      "module": "Mathlib.Data.Nat.Prime.Basic",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Nat/Prime/Basic.olean",
+      "cachedObjectSha256": "9c30e231156e61a8947f6997857b3dc6641982127baaa54c44bea5b901e4912b"
+    },
+    {
+      "module": "Mathlib.Data.Real.Basic",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Real/Basic.olean",
+      "cachedObjectSha256": "559efb0e853f55be8ae0de97c10d22f58e7ed4b71a5e2e4c92bdfe764636b724"
+    },
+    {
+      "module": "Mathlib.Tactic.FieldSimp",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FieldSimp.olean",
+      "cachedObjectSha256": "70c6925cd9edb780a85b5bf695d5ecc45eb1bb650c57e2729c8dbfd8b8c902d4"
+    },
+    {
+      "module": "Mathlib.Tactic.FinCases",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FinCases.olean",
+      "cachedObjectSha256": "8f3dfc361bde73e4dfcb36faeb341849e935e7b4fd479776cdd79384bfaab469"
+    },
+    {
+      "module": "Mathlib.Tactic.Linarith",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Linarith.olean",
+      "cachedObjectSha256": "f87d414cd6ee07958edb9eb1ccb405173ee00e2df9dbbbffdb526a485c92d322"
+    },
+    {
+      "module": "Mathlib.Tactic.NormNum",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/NormNum.olean",
+      "cachedObjectSha256": "f6be00ff19229f44a6a58dff006a3896f6da3dee197d730fb566889c0c532843"
+    },
+    {
+      "module": "Mathlib.Tactic.NormNum.Prime",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/NormNum/Prime.olean",
+      "cachedObjectSha256": "bcff5a281e7603abaae8c3a3995c2c9a7019cfc35f6156736ebd2f276cf188c2"
+    },
+    {
+      "module": "Mathlib.Tactic.Positivity",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Positivity.olean",
+      "cachedObjectSha256": "11440b335f1cd98c125aeae637daaf01c5c90386929d40a15db7bfeea47ace8a"
+    },
+    {
+      "module": "Mathlib.Tactic.Ring",
+      "scope": "direct external import; transitive cached dependency closure is not enumerated or rebuilt",
+      "cachedObjectPath": "/var/tmp/erdos883-replay-20261005/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean",
+      "cachedObjectSha256": "0d6d9cfc5fb5f47b125e7a85bb0126257337c279edd7a735f4c5aaf810e38061"
+    }
+  ],
+  "compileOrder": [
+    {
+      "index": 1,
+      "module": "Erdos883SecondPrimeSupport",
+      "source": "Erdos883SecondPrimeSupport.lean",
+      "sourceSha256": "9ceb6c8018866fa9834d7b115737ad87b1c8d08923b09adea38285d9e751a14d",
+      "imports": [
+        "Erdos883TotientDensity",
+        "Mathlib.Algebra.BigOperators.Ring.Finset"
+      ]
+    },
+    {
+      "index": 2,
+      "module": "Erdos883SecondCounts",
+      "source": "Erdos883SecondCounts.lean",
+      "sourceSha256": "cd81548567ded37a1004645b3c672630807fed7b2c02f650e4baa24a6ee6bdbd",
+      "imports": [
+        "Erdos883NeighborDiscrepancy",
+        "Erdos883SecondPrimeSupport",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.FieldSimp"
+      ]
+    },
+    {
+      "index": 3,
+      "module": "Erdos883SecondMoment",
+      "source": "Erdos883SecondMoment.lean",
+      "sourceSha256": "cd1fc17532e4d5b90bb4dd1d742a1ec043c80f6a8ea90345c2afb58d3dda2959",
+      "imports": [
+        "Erdos883TotientMoment"
+      ]
+    },
+    {
+      "index": 4,
+      "module": "Erdos883SecondMomentBound",
+      "source": "Erdos883SecondMomentBound.lean",
+      "sourceSha256": "709322a60f7a688730202078f36ddc2228a3fdcd002cbc21d6d128241869a27a",
+      "imports": [
+        "Erdos883SecondMoment",
+        "Mathlib.Algebra.Order.Ring.Pow"
+      ]
+    },
+    {
+      "index": 5,
+      "module": "Erdos883SecondGoodProfiles",
+      "source": "Erdos883SecondGoodProfiles.lean",
+      "sourceSha256": "c0fe072fd51428538cf643560e5b227ffa9a1649e4960c4573e5c33418bd42ac",
+      "imports": [
+        "Erdos883SecondMomentBound"
+      ]
+    },
+    {
+      "index": 6,
+      "module": "Erdos883SecondQuestion",
+      "source": "Erdos883SecondQuestion.lean",
+      "sourceSha256": "9b51a7064de6a55ecf69cbdaaac883cb939525bb5df020dc1aa603c4c8489f20",
+      "imports": [
+        "CanonicalTarget",
+        "Mathlib.Combinatorics.SimpleGraph.Maps"
+      ]
+    },
+    {
+      "index": 7,
+      "module": "Erdos883SecondQuestionFinsets",
+      "source": "Erdos883SecondQuestionFinsets.lean",
+      "sourceSha256": "a33e470adc13fb2199d706fd3229b2ca8c14e3c6520b98ba1ee58841e663d554",
+      "imports": [
+        "Erdos883SecondQuestion"
+      ]
+    },
+    {
+      "index": 8,
+      "module": "Erdos883SecondNearBase",
+      "source": "Erdos883SecondNearBase.lean",
+      "sourceSha256": "ef646bac0c7cb4849424ba079206721e35221512d0e78009209494a27d008056",
+      "imports": [
+        "Erdos883SecondCounts",
+        "Erdos883SecondGoodProfiles",
+        "Erdos883SecondQuestionFinsets"
+      ]
+    },
+    {
+      "index": 9,
+      "module": "Erdos883SecondNearConstruction",
+      "source": "Erdos883SecondNearConstruction.lean",
+      "sourceSha256": "4bc2673dd99421c5cdc9b949611f0586c345ca21b31dd887503b11c79054ca58",
+      "imports": [
+        "Erdos883SecondNearBase"
+      ]
+    },
+    {
+      "index": 10,
+      "module": "Erdos883SecondNearParameters",
+      "source": "Erdos883SecondNearParameters.lean",
+      "sourceSha256": "759ea806958b7ab881ece8e4db1ba723dd3d92711ce9195ae0fad4671165c7d0",
+      "imports": [
+        "Erdos883SecondNearConstruction"
+      ]
+    },
+    {
+      "index": 11,
+      "module": "Erdos883SecondNearThreshold",
+      "source": "Erdos883SecondNearThreshold.lean",
+      "sourceSha256": "ca0b548e9d473ae10a6e0df4503a361dafa97fcc86b98ddbd4390c628bd38509",
+      "imports": [
+        "Erdos883SecondNearBase"
+      ]
+    },
+    {
+      "index": 12,
+      "module": "Erdos883SecondNearComplete",
+      "source": "Erdos883SecondNearComplete.lean",
+      "sourceSha256": "3a0a7f96e9d585d76bdcc894b1f8d30686c5c5cd6ce4b4250b8356d2dcd34f63",
+      "imports": [
+        "Erdos883SecondNearParameters",
+        "Erdos883SecondNearThreshold"
+      ]
+    },
+    {
+      "index": 13,
+      "module": "Erdos883SecondAssembly",
+      "source": "Erdos883SecondAssembly.lean",
+      "sourceSha256": "4b9aa22e6b6df72804d29b81a44275dd4d8f3f0b4ee2b0afab67ba77f1580277",
+      "imports": [
+        "Erdos883SecondNearComplete"
+      ]
+    },
+    {
+      "index": 14,
+      "module": "Erdos883SecondFarBudgets",
+      "source": "Erdos883SecondFarBudgets.lean",
+      "sourceSha256": "7674f12a84cd8eaf03499e34aaed7fdb1a18f1765e538846b49395e828112e94",
+      "imports": [
+        "Mathlib.Analysis.Real.Sqrt",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Positivity"
+      ]
+    },
+    {
+      "index": 15,
+      "module": "Erdos883SecondSignatureCRT",
+      "source": "Erdos883SecondSignatureCRT.lean",
+      "sourceSha256": "812c2eba1c5db38e83c4d44647e980ad41ba491a5a79bbda7c3e9d91c8ea7ade",
+      "imports": [
+        "Mathlib.Data.Nat.ChineseRemainder",
+        "Mathlib.Data.Nat.Prime.Basic",
+        "Mathlib.Data.Fintype.EquivFin",
+        "Mathlib.Data.Fintype.Pi",
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Order.BigOperators.Ring.Finset"
+      ]
+    },
+    {
+      "index": 16,
+      "module": "Erdos883SecondSpectralKernel",
+      "source": "Erdos883SecondSpectralKernel.lean",
+      "sourceSha256": "ce70bd82199633f644f8f807234009b47dc8c07d9569fc849d6f6ae10ae6e9f6",
+      "imports": [
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.NormNum"
+      ]
+    },
+    {
+      "index": 17,
+      "module": "Erdos883SecondSpectralBasis",
+      "source": "Erdos883SecondSpectralBasis.lean",
+      "sourceSha256": "8d823d905f2bb853e4aceedc0e09b509456f1fdcaf81cd0897e01570ce6d44d2",
+      "imports": [
+        "Erdos883SecondSpectralKernel",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Data.Fintype.Pi"
+      ]
+    },
+    {
+      "index": 18,
+      "module": "Erdos883SecondSignatureWeights",
+      "source": "Erdos883SecondSignatureWeights.lean",
+      "sourceSha256": "2458e1d1db0a8471e449cfb3916b7709bc09ccf312ca712332b663149f70fc1b",
+      "imports": [
+        "Erdos883SecondSignatureCRT",
+        "Erdos883SecondSpectralBasis",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "index": 19,
+      "module": "Erdos883SecondSignaturePrefix",
+      "source": "Erdos883SecondSignaturePrefix.lean",
+      "sourceSha256": "9d89b7fe83c5892e01641db784740ed931f23e4866e71f076c7b17bf6bcaad50",
+      "imports": [
+        "Erdos883SecondSignatureWeights",
+        "Mathlib.Data.Nat.Periodic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "index": 20,
+      "module": "Erdos883SecondSignatureFrequency",
+      "source": "Erdos883SecondSignatureFrequency.lean",
+      "sourceSha256": "6abb0b35ffa926b8f922a50ee5956a9e07793cbdb93c8f7bc9a78a859d9809ab",
+      "imports": [
+        "Erdos883SecondSignaturePrefix"
+      ]
+    },
+    {
+      "index": 21,
+      "module": "Erdos883SecondSpectralFourier",
+      "source": "Erdos883SecondSpectralFourier.lean",
+      "sourceSha256": "246d732b6d4885dcadac510e16cf9144680c763e6f0b251eed50359519b5d5f6",
+      "imports": [
+        "Erdos883SecondSpectralBasis"
+      ]
+    },
+    {
+      "index": 22,
+      "module": "Erdos883SecondSpectralPair",
+      "source": "Erdos883SecondSpectralPair.lean",
+      "sourceSha256": "5ff14de15e968a78c564cc5666978414af4fcda31b630af2684b3aa9d4c66304",
+      "imports": [
+        "Erdos883SecondSpectralFourier",
+        "Mathlib.Data.Fintype.BigOperators"
+      ]
+    },
+    {
+      "index": 23,
+      "module": "Erdos883SecondSpectralProduct",
+      "source": "Erdos883SecondSpectralProduct.lean",
+      "sourceSha256": "4ee1e8826e254776467d25d088b62e794282889beb858abf71708e06635f3b08",
+      "imports": [
+        "Erdos883SecondSpectralKernel",
+        "Mathlib.Data.Nat.Prime.Basic",
+        "Mathlib.Data.Finset.Card",
+        "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+        "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+        "Lean.Elab.Tactic.Omega"
+      ]
+    },
+    {
+      "index": 24,
+      "module": "Erdos883SecondSpectralGap",
+      "source": "Erdos883SecondSpectralGap.lean",
+      "sourceSha256": "345f1d85abe02f4cf1a6301f8137b14cff698efa7d2b27fa684777debc78a711",
+      "imports": [
+        "Erdos883SecondSpectralProduct"
+      ]
+    },
+    {
+      "index": 25,
+      "module": "Erdos883SecondStabilityBounds",
+      "source": "Erdos883SecondStabilityBounds.lean",
+      "sourceSha256": "33c6b55af0cbf700853d125f23ca93a308d01315b89c61108b5f1159220ef2dc",
+      "imports": [
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "index": 26,
+      "module": "Erdos883SecondSpectralStability",
+      "source": "Erdos883SecondSpectralStability.lean",
+      "sourceSha256": "c7470b573f07bf0f383d6e72d241877a5e4b9e1df1c32e4d09ca4591f2ebd75c",
+      "imports": [
+        "Erdos883SecondSpectralPair",
+        "Erdos883SecondSpectralGap",
+        "Erdos883SecondStabilityBounds"
+      ]
+    },
+    {
+      "index": 27,
+      "module": "Erdos883SecondSpectralConditional",
+      "source": "Erdos883SecondSpectralConditional.lean",
+      "sourceSha256": "2a401680fb26e9c7dd83627df76916dfd78385a22e440aeffe7ece95343091a2",
+      "imports": [
+        "Erdos883SecondSpectralStability"
+      ]
+    },
+    {
+      "index": 28,
+      "module": "Erdos883SecondSpectralFull",
+      "source": "Erdos883SecondSpectralFull.lean",
+      "sourceSha256": "7b340c69bd7bc527b1d9db387f4c64ce1865fe17b06b958381548d7fb8d92987",
+      "imports": [
+        "Erdos883SecondSpectralConditional",
+        "Mathlib.Data.Fintype.Option"
+      ]
+    },
+    {
+      "index": 29,
+      "module": "Erdos883SecondSignatureFull",
+      "source": "Erdos883SecondSignatureFull.lean",
+      "sourceSha256": "836c240cc36c5a9442168dce2ae9adf83be4a934f30a9cc3158539c4bb8be3a7",
+      "imports": [
+        "Erdos883SecondSignatureFrequency",
+        "Erdos883SecondSpectralFull"
+      ]
+    },
+    {
+      "index": 30,
+      "module": "Erdos883SecondSignatureOccupancy",
+      "source": "Erdos883SecondSignatureOccupancy.lean",
+      "sourceSha256": "9d922eb789e3f49f8b51eb4c605d2f2ad87b66d2a9f7fb5debd3dca4a9982338",
+      "imports": [
+        "Erdos883SecondSignatureFull",
+        "Erdos883SecondNearBase"
+      ]
+    },
+    {
+      "index": 31,
+      "module": "Erdos883SecondSignatureOutside",
+      "source": "Erdos883SecondSignatureOutside.lean",
+      "sourceSha256": "f29eb1d40b7eb85545d305fee41e84b36a2e0dad70c37ba5b8647e0c86e69169",
+      "imports": [
+        "Erdos883SecondSignatureOccupancy"
+      ]
+    },
+    {
+      "index": 32,
+      "module": "Erdos883SecondSignatureBounds",
+      "source": "Erdos883SecondSignatureBounds.lean",
+      "sourceSha256": "3a9eca213cf931a68bb4dfd77996b06622d1ac53e3443ee069b8e207431a2d65",
+      "imports": [
+        "Erdos883SecondSignatureOutside"
+      ]
+    },
+    {
+      "index": 33,
+      "module": "Erdos883SecondCouplingNorm",
+      "source": "Erdos883SecondCouplingNorm.lean",
+      "sourceSha256": "c95b6c6c0c7cd082ac2c86ba8ecdee382e80bbd6f07a9eec2fd67dc53ab2db48",
+      "imports": [
+        "Erdos883SecondMomentBound",
+        "Mathlib.Data.Fintype.Prod",
+        "Mathlib.Data.Fintype.Sum"
+      ]
+    },
+    {
+      "index": 34,
+      "module": "Erdos883SecondCouplingEstimate",
+      "source": "Erdos883SecondCouplingEstimate.lean",
+      "sourceSha256": "b64389eecac95829ccfa4a7c56688271198e9cca5f95a330de49259de382c591",
+      "imports": [
+        "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+        "Mathlib.Analysis.Real.Sqrt",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "index": 35,
+      "module": "Erdos883SecondSpectralTriple",
+      "source": "Erdos883SecondSpectralTriple.lean",
+      "sourceSha256": "fa15f953b99028096a4be9bb60aed1d8c41a452e29122ef2c292cbcbff3c885f",
+      "imports": [
+        "Erdos883SecondSpectralConditional",
+        "Erdos883SecondCouplingNorm",
+        "Erdos883SecondCouplingEstimate"
+      ]
+    },
+    {
+      "index": 36,
+      "module": "Erdos883SecondSpectralCoupling",
+      "source": "Erdos883SecondSpectralCoupling.lean",
+      "sourceSha256": "b7a1d9ff6562231c8b6b2ad18ae5584240999296813c576661252eff3a4058af",
+      "imports": [
+        "Erdos883SecondSpectralTriple"
+      ]
+    },
+    {
+      "index": 37,
+      "module": "Erdos883SecondSpectralDensity",
+      "source": "Erdos883SecondSpectralDensity.lean",
+      "sourceSha256": "b6a775e300722499fb3be6012d50d1545beb6934d38c04bac3f747e402dd2884",
+      "imports": [
+        "Erdos883SecondSpectralFull",
+        "Erdos883SecondSpectralCoupling"
+      ]
+    },
+    {
+      "index": 38,
+      "module": "Erdos883SecondProductError",
+      "source": "Erdos883SecondProductError.lean",
+      "sourceSha256": "97b9119e307a292b503e46b5272edccc9a0ea2144f8fa94f51f71f99534c7e0a",
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+        "Mathlib.Data.Fintype.Prod",
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "index": 39,
+      "module": "Erdos883SecondLinkCounts",
+      "source": "Erdos883SecondLinkCounts.lean",
+      "sourceSha256": "dd960e408e162fe82c774f30cbd4a157dcc0859d4d4a7032156e1d11c48215dd",
+      "imports": [
+        "Mathlib.Data.Finset.Powerset",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+        "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    {
+      "index": 40,
+      "module": "Erdos883SecondLinkDensity",
+      "source": "Erdos883SecondLinkDensity.lean",
+      "sourceSha256": "1f903b9e8a832923dd69c0e17ecc1a9c1b79665068503dfa0274d734e3c527c1",
+      "imports": [
+        "Erdos883SecondLinkCounts",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "index": 41,
+      "module": "Erdos883SecondLinkTripartite",
+      "source": "Erdos883SecondLinkTripartite.lean",
+      "sourceSha256": "15268913ae2cab431cf95a49ecfbc8f9e00dce69aa6777f1dad3c69550de4793",
+      "imports": [
+        "Erdos883SecondLinkCounts",
+        "Erdos883SecondQuestionFinsets"
+      ]
+    },
+    {
+      "index": 42,
+      "module": "Erdos883SecondLinkTriangles",
+      "source": "Erdos883SecondLinkTriangles.lean",
+      "sourceSha256": "4db36a24d4387c80ee78871ab0bcd8011178638f54405ee6e411625894dc945e",
+      "imports": [
+        "Erdos883SecondLinkDensity",
+        "Erdos883SecondLinkTripartite",
+        "Mathlib.Algebra.BigOperators.Ring.Finset"
+      ]
+    },
+    {
+      "index": 43,
+      "module": "Erdos883SecondLinkTailPairs",
+      "source": "Erdos883SecondLinkTailPairs.lean",
+      "sourceSha256": "0711658517c31f7e335499bfd6a743d6eda8cc462713aabc58df5fcaf60e9ce9",
+      "imports": [
+        "Erdos883SecondLinkTriangles",
+        "Mathlib.Data.Finset.Prod",
+        "Mathlib.Algebra.BigOperators.Intervals",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Data.Nat.Prime.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    {
+      "index": 44,
+      "module": "Erdos883SecondLinkRealDensity",
+      "source": "Erdos883SecondLinkRealDensity.lean",
+      "sourceSha256": "dd98929e52d6b589a3825c3312df514d74829f2eb9565d8b8c19c15253763f59",
+      "imports": [
+        "Erdos883SecondLinkTriangles",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith"
+      ]
+    },
+    {
+      "index": 45,
+      "module": "Erdos883SecondLinkTailTriangles",
+      "source": "Erdos883SecondLinkTailTriangles.lean",
+      "sourceSha256": "89ffde7550b4a83c8e4210a702bb3f4bf4cde17ec738ede24e8411e7970109f6",
+      "imports": [
+        "Erdos883SecondLinkTailPairs",
+        "Erdos883SecondLinkRealDensity"
+      ]
+    },
+    {
+      "index": 46,
+      "module": "Erdos883SecondSignatureTriangles",
+      "source": "Erdos883SecondSignatureTriangles.lean",
+      "sourceSha256": "e4d7b5711920c533c7bf9da76aefc0741d0e0b6f0430e8e8c71d7dea519c7629",
+      "imports": [
+        "Erdos883SecondSignatureOccupancy",
+        "Erdos883SecondSpectralDensity",
+        "Erdos883SecondProductError",
+        "Erdos883SecondLinkTailTriangles"
+      ]
+    },
+    {
+      "index": 47,
+      "module": "Erdos883SecondSpectralOdd",
+      "source": "Erdos883SecondSpectralOdd.lean",
+      "sourceSha256": "357b8cedfcb0941a8689b0da91d1d033a52d5e2791b9f44d730d3000bb7e2fcb",
+      "imports": [
+        "Erdos883SecondSpectralDensity"
+      ]
+    },
+    {
+      "index": 48,
+      "module": "Erdos883SecondSixCoordinate",
+      "source": "Erdos883SecondSixCoordinate.lean",
+      "sourceSha256": "160f4262cec55ecf143ca0aeb4664470504f7de80b9d6da73c635d7265106290",
+      "imports": [
+        "Erdos883SecondCouplingNorm",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Algebra.BigOperators.Fin",
+        "Mathlib.Tactic.NormNum.Prime"
+      ]
+    },
+    {
+      "index": 49,
+      "module": "Erdos883SecondTensorPushforward",
+      "source": "Erdos883SecondTensorPushforward.lean",
+      "sourceSha256": "6f1c104af678efb634b45af5efbbb6bed6dad274f458edf50d6ae722d1dca49c",
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Data.Fintype.Pi",
+        "Mathlib.Data.Fintype.BigOperators",
+        "Mathlib.Data.Real.Basic"
+      ]
+    },
+    {
+      "index": 50,
+      "module": "Erdos883SecondSixTensor",
+      "source": "Erdos883SecondSixTensor.lean",
+      "sourceSha256": "6e58f1c5da984603471c378b2b9b98e013a1350fbfb2a932e1944e63eef58071",
+      "imports": [
+        "Erdos883SecondSixCoordinate",
+        "Erdos883SecondTensorPushforward",
+        "Erdos883SecondSpectralTriple"
+      ]
+    },
+    {
+      "index": 51,
+      "module": "Erdos883SecondSixBlock",
+      "source": "Erdos883SecondSixBlock.lean",
+      "sourceSha256": "b153dc03a962514a16d876ad88b6c16f762eb5a08638a6a13a1b0f8a47871436",
+      "imports": [
+        "Mathlib.Data.Fintype.Pi",
+        "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "index": 52,
+      "module": "Erdos883SecondSelectionMoments",
+      "source": "Erdos883SecondSelectionMoments.lean",
+      "sourceSha256": "d432b061ba8eeca0ab9706f29ff950270a4940e41e30278fd280e813281529b9",
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Ring.Finset",
+        "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+        "Mathlib.Data.Fintype.Pi",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "index": 53,
+      "module": "Erdos883SecondSixFractional",
+      "source": "Erdos883SecondSixFractional.lean",
+      "sourceSha256": "a3678c01895d90ace12769f7ae47a6afc5d275dba0df9c4ef432a9f0d0adba13",
+      "imports": [
+        "Erdos883SecondSixBlock",
+        "Erdos883SecondSelectionMoments"
+      ]
+    },
+    {
+      "index": 54,
+      "module": "Erdos883SecondSixMean",
+      "source": "Erdos883SecondSixMean.lean",
+      "sourceSha256": "4ffc2d824696e0c8d6c39c73f9e703d8c4a3bdff9cd85d5a56fccf3d771f34fc",
+      "imports": [
+        "Erdos883SecondSixTensor",
+        "Erdos883SecondSixFractional",
+        "Erdos883SecondSpectralFull"
+      ]
+    },
+    {
+      "index": 55,
+      "module": "Erdos883SecondSpectralGlobal",
+      "source": "Erdos883SecondSpectralGlobal.lean",
+      "sourceSha256": "a2636731f8108c818f7180206c04b9a91bfa2e5b1c414e742f831522946c3e1e",
+      "imports": [
+        "Erdos883SecondSpectralOdd",
+        "Erdos883SecondSixMean"
+      ]
+    },
+    {
+      "index": 56,
+      "module": "Erdos883SecondFarComplete",
+      "source": "Erdos883SecondFarComplete.lean",
+      "sourceSha256": "ee65672899ee594ddd61fafb320f8f62ae0e8f373c90a21de0b9207d03c97af8",
+      "imports": [
+        "Erdos883SecondAssembly",
+        "Erdos883SecondFarBudgets",
+        "Erdos883SecondSignatureBounds",
+        "Erdos883SecondSignatureTriangles",
+        "Erdos883SecondSpectralGlobal"
+      ]
+    },
+    {
+      "index": 57,
+      "module": "Erdos883SecondCompleteAudit",
+      "source": "Erdos883SecondCompleteAudit.lean",
+      "sourceSha256": "9c04f92ca6d7a8c9f2820cc77255307c6b46b11f5b0abdb22ffab2e154901932",
+      "imports": [
+        "Erdos883SecondFarComplete",
+        "Erdos883VerifiedCoverage"
+      ]
+    }
+  ]
+}

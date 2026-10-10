@@ -1,0 +1,30 @@
+erdos883_bothQuestions : And Erdos883Target.FirstQuestion Erdos883Second.SecondQuestion
+def Erdos883Target.FirstQuestion : Prop :=
+∀ (n : ℕ),
+  ∀ A ⊆ Finset.Icc 1 n,
+    n / 2 + n / 3 - n / 6 < A.card →
+      ∀ (l : ℕ),
+        Odd l → 3 ≤ l → l ≤ n / 3 + 1 → l ∈ (SimpleGraph.induce (↑A) Erdos883Target.coprimeGraph).oddCycleLengths
+def Erdos883Second.SecondQuestion : Prop :=
+∀ (l : ℕ),
+  1 ≤ l →
+    ∃ N, ∀ (n : ℕ), N ≤ n → ∀ A ⊆ Finset.Icc 1 n, n / 2 + n / 3 - n / 6 < A.card → Erdos883Second.ContainsTripartite A l
+def Erdos883Second.ContainsTripartite : Finset ℕ → ℕ → Prop :=
+fun A l => ∃ f, Function.Injective ⇑f
+def Erdos883Second.tripartiteGraph : (l : ℕ) → SimpleGraph (Erdos883Second.TripartiteVertex l) :=
+fun l => SimpleGraph.comap Erdos883Second.part ⊤
+def Erdos883Second.part : {l : ℕ} → Erdos883Second.TripartiteVertex l → Fin 3 :=
+fun {l} x =>
+  match x with
+  | Sum.inl val => 0
+  | Sum.inr (Sum.inl val) => 1
+  | Sum.inr (Sum.inr val) => 2
+def SimpleGraph.cycleLengths.{u_1} : {α : Type u_1} → SimpleGraph α → Set ℕ :=
+fun {α} G => {m | ∃ a w, w.IsCycle ∧ w.length = m}
+def SimpleGraph.oddCycleLengths.{u_1} : {α : Type u_1} → SimpleGraph α → Set ℕ :=
+fun {α} G => {m | m ∈ G.cycleLengths ∧ Odd m}
+'Erdos883Verified.erdos883_firstQuestion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.farBranch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.secondQuestion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Verified.erdos883_secondQuestion_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Verified.erdos883_bothQuestions' depends on axioms: [propext, Classical.choice, Quot.sound]

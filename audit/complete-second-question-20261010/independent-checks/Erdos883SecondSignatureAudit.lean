@@ -1,0 +1,16 @@
+import Erdos883SecondSignatureBounds
+
+#check Erdos883Second.Signature.signature_frequency_l1_primes
+#check Erdos883Second.Signature.full_signature_frequency_l1
+#check Erdos883Second.Signature.full_occupancy_mean_lower_of_dense
+#check Erdos883Second.Signature.full_occupancy_outside_lower_of_far
+#print axioms Erdos883Second.Signature.residueMap_bijective
+#print axioms Erdos883Second.Signature.periodCount_div_modulus
+#print axioms Erdos883Second.Signature.residuePrefixCount_error
+#print axioms Erdos883Second.Signature.signature_frequency_l1_primes
+#print axioms Erdos883Second.Signature.full_signature_frequency_l1
+#print axioms Erdos883Second.Signature.occupancy_weight
+#print axioms Erdos883Second.Signature.full_occupancy_mean_error
+#print axioms Erdos883Second.Signature.full_occupancy_outside_error
+#print axioms Erdos883Second.Signature.full_occupancy_mean_lower_of_dense
+#print axioms Erdos883Second.Signature.full_occupancy_outside_lower_of_far

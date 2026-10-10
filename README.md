@@ -1,14 +1,14 @@
-# Erdős Problem 883: first-question all-n proof — Yicheng Pan (潘奕成, zoahdev)
+# Erdős Problem 883: both questions — Yicheng Pan (潘奕成, zoahdev)
 
 **The first question is proved for every natural number n.** This repository
 contains the unchanged Lean proof source, the aligned manuscript, and a
-separate independent rebuild audit. The second question is outside this contribution.
+separate independent rebuild audit. The independent second-question development and joint audit are now included on this branch.
 
 Author: **Yicheng Pan (潘奕成), GitHub: zoahdev**.
 
 [English / 中文 author and contribution summary](https://zoahdev.github.io/erdos-883/) · [Public proof claim](https://www.erdosproblems.com/forum/thread/883/proof-claims)
 
-中文：潘奕成（zoahdev）在 Donald Della Pietra 的渐近工作基础上完成埃尔德什第 883 题第一问的全 n 证明与 Lean 形式化；第二问不属于此贡献。
+中文：潘奕成（zoahdev）在 Donald Della Pietra 的渐近工作基础上完成埃尔德什第 883 题第一问的全 n 证明与 Lean 形式化；本分支新增第二问的独立证明与 Lean 形式化，并合并检查两问。
 
 GitHub: [zoahdev](https://github.com/zoahdev). Erdős Problems account:
 [yichengpan](https://www.erdosproblems.com/forum/user/yichengpan).
@@ -22,6 +22,20 @@ These are Yicheng Pan's public accounts for this contribution.
 - [Canonical statement and axiom audit](audit/VERIFY_CANONICAL_REPLAY.log)
 - [Per-module rebuild receipt](audit/MODULE_KERNEL_REPLAY_RECEIPT.json)
 - [Reproduction errata](REPRODUCTION_ERRATA.txt)
+
+## Complete two-question formalization on this branch
+
+The new second-question theorem is `Erdos883Second.secondQuestion`.
+The combined theorem is `Erdos883Verified.erdos883_bothQuestions`.
+The [raw statement audit](lean/Erdos883SecondCompleteAudit.lean),
+[reproduction guide](lean/SECOND_QUESTION_README.md), and
+[57-module source check](audit/complete-second-question-20261010)
+record the actual coverage, standard axiom dependencies and cache limits.
+
+The second question remains historically credited to Gábor N. Sárközy (1999).
+The new derivation and formalization are substantially AI-assisted.
+The earlier first-question proof, attribution and independent rebuild records
+below are preserved. Official submission review remains pending.
 
 ## Exact scope
 

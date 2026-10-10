@@ -1,0 +1,2 @@
+'Erdos883Second.Far.coupling_expectation_sq_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Far.coupling_expectation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

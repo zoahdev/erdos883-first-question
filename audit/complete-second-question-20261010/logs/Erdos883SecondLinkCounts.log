@@ -1,0 +1,6 @@
+'Erdos883Second.Link.star_count_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.edge_count_le_highCenters' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.star_count_le_of_no_biclique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.biclique_of_star_count_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.high_degree_bound_of_no_biclique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.biclique_of_high_degree_count' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,9 @@
+'Erdos883Second.Link.orderedTriangleCount_small_of_no_link_biclique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos883Second.Link.ordered_coprime_triangles_small_of_no_tripartite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos883Second.Link.ordered_coprime_triangles_eventually_small' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

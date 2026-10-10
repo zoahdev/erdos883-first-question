@@ -1,0 +1,5 @@
+'Erdos883Second.Link.containsTripartite_of_link_biclique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.containsTripartite_of_link_high_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.containsTripartite_of_irreflexive_link_biclique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

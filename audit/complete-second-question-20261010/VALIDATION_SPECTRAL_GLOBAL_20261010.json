@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "validatedAtUTC": "2026-10-10T11:06:00.4997737Z",
+  "leanVersion": "4.33.1",
+  "modules": [
+    {
+      "source": "Erdos883SecondSpectralStability.lean",
+      "object": "Erdos883SecondSpectralStability.olean",
+      "sourceSHA256": "C7470B573F07BF0F383D6E72D241877A5E4B9E1DF1C32E4D09CA4591F2EBD75C",
+      "objectSHA256": "34143D65505B88CA6CABB257BAED5C928E87627695B83A67A38A17F7825AD504",
+      "exitCode": 0,
+      "log": "logs/Erdos883SecondSpectralStability-final.log",
+      "command": "wsl -d Ubuntu-24.04 -- bash /mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh Erdos883SecondSpectralStability.lean -o Erdos883SecondSpectralStability.olean -M4096",
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\n'Erdos883.SecondSpectral.tensorPairCorrelation_spectral_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.tensorFractionalDefect_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.tensorResidual_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n\u0000"
+    },
+    {
+      "source": "Erdos883SecondSpectralConditional.lean",
+      "object": "Erdos883SecondSpectralConditional.olean",
+      "sourceSHA256": "2A401680FB26E9C7DD83627DF76916DFD78385A22E440AEFFE7ECE95343091A2",
+      "objectSHA256": "1F5A639D58DE7D394CEDB457605BFCD7816CBF894951A1C6BC0E8A0C6F990FBE",
+      "exitCode": 0,
+      "log": "logs/Erdos883SecondSpectralConditional-final.log",
+      "command": "wsl -d Ubuntu-24.04 -- bash /mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh Erdos883SecondSpectralConditional.lean -o Erdos883SecondSpectralConditional.olean -M4096",
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\n'Erdos883.SecondSpectral.tensorThreeMean_conditional_defect' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.tensorOutsideMass_small' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n\u0000"
+    },
+    {
+      "source": "Erdos883SecondSpectralTriple.lean",
+      "object": "Erdos883SecondSpectralTriple.olean",
+      "sourceSHA256": "FA15F953B99028096A4BE9BB60AED1D8C41A452E29122EF2C292CBCBFF3C885F",
+      "objectSHA256": "21F0108B39B6D0729BB1FDB82C5FF9C64087F8EA14A9F2D53333391BEF438EDC",
+      "exitCode": 0,
+      "log": "logs/Erdos883SecondSpectralTriple-final.log",
+      "command": "wsl -d Ubuntu-24.04 -- bash /mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh Erdos883SecondSpectralTriple.lean -o Erdos883SecondSpectralTriple.olean -M4096",
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\n'Erdos883.SecondSpectral.tensorTripleWeight_pair_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.tensorTripleWeight_third_expectation' depends on axioms: [propext,\r\n Classical.choice,\r\n Quot.sound]\r\n'Erdos883.SecondSpectral.tensorTripleL2_product' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.tensorTripleL2_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n\u0000"
+    },
+    {
+      "source": "Erdos883SecondSpectralCoupling.lean",
+      "object": "Erdos883SecondSpectralCoupling.olean",
+      "sourceSHA256": "B7A1D9FF6562231C8B6B2AD18AE5584240999296813C576661252EFF3A4058AF",
+      "objectSHA256": "EC985B72D38CBF4155723CE5F0D68494B57B2D9F7B4BEB613E5629427024C6EF",
+      "exitCode": 0,
+      "log": "logs/Erdos883SecondSpectralCoupling-final.log",
+      "command": "wsl -d Ubuntu-24.04 -- bash /mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh Erdos883SecondSpectralCoupling.lean -o Erdos883SecondSpectralCoupling.olean -M4096",
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\n'Erdos883.SecondSpectral.tensorTriple_odd_odd_even_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.tensorTriple_fixed_two_three_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n\u0000"
+    },
+    {
+      "source": "Erdos883SecondSpectralFull.lean",
+      "object": "Erdos883SecondSpectralFull.olean",
+      "sourceSHA256": "7B340C69BD7BC527B1D9DB387F4C64CE1865FE17B06B958381548D7FB8D92987",
+      "objectSHA256": "FCCC30FD3791EF0D90C3FDDE4F94FE28839E292775F556B28E457B0CBF573FBA",
+      "exitCode": 0,
+      "log": "logs/Erdos883SecondSpectralFull-final.log",
+      "command": "wsl -d Ubuntu-24.04 -- bash /mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh Erdos883SecondSpectralFull.lean -o Erdos883SecondSpectralFull.olean -M4096",
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\n'Erdos883.SecondSpectral.fullOutsideMass_spectral_small' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n\u0000"
+    },
+    {
+      "source": "Erdos883SecondSpectralDensity.lean",
+      "object": "Erdos883SecondSpectralDensity.olean",
+      "sourceSHA256": "B6A775E300722499FB3BE6012D50D1545BEB6934D38C04BAC3F747E402DD2884",
+      "objectSHA256": "AAD3A980B71CFE948906AD6AB61A8450207E19E783B6B0A63B71051D15571B9A",
+      "exitCode": 0,
+      "log": "logs/Erdos883SecondSpectralDensity-final.log",
+      "command": "wsl -d Ubuntu-24.04 -- bash /mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh Erdos883SecondSpectralDensity.lean -o Erdos883SecondSpectralDensity.olean -M4096",
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\nTry this:\r\n  [apply] ring_nf\r\n  \r\n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\r\n    \r\n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\r\nErdos883SecondSpectralDensity.lean:86:1: warning: automatically included section variable(s) unused in theorem `Erdos883.SecondSpectral.splitFullTriple_weight`:\r\n  [DecidableEq ι]\r\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\r\n  omit [DecidableEq ι] in theorem ...\r\n\r\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\r\n'Erdos883.SecondSpectral.fullTriangleDensity_fixed_slice' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n\u0000"
+    },
+    {
+      "source": "Erdos883SecondSpectralOdd.lean",
+      "object": "Erdos883SecondSpectralOdd.olean",
+      "sourceSHA256": "357B8CEDFCB0941A8689B0DA91D1D033A52D5E2791B9F44D730D3000BB7E2FCB",
+      "objectSHA256": "FC081FF67D0FF175C4BCC4236C064B668DC3B8C81E3CC0B5521E85F5C255117D",
+      "exitCode": 0,
+      "log": "logs/Erdos883SecondSpectralOdd-final.log",
+      "command": "wsl -d Ubuntu-24.04 -- bash /mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh Erdos883SecondSpectralOdd.lean -o Erdos883SecondSpectralOdd.olean -M4096",
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\n'Erdos883.SecondSpectral.fullTriangle_odd_odd_even_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.fullOddPairCorrelation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n\u0000"
+    },
+    {
+      "source": "Erdos883SecondSpectralGlobal.lean",
+      "object": "Erdos883SecondSpectralGlobal.olean",
+      "sourceSHA256": "A2636731F8108C818F7180206C04B9A91BFA2E5B1C414E742F831522946C3E1E",
+      "objectSHA256": "2AF7F6F5521DE039C09151801D9C46E2518F3D15A21D7B31BF453FD8F85065F1",
+      "exitCode": 0,
+      "log": "logs/Erdos883SecondSpectralGlobal-final.log",
+      "command": "wsl -d Ubuntu-24.04 -- bash /mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh Erdos883SecondSpectralGlobal.lean -o Erdos883SecondSpectralGlobal.olean -M4096",
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\n'Erdos883.SecondSpectral.blockTriangleMean_density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.fullEvenDeficit_density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.fullOddPair_density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.fullSignature_stability' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n\u0000"
+    },
+    {
+      "source": "Erdos883SecondSpectralMeasure.lean",
+      "object": "Erdos883SecondSpectralMeasure.olean",
+      "sourceSHA256": "2FB79E399C087CA1104D884F71846F6CA3733237732430B3CB18BD1A0BF107D3",
+      "objectSHA256": "6676356822F0E27F7309AC2B4DC5AE4F064198BA0A7CAE0381C658928615F5AC",
+      "exitCode": 0,
+      "log": "logs/Erdos883SecondSpectralMeasure-final.log",
+      "command": "wsl -d Ubuntu-24.04 -- bash /mnt/c/Users/zoah/Documents/Codex/2026-10-10/su/work/run_lean.sh Erdos883SecondSpectralMeasure.lean -o Erdos883SecondSpectralMeasure.olean -M4096",
+      "output": "w\u0000s\u0000l\u0000:\u0000 \u0000�hKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006tM�n\f�FO*g\\��P0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN�v \u0000W\u0000S\u0000L\u0000 \u0000\r\nN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000�N\u0006t\u00020\r\n\u0000\r\nErdos883SecondSpectralMeasure.lean:22:1: warning: automatically included section variable(s) unused in theorem `Erdos883.SecondSpectral.fullSignatureWeight_nonneg`:\r\n  [DecidableEq ι]\r\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\r\n  omit [DecidableEq ι] in theorem ...\r\n\r\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\r\n'Erdos883.SecondSpectral.fullSignatureWeight_pos' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.fullSignatureWeight_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n'Erdos883.SecondSpectral.fullTriangleDensity_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]\r\n\u0000"
+    }
+  ],
+  "scope": "Complete finite weighted signature stability: actual density, odd/even deficits, spectral projection, and uniform triangle couplings. This is not the full arithmetic SecondQuestion; the CRT occupancy, tail counting, link density and final quantifiers remain separate.",
+  "audit": "The audited declarations printed only propext, Classical.choice, and Quot.sound; see each log. No new axiom or sorry occurs in these nine source files.",
+  "dependencyNote": "Reuses existing compiled SpectralPair/Fourier/Gap, SixMean and Mathlib objects rather than rebuilding the entire external dependency closure."
+}

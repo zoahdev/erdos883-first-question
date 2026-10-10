@@ -1,0 +1,2 @@
+'Erdos883.SecondSpectral.tensorPair_basis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.tensorPairCorrelation_fourier' depends on axioms: [propext, Classical.choice, Quot.sound]

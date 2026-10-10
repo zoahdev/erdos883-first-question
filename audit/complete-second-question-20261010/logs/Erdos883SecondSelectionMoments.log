@@ -1,0 +1,9 @@
+Erdos883SecondSelectionMoments.lean:25:0: warning: automatically included section variable(s) unused in theorem `Erdos883Second.Far.selectionWeight_nonneg`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'Erdos883Second.Far.selectionWeight_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Far.selection_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Far.selection_first_moment' depends on axioms: [propext, Classical.choice, Quot.sound]

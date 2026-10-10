@@ -1,0 +1,2 @@
+'Erdos883Second.Near.prime_support_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.prime_support_power_bound_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]

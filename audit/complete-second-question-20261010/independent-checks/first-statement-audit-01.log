@@ -1,0 +1,16 @@
+Erdos883Verified.erdos883_firstQuestion : Erdos883Target.FirstQuestion
+Erdos883Target.firstQuestion_iff_halfLength : Erdos883Target.FirstQuestion ↔ Erdos883Target.HalfLengthStatement
+def Erdos883Target.FirstQuestion : Prop :=
+∀ (n : ℕ),
+  ∀ A ⊆ Finset.Icc 1 n,
+    n / 2 + n / 3 - n / 6 < A.card →
+      ∀ (l : ℕ),
+        Odd l → 3 ≤ l → l ≤ n / 3 + 1 → l ∈ (SimpleGraph.induce (↑A) Erdos883Target.coprimeGraph).oddCycleLengths
+def Erdos883Second.SecondQuestion : Prop :=
+∀ (l : ℕ),
+  1 ≤ l →
+    ∃ N, ∀ (n : ℕ), N ≤ n → ∀ A ⊆ Finset.Icc 1 n, n / 2 + n / 3 - n / 6 < A.card → Erdos883Second.ContainsTripartite A l
+def Erdos883Second.ContainsTripartite : Finset ℕ → ℕ → Prop :=
+fun A l => ∃ f, Function.Injective ⇑f
+'Erdos883Verified.erdos883_firstQuestion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Target.firstQuestion_iff_halfLength' depends on axioms: [propext, Classical.choice, Quot.sound]

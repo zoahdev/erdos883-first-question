@@ -1,0 +1,1 @@
+'Erdos883.SecondSpectral.fullOutsideMass_spectral_small' depends on axioms: [propext, Classical.choice, Quot.sound]

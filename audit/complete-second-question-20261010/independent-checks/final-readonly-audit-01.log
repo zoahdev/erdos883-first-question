@@ -1,0 +1,53 @@
+Erdos883Verified.erdos883_bothQuestions : And Erdos883Target.FirstQuestion Erdos883Second.SecondQuestion
+Erdos883Verified.erdos883_secondQuestion_raw : ∀ (l : Nat),
+  @LE.le Nat instLENat (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) l →
+    ∃ N,
+      ∀ (n : Nat),
+        @LE.le Nat instLENat N n →
+          ∀ (A : Finset Nat),
+            @LE.le (Finset Nat)
+                (@Preorder.toLE (Finset Nat) (@PartialOrder.toPreorder (Finset Nat) (@Finset.instPartialOrder Nat))) A
+                (@Finset.Icc Nat Nat.instPreorder Nat.instLocallyFiniteOrder
+                  (@OfNat.ofNat Nat (nat_lit 1) (instOfNatNat (nat_lit 1))) n) →
+              @LT.lt Nat instLTNat
+                  (@HSub.hSub Nat Nat Nat (@instHSub Nat instSubNat)
+                    (@HAdd.hAdd Nat Nat Nat (@instHAdd Nat instAddNat)
+                      (@HDiv.hDiv Nat Nat Nat (@instHDiv Nat Nat.instDiv) n
+                        (@OfNat.ofNat Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+                      (@HDiv.hDiv Nat Nat Nat (@instHDiv Nat Nat.instDiv) n
+                        (@OfNat.ofNat Nat (nat_lit 3) (instOfNatNat (nat_lit 3)))))
+                    (@HDiv.hDiv Nat Nat Nat (@instHDiv Nat Nat.instDiv) n
+                      (@OfNat.ofNat Nat (nat_lit 6) (instOfNatNat (nat_lit 6)))))
+                  (@Finset.card Nat A) →
+                ∃ a b c,
+                  And
+                    (@Membership.mem Nat (Finset Nat)
+                      (@SetLike.instMembership (Finset Nat) Nat (@Finset.instSetLike Nat)) A a)
+                    (And
+                      (∀ (i : Fin l),
+                        @Membership.mem Nat (Finset Nat)
+                          (@SetLike.instMembership (Finset Nat) Nat (@Finset.instSetLike Nat)) A (b i))
+                      (And
+                        (∀ (i : Fin l),
+                          @Membership.mem Nat (Finset Nat)
+                            (@SetLike.instMembership (Finset Nat) Nat (@Finset.instSetLike Nat)) A (c i))
+                        (And (@Function.Injective (Fin l) Nat b)
+                          (And (@Function.Injective (Fin l) Nat c)
+                            (And (∀ (i : Fin l), @Ne Nat a (b i))
+                              (And (∀ (i : Fin l), @Ne Nat a (c i))
+                                (And (∀ (i j : Fin l), @Ne Nat (b i) (c j))
+                                  (And (∀ (i : Fin l), a.Coprime (b i))
+                                    (And (∀ (i : Fin l), a.Coprime (c i))
+                                      (∀ (i j : Fin l), (b i).Coprime (c j)))))))))))
+Erdos883Second.contains_iff_witness {A : Finset ℕ} {l : ℕ} :
+  Erdos883Second.ContainsTripartite A l ↔ Nonempty (Erdos883Second.Witness A l)
+Erdos883Second.contains_iff_finsetWitness {A : Finset ℕ} {l : ℕ} :
+  Erdos883Second.ContainsTripartite A l ↔ Nonempty (Erdos883Second.FinsetWitness A l)
+Erdos883Second.tripartiteVertex_card (l : ℕ) : Fintype.card (Erdos883Second.TripartiteVertex l) = 2 * l + 1
+'Erdos883Verified.erdos883_firstQuestion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.farBranch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.secondQuestion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Verified.erdos883_secondQuestion_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Verified.erdos883_bothQuestions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.contains_iff_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.contains_iff_finsetWitness' depends on axioms: [propext, Classical.choice, Quot.sound]

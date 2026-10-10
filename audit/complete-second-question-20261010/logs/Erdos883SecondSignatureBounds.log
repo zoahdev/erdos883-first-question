@@ -1,0 +1,5 @@
+'Erdos883Second.Signature.dense_card_real_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.full_occupancy_mean_lower_of_dense' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.full_occupancy_outside_lower_of_far' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

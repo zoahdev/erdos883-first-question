@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-10",
+  "toolchain": "Lean 4.33.1",
+  "reviewer_role": "Independent read-only subagent review",
+  "audited_module": "Erdos883FinalReadOnlyAudit.lean",
+  "sha256": "5fd9538c24fd6d16e2e799a362e7d8d0bcf272e7de3cfc3dbf483ca52194a50d",
+  "exit_code": 0,
+  "log": "logs/final-readonly-audit-01.log",
+  "claim_checked": "Erdos883Verified.erdos883_bothQuestions : Erdos883Target.FirstQuestion and Erdos883Second.SecondQuestion",
+  "theorem_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audited_declarations": [
+    "Erdos883Verified.erdos883_firstQuestion",
+    "Erdos883Second.farBranch",
+    "Erdos883Second.secondQuestion",
+    "Erdos883Verified.erdos883_secondQuestion_raw",
+    "Erdos883Verified.erdos883_bothQuestions",
+    "Erdos883Second.contains_iff_witness",
+    "Erdos883Second.contains_iff_finsetWitness"
+  ],
+  "source_review": [
+    {
+      "file": "Erdos883SecondCompleteAudit.lean",
+      "sha256": "9c04f92ca6d7a8c9f2820cc77255307c6b46b11f5b0abdb22ffab2e154901932"
+    },
+    {
+      "file": "Erdos883SecondFarComplete.lean",
+      "sha256": "ee65672899ee594ddd61fafb320f8f62ae0e8f373c90a21de0b9207d03c97af8"
+    },
+    {
+      "file": "Erdos883SecondAssembly.lean",
+      "sha256": "4b9aa22e6b6df72804d29b81a44275dd4d8f3f0b4ee2b0afab67ba77f1580277"
+    },
+    {
+      "file": "Erdos883SecondQuestion.lean",
+      "sha256": "9b51a7064de6a55ecf69cbdaaac883cb939525bb5df020dc1aa603c4c8489f20"
+    },
+    {
+      "file": "Erdos883SecondQuestionFinsets.lean",
+      "sha256": "a33e470adc13fb2199d706fd3229b2ca8c14e3c6520b98ba1ee58841e663d554"
+    }
+  ],
+  "findings": [],
+  "original_statement_source": "https://www.erdosproblems.com/latex/883",
+  "target_correspondence": [
+    "Both the raw graph statement and arithmetic witness assert the original fixed-l sufficiently-large-n tripartite conclusion without an extra premise.",
+    "The raw second-question statement ensures all 2*l+1 vertices are distinct, belong to A, and are coprime across different parts.",
+    "The graph copy is non-induced, as required by containment of a complete tripartite subgraph; edges within large parts are allowed.",
+    "The first-question odd-cycle predicate uses Mathlib Walk.IsCycle and the original exact floor threshold and length range.",
+    "The near/far split covers every admissible A and its equality boundary. Cutoff and thresholds are selected before n and A.",
+    "FarComplete uses the finite-prime bounding parameter K in the spectral theorem and its uniform real error budgets to discharge the contradiction."
+  ],
+  "source_integrity": "Existing root proof files were read but not changed.",
+  "validation_scope": "Independent final-declaration import and complete axiom-list audit plus source/semantic review of named modules; not a fresh source recompilation of the full transitive first-question and Mathlib dependency closures."
+}

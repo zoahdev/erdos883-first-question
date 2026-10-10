@@ -61,7 +61,8 @@ def fullOddPairCorrelation (q : ι → ℕ) (f : FullSignature ι → ℝ) : ℝ
   simp [Fintype.univ_bool, coordinateWeight]
   ring
 
- theorem oddPrimeLabels_injective (q : ι → ℕ) (hqi : Function.Injective q)
+omit [Fintype ι] [DecidableEq ι] in
+theorem oddPrimeLabels_injective (q : ι → ℕ) (hqi : Function.Injective q)
     (hq : ∀ i, 5 ≤ q i) : Function.Injective (oddPrimeLabels q) := by
   intro a b hab
   cases a with
@@ -74,14 +75,16 @@ def fullOddPairCorrelation (q : ι → ℕ) (f : FullSignature ι → ℝ) : ℝ
     | none => have h := hq i; simp only [oddPrimeLabels] at hab; omega
     | some j => exact congrArg some (hqi hab)
 
- theorem oddPrimeLabels_prime (q : ι → ℕ) (hq : ∀ i, (q i).Prime ∧ 5 ≤ q i) :
+omit [Fintype ι] [DecidableEq ι] in
+theorem oddPrimeLabels_prime (q : ι → ℕ) (hq : ∀ i, (q i).Prime ∧ 5 ≤ q i) :
     ∀ i, (oddPrimeLabels q i).Prime ∧ 3 ≤ oddPrimeLabels q i := by
   intro i
   cases i with
   | none => exact ⟨Nat.prime_three, by change 3 ≤ 3; omega⟩
   | some i => exact ⟨(hq i).1, Nat.le_trans (by norm_num) (hq i).2⟩
 
- theorem tensorWeight_withThree (q : ι → ℕ) (x : Option ι → Bool) :
+omit [DecidableEq ι] in
+theorem tensorWeight_withThree (q : ι → ℕ) (x : Option ι → Bool) :
     tensorWeight (fun i => (oddPrimeLabels q i : ℝ)) x =
       coordinateWeight 3 (x none) * tensorWeight (fun i => (q i : ℝ))
         (fun i => x (some i)) := by
@@ -164,3 +167,6 @@ precise density threshold 2/3 minus the finite counting error eps. -/
 end
 
 end Erdos883.SecondSpectral
+
+#print axioms Erdos883.SecondSpectral.fullOutsideMass_spectral_small
+

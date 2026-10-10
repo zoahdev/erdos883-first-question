@@ -1,0 +1,4 @@
+'Erdos883.SecondSpectral.blockTriangleMean_density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.fullEvenDeficit_density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.fullOddPair_density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883.SecondSpectral.fullSignature_stability' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'Erdos883Second.Link.high_degree_power_bound_of_no_biclique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.biclique_of_dense_relation_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.biclique_of_dense_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.edge_count_small_of_no_biclique' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,4 @@
+'Erdos883Second.Far.sixRootMass_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Far.sixRootMass_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Far.sixRootBit_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Far.sixRootTriple_marginal' depends on axioms: [propext, Classical.choice, Quot.sound]

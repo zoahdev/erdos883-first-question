@@ -1,0 +1,10 @@
+Erdos883SecondNearThreshold.lean:56:5: warning: Variable name `ht` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ht
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Erdos883Second.Near.exists_profile_denominator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.scale_budget_of_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.small_extra_scale_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.support_certificate_from_scale' depends on axioms: [propext, Classical.choice, Quot.sound]

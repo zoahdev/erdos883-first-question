@@ -1,0 +1,7 @@
+Erdos883SecondNearBase.lean:24:6: warning: Unused tactic linter: `norm_num at h6` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+'Erdos883Second.Near.standardUniverse_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.missing_lt_extra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.product_density_ge_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.candidate_card_le_good_missing_bad' depends on axioms: [propext, Classical.choice, Quot.sound]

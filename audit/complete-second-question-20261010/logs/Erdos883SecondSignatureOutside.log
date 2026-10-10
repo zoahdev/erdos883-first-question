@@ -1,0 +1,2 @@
+'Erdos883Second.Signature.outsideBit_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.full_occupancy_outside_error' depends on axioms: [propext, Classical.choice, Quot.sound]

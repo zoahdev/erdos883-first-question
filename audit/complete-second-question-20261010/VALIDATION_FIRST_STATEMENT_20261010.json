@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-10",
+  "toolchain": "Lean 4.33.1",
+  "file": "Erdos883FirstStatementAudit.lean",
+  "sha256": "f89924863f4df10cc9b501fafec0fd474f5c752bae648d88f232f88cd713281c",
+  "exit_code": 0,
+  "log": "logs/first-statement-audit-01.log",
+  "import": "Erdos883VerifiedCoverage",
+  "verified_theorem": "Erdos883Verified.erdos883_firstQuestion",
+  "verified_type": "Erdos883Target.FirstQuestion",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "validation_scope": "Independent import and final axiom audit of the existing first-question dependency closure; the full first-question source closure was not rebuilt during this audit.",
+  "statement_source": "https://www.erdosproblems.com/latex/883",
+  "statement_match": [
+    "FirstQuestion quantifies all natural n and all finite subsets A of [1,n], under the exact strict floor-card threshold, and asserts every odd cycle length from 3 to floor(n/3)+1.",
+    "The real upper bound n/3+1 in the original problem is equivalent to floor(n/3)+1 for integer cycle lengths.",
+    "SecondQuestion uses fixed positive l followed by exists N then every n>=N and every admissible A.",
+    "ContainsTripartite requires an injective homomorphism of K_(1,l,l), thus a non-induced subgraph as the original problem asks.",
+    "oddCycleLengths is defined using a Mathlib Walk with IsCycle, not just a closed walk."
+  ],
+  "source_integrity": "No existing proof or statement module changed.",
+  "combined_theorem_recommendation": "Import Erdos883VerifiedCoverage and Erdos883SecondFarComplete; theorem bothQuestions : Erdos883Target.FirstQuestion and Erdos883Second.SecondQuestion := And.intro Erdos883Verified.erdos883_firstQuestion Erdos883Second.secondQuestion; audit bothQuestions and the raw expanded secondQuestion statement.",
+  "far_budget_audit": {
+    "status": "consistent",
+    "s": "min(delta/32,1/1000)",
+    "g": "(s/2784)^2",
+    "epsilon_bound": "(2+M)/n <= s/14",
+    "triangle_budget": "actual small-prime triangle density < g/2 and 3*M/n <= g/2 imply full triangle density <= g",
+    "stability_bound": "7*eps+1392*sqrt(D) <= s <= 1/48; eps <= 1/12",
+    "contradiction": "outside <= 8*s <= delta/4, M/n <= delta/4, and delta <= outside+M/n imply delta <= delta/2, impossible for delta>0",
+    "cutoff_note": "fullSignature_stability is invoked with its finite-prime bounding parameter K, so its q<=K hypothesis does not additionally require prefix n>=K."
+  }
+}

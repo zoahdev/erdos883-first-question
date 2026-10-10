@@ -1,0 +1,2 @@
+'Erdos883Second.Near.inverse_totient_moment_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.moment_euler_prod_le_constant' depends on axioms: [propext, Classical.choice, Quot.sound]

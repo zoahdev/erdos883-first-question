@@ -1,0 +1,5 @@
+'Erdos883Second.Signature.empiricalFullTriangleDensity_eq_actual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Erdos883Second.Signature.full_triangle_density_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.full_triangle_density_le_actual' depends on axioms: [propext, Classical.choice, Quot.sound]

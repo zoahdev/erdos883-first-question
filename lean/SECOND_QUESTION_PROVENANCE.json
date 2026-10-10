@@ -1,0 +1,457 @@
+{
+  "format_version": 1,
+  "roots": [
+    "Erdos883SecondCompleteAudit"
+  ],
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "compile_order": [
+    "Erdos883SecondPrimeSupport",
+    "Erdos883SecondCounts",
+    "Erdos883SecondMoment",
+    "Erdos883SecondMomentBound",
+    "Erdos883SecondGoodProfiles",
+    "Erdos883SecondQuestion",
+    "Erdos883SecondQuestionFinsets",
+    "Erdos883SecondNearBase",
+    "Erdos883SecondNearConstruction",
+    "Erdos883SecondNearParameters",
+    "Erdos883SecondNearThreshold",
+    "Erdos883SecondNearComplete",
+    "Erdos883SecondAssembly",
+    "Erdos883SecondFarBudgets",
+    "Erdos883SecondSignatureCRT",
+    "Erdos883SecondSpectralKernel",
+    "Erdos883SecondSpectralBasis",
+    "Erdos883SecondSignatureWeights",
+    "Erdos883SecondSignaturePrefix",
+    "Erdos883SecondSignatureFrequency",
+    "Erdos883SecondSpectralFourier",
+    "Erdos883SecondSpectralPair",
+    "Erdos883SecondSpectralProduct",
+    "Erdos883SecondSpectralGap",
+    "Erdos883SecondStabilityBounds",
+    "Erdos883SecondSpectralStability",
+    "Erdos883SecondSpectralConditional",
+    "Erdos883SecondSpectralFull",
+    "Erdos883SecondSignatureFull",
+    "Erdos883SecondSignatureOccupancy",
+    "Erdos883SecondSignatureOutside",
+    "Erdos883SecondSignatureBounds",
+    "Erdos883SecondCouplingNorm",
+    "Erdos883SecondCouplingEstimate",
+    "Erdos883SecondSpectralTriple",
+    "Erdos883SecondSpectralCoupling",
+    "Erdos883SecondSpectralDensity",
+    "Erdos883SecondProductError",
+    "Erdos883SecondLinkCounts",
+    "Erdos883SecondLinkDensity",
+    "Erdos883SecondLinkTripartite",
+    "Erdos883SecondLinkTriangles",
+    "Erdos883SecondLinkTailPairs",
+    "Erdos883SecondLinkRealDensity",
+    "Erdos883SecondLinkTailTriangles",
+    "Erdos883SecondSignatureTriangles",
+    "Erdos883SecondSpectralOdd",
+    "Erdos883SecondSixCoordinate",
+    "Erdos883SecondTensorPushforward",
+    "Erdos883SecondSixTensor",
+    "Erdos883SecondSixBlock",
+    "Erdos883SecondSelectionMoments",
+    "Erdos883SecondSixFractional",
+    "Erdos883SecondSixMean",
+    "Erdos883SecondSpectralGlobal",
+    "Erdos883SecondFarComplete",
+    "Erdos883SecondCompleteAudit"
+  ],
+  "source_sha256": {
+    "Erdos883SecondPrimeSupport": "9ceb6c8018866fa9834d7b115737ad87b1c8d08923b09adea38285d9e751a14d",
+    "Erdos883SecondCounts": "cd81548567ded37a1004645b3c672630807fed7b2c02f650e4baa24a6ee6bdbd",
+    "Erdos883SecondMoment": "cd1fc17532e4d5b90bb4dd1d742a1ec043c80f6a8ea90345c2afb58d3dda2959",
+    "Erdos883SecondMomentBound": "709322a60f7a688730202078f36ddc2228a3fdcd002cbc21d6d128241869a27a",
+    "Erdos883SecondGoodProfiles": "c0fe072fd51428538cf643560e5b227ffa9a1649e4960c4573e5c33418bd42ac",
+    "Erdos883SecondQuestion": "9b51a7064de6a55ecf69cbdaaac883cb939525bb5df020dc1aa603c4c8489f20",
+    "Erdos883SecondQuestionFinsets": "a33e470adc13fb2199d706fd3229b2ca8c14e3c6520b98ba1ee58841e663d554",
+    "Erdos883SecondNearBase": "ef646bac0c7cb4849424ba079206721e35221512d0e78009209494a27d008056",
+    "Erdos883SecondNearConstruction": "4bc2673dd99421c5cdc9b949611f0586c345ca21b31dd887503b11c79054ca58",
+    "Erdos883SecondNearParameters": "759ea806958b7ab881ece8e4db1ba723dd3d92711ce9195ae0fad4671165c7d0",
+    "Erdos883SecondNearThreshold": "ca0b548e9d473ae10a6e0df4503a361dafa97fcc86b98ddbd4390c628bd38509",
+    "Erdos883SecondNearComplete": "3a0a7f96e9d585d76bdcc894b1f8d30686c5c5cd6ce4b4250b8356d2dcd34f63",
+    "Erdos883SecondAssembly": "4b9aa22e6b6df72804d29b81a44275dd4d8f3f0b4ee2b0afab67ba77f1580277",
+    "Erdos883SecondFarBudgets": "7674f12a84cd8eaf03499e34aaed7fdb1a18f1765e538846b49395e828112e94",
+    "Erdos883SecondSignatureCRT": "812c2eba1c5db38e83c4d44647e980ad41ba491a5a79bbda7c3e9d91c8ea7ade",
+    "Erdos883SecondSpectralKernel": "ce70bd82199633f644f8f807234009b47dc8c07d9569fc849d6f6ae10ae6e9f6",
+    "Erdos883SecondSpectralBasis": "8d823d905f2bb853e4aceedc0e09b509456f1fdcaf81cd0897e01570ce6d44d2",
+    "Erdos883SecondSignatureWeights": "2458e1d1db0a8471e449cfb3916b7709bc09ccf312ca712332b663149f70fc1b",
+    "Erdos883SecondSignaturePrefix": "9d89b7fe83c5892e01641db784740ed931f23e4866e71f076c7b17bf6bcaad50",
+    "Erdos883SecondSignatureFrequency": "6abb0b35ffa926b8f922a50ee5956a9e07793cbdb93c8f7bc9a78a859d9809ab",
+    "Erdos883SecondSpectralFourier": "246d732b6d4885dcadac510e16cf9144680c763e6f0b251eed50359519b5d5f6",
+    "Erdos883SecondSpectralPair": "5ff14de15e968a78c564cc5666978414af4fcda31b630af2684b3aa9d4c66304",
+    "Erdos883SecondSpectralProduct": "4ee1e8826e254776467d25d088b62e794282889beb858abf71708e06635f3b08",
+    "Erdos883SecondSpectralGap": "345f1d85abe02f4cf1a6301f8137b14cff698efa7d2b27fa684777debc78a711",
+    "Erdos883SecondStabilityBounds": "33c6b55af0cbf700853d125f23ca93a308d01315b89c61108b5f1159220ef2dc",
+    "Erdos883SecondSpectralStability": "c7470b573f07bf0f383d6e72d241877a5e4b9e1df1c32e4d09ca4591f2ebd75c",
+    "Erdos883SecondSpectralConditional": "2a401680fb26e9c7dd83627df76916dfd78385a22e440aeffe7ece95343091a2",
+    "Erdos883SecondSpectralFull": "7b340c69bd7bc527b1d9db387f4c64ce1865fe17b06b958381548d7fb8d92987",
+    "Erdos883SecondSignatureFull": "836c240cc36c5a9442168dce2ae9adf83be4a934f30a9cc3158539c4bb8be3a7",
+    "Erdos883SecondSignatureOccupancy": "9d922eb789e3f49f8b51eb4c605d2f2ad87b66d2a9f7fb5debd3dca4a9982338",
+    "Erdos883SecondSignatureOutside": "f29eb1d40b7eb85545d305fee41e84b36a2e0dad70c37ba5b8647e0c86e69169",
+    "Erdos883SecondSignatureBounds": "3a9eca213cf931a68bb4dfd77996b06622d1ac53e3443ee069b8e207431a2d65",
+    "Erdos883SecondCouplingNorm": "c95b6c6c0c7cd082ac2c86ba8ecdee382e80bbd6f07a9eec2fd67dc53ab2db48",
+    "Erdos883SecondCouplingEstimate": "b64389eecac95829ccfa4a7c56688271198e9cca5f95a330de49259de382c591",
+    "Erdos883SecondSpectralTriple": "fa15f953b99028096a4be9bb60aed1d8c41a452e29122ef2c292cbcbff3c885f",
+    "Erdos883SecondSpectralCoupling": "b7a1d9ff6562231c8b6b2ad18ae5584240999296813c576661252eff3a4058af",
+    "Erdos883SecondSpectralDensity": "b6a775e300722499fb3be6012d50d1545beb6934d38c04bac3f747e402dd2884",
+    "Erdos883SecondProductError": "97b9119e307a292b503e46b5272edccc9a0ea2144f8fa94f51f71f99534c7e0a",
+    "Erdos883SecondLinkCounts": "dd960e408e162fe82c774f30cbd4a157dcc0859d4d4a7032156e1d11c48215dd",
+    "Erdos883SecondLinkDensity": "1f903b9e8a832923dd69c0e17ecc1a9c1b79665068503dfa0274d734e3c527c1",
+    "Erdos883SecondLinkTripartite": "15268913ae2cab431cf95a49ecfbc8f9e00dce69aa6777f1dad3c69550de4793",
+    "Erdos883SecondLinkTriangles": "4db36a24d4387c80ee78871ab0bcd8011178638f54405ee6e411625894dc945e",
+    "Erdos883SecondLinkTailPairs": "0711658517c31f7e335499bfd6a743d6eda8cc462713aabc58df5fcaf60e9ce9",
+    "Erdos883SecondLinkRealDensity": "dd98929e52d6b589a3825c3312df514d74829f2eb9565d8b8c19c15253763f59",
+    "Erdos883SecondLinkTailTriangles": "89ffde7550b4a83c8e4210a702bb3f4bf4cde17ec738ede24e8411e7970109f6",
+    "Erdos883SecondSignatureTriangles": "e4d7b5711920c533c7bf9da76aefc0741d0e0b6f0430e8e8c71d7dea519c7629",
+    "Erdos883SecondSpectralOdd": "357b8cedfcb0941a8689b0da91d1d033a52d5e2791b9f44d730d3000bb7e2fcb",
+    "Erdos883SecondSixCoordinate": "160f4262cec55ecf143ca0aeb4664470504f7de80b9d6da73c635d7265106290",
+    "Erdos883SecondTensorPushforward": "6f1c104af678efb634b45af5efbbb6bed6dad274f458edf50d6ae722d1dca49c",
+    "Erdos883SecondSixTensor": "6e58f1c5da984603471c378b2b9b98e013a1350fbfb2a932e1944e63eef58071",
+    "Erdos883SecondSixBlock": "b153dc03a962514a16d876ad88b6c16f762eb5a08638a6a13a1b0f8a47871436",
+    "Erdos883SecondSelectionMoments": "d432b061ba8eeca0ab9706f29ff950270a4940e41e30278fd280e813281529b9",
+    "Erdos883SecondSixFractional": "a3678c01895d90ace12769f7ae47a6afc5d275dba0df9c4ef432a9f0d0adba13",
+    "Erdos883SecondSixMean": "4ffc2d824696e0c8d6c39c73f9e703d8c4a3bdff9cd85d5a56fccf3d771f34fc",
+    "Erdos883SecondSpectralGlobal": "a2636731f8108c818f7180206c04b9a91bfa2e5b1c414e742f831522946c3e1e",
+    "Erdos883SecondFarComplete": "ee65672899ee594ddd61fafb320f8f62ae0e8f373c90a21de0b9207d03c97af8",
+    "Erdos883SecondCompleteAudit": "9c04f92ca6d7a8c9f2820cc77255307c6b46b11f5b0abdb22ffab2e154901932"
+  },
+  "source_imports": {
+    "Erdos883SecondPrimeSupport": [
+      "Erdos883TotientDensity",
+      "Mathlib.Algebra.BigOperators.Ring.Finset"
+    ],
+    "Erdos883SecondCounts": [
+      "Erdos883NeighborDiscrepancy",
+      "Erdos883SecondPrimeSupport",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.FieldSimp"
+    ],
+    "Erdos883SecondMoment": [
+      "Erdos883TotientMoment"
+    ],
+    "Erdos883SecondMomentBound": [
+      "Erdos883SecondMoment",
+      "Mathlib.Algebra.Order.Ring.Pow"
+    ],
+    "Erdos883SecondGoodProfiles": [
+      "Erdos883SecondMomentBound"
+    ],
+    "Erdos883SecondQuestion": [
+      "CanonicalTarget",
+      "Mathlib.Combinatorics.SimpleGraph.Maps"
+    ],
+    "Erdos883SecondQuestionFinsets": [
+      "Erdos883SecondQuestion"
+    ],
+    "Erdos883SecondNearBase": [
+      "Erdos883SecondCounts",
+      "Erdos883SecondGoodProfiles",
+      "Erdos883SecondQuestionFinsets"
+    ],
+    "Erdos883SecondNearConstruction": [
+      "Erdos883SecondNearBase"
+    ],
+    "Erdos883SecondNearParameters": [
+      "Erdos883SecondNearConstruction"
+    ],
+    "Erdos883SecondNearThreshold": [
+      "Erdos883SecondNearBase"
+    ],
+    "Erdos883SecondNearComplete": [
+      "Erdos883SecondNearParameters",
+      "Erdos883SecondNearThreshold"
+    ],
+    "Erdos883SecondAssembly": [
+      "Erdos883SecondNearComplete"
+    ],
+    "Erdos883SecondFarBudgets": [
+      "Mathlib.Analysis.Real.Sqrt",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.Positivity"
+    ],
+    "Erdos883SecondSignatureCRT": [
+      "Mathlib.Data.Nat.ChineseRemainder",
+      "Mathlib.Data.Nat.Prime.Basic",
+      "Mathlib.Data.Fintype.EquivFin",
+      "Mathlib.Data.Fintype.Pi",
+      "Mathlib.Data.Fintype.BigOperators",
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Algebra.Order.BigOperators.Ring.Finset"
+    ],
+    "Erdos883SecondSpectralKernel": [
+      "Mathlib.Data.Real.Basic",
+      "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.Ring",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.Positivity",
+      "Mathlib.Tactic.NormNum"
+    ],
+    "Erdos883SecondSpectralBasis": [
+      "Erdos883SecondSpectralKernel",
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Data.Fintype.Pi"
+    ],
+    "Erdos883SecondSignatureWeights": [
+      "Erdos883SecondSignatureCRT",
+      "Erdos883SecondSpectralBasis",
+      "Mathlib.Data.Real.Basic",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Erdos883SecondSignaturePrefix": [
+      "Erdos883SecondSignatureWeights",
+      "Mathlib.Data.Nat.Periodic",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Erdos883SecondSignatureFrequency": [
+      "Erdos883SecondSignaturePrefix"
+    ],
+    "Erdos883SecondSpectralFourier": [
+      "Erdos883SecondSpectralBasis"
+    ],
+    "Erdos883SecondSpectralPair": [
+      "Erdos883SecondSpectralFourier",
+      "Mathlib.Data.Fintype.BigOperators"
+    ],
+    "Erdos883SecondSpectralProduct": [
+      "Erdos883SecondSpectralKernel",
+      "Mathlib.Data.Nat.Prime.Basic",
+      "Mathlib.Data.Finset.Card",
+      "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+      "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+      "Lean.Elab.Tactic.Omega"
+    ],
+    "Erdos883SecondSpectralGap": [
+      "Erdos883SecondSpectralProduct"
+    ],
+    "Erdos883SecondStabilityBounds": [
+      "Mathlib.Data.Real.Basic",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Erdos883SecondSpectralStability": [
+      "Erdos883SecondSpectralPair",
+      "Erdos883SecondSpectralGap",
+      "Erdos883SecondStabilityBounds"
+    ],
+    "Erdos883SecondSpectralConditional": [
+      "Erdos883SecondSpectralStability"
+    ],
+    "Erdos883SecondSpectralFull": [
+      "Erdos883SecondSpectralConditional",
+      "Mathlib.Data.Fintype.Option"
+    ],
+    "Erdos883SecondSignatureFull": [
+      "Erdos883SecondSignatureFrequency",
+      "Erdos883SecondSpectralFull"
+    ],
+    "Erdos883SecondSignatureOccupancy": [
+      "Erdos883SecondSignatureFull",
+      "Erdos883SecondNearBase"
+    ],
+    "Erdos883SecondSignatureOutside": [
+      "Erdos883SecondSignatureOccupancy"
+    ],
+    "Erdos883SecondSignatureBounds": [
+      "Erdos883SecondSignatureOutside"
+    ],
+    "Erdos883SecondCouplingNorm": [
+      "Erdos883SecondMomentBound",
+      "Mathlib.Data.Fintype.Prod",
+      "Mathlib.Data.Fintype.Sum"
+    ],
+    "Erdos883SecondCouplingEstimate": [
+      "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+      "Mathlib.Analysis.Real.Sqrt",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Erdos883SecondSpectralTriple": [
+      "Erdos883SecondSpectralConditional",
+      "Erdos883SecondCouplingNorm",
+      "Erdos883SecondCouplingEstimate"
+    ],
+    "Erdos883SecondSpectralCoupling": [
+      "Erdos883SecondSpectralTriple"
+    ],
+    "Erdos883SecondSpectralDensity": [
+      "Erdos883SecondSpectralFull",
+      "Erdos883SecondSpectralCoupling"
+    ],
+    "Erdos883SecondProductError": [
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+      "Mathlib.Data.Fintype.Prod",
+      "Mathlib.Data.Fintype.BigOperators",
+      "Mathlib.Data.Real.Basic",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Erdos883SecondLinkCounts": [
+      "Mathlib.Data.Finset.Powerset",
+      "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+      "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+      "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+      "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+      "Mathlib.Tactic.Linarith"
+    ],
+    "Erdos883SecondLinkDensity": [
+      "Erdos883SecondLinkCounts",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Erdos883SecondLinkTripartite": [
+      "Erdos883SecondLinkCounts",
+      "Erdos883SecondQuestionFinsets"
+    ],
+    "Erdos883SecondLinkTriangles": [
+      "Erdos883SecondLinkDensity",
+      "Erdos883SecondLinkTripartite",
+      "Mathlib.Algebra.BigOperators.Ring.Finset"
+    ],
+    "Erdos883SecondLinkTailPairs": [
+      "Erdos883SecondLinkTriangles",
+      "Mathlib.Data.Finset.Prod",
+      "Mathlib.Algebra.BigOperators.Intervals",
+      "Mathlib.Data.Real.Basic",
+      "Mathlib.Data.Nat.Prime.Basic",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.Linarith"
+    ],
+    "Erdos883SecondLinkRealDensity": [
+      "Erdos883SecondLinkTriangles",
+      "Mathlib.Data.Real.Basic",
+      "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+      "Mathlib.Tactic.FieldSimp",
+      "Mathlib.Tactic.Linarith"
+    ],
+    "Erdos883SecondLinkTailTriangles": [
+      "Erdos883SecondLinkTailPairs",
+      "Erdos883SecondLinkRealDensity"
+    ],
+    "Erdos883SecondSignatureTriangles": [
+      "Erdos883SecondSignatureOccupancy",
+      "Erdos883SecondSpectralDensity",
+      "Erdos883SecondProductError",
+      "Erdos883SecondLinkTailTriangles"
+    ],
+    "Erdos883SecondSpectralOdd": [
+      "Erdos883SecondSpectralDensity"
+    ],
+    "Erdos883SecondSixCoordinate": [
+      "Erdos883SecondCouplingNorm",
+      "Mathlib.Tactic.FinCases",
+      "Mathlib.Algebra.BigOperators.Fin",
+      "Mathlib.Tactic.NormNum.Prime"
+    ],
+    "Erdos883SecondTensorPushforward": [
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Data.Fintype.Pi",
+      "Mathlib.Data.Fintype.BigOperators",
+      "Mathlib.Data.Real.Basic"
+    ],
+    "Erdos883SecondSixTensor": [
+      "Erdos883SecondSixCoordinate",
+      "Erdos883SecondTensorPushforward",
+      "Erdos883SecondSpectralTriple"
+    ],
+    "Erdos883SecondSixBlock": [
+      "Mathlib.Data.Fintype.Pi",
+      "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Data.Real.Basic",
+      "Mathlib.Tactic.Linarith",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Erdos883SecondSelectionMoments": [
+      "Mathlib.Algebra.BigOperators.Ring.Finset",
+      "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+      "Mathlib.Data.Fintype.Pi",
+      "Mathlib.Data.Real.Basic",
+      "Mathlib.Tactic.Ring"
+    ],
+    "Erdos883SecondSixFractional": [
+      "Erdos883SecondSixBlock",
+      "Erdos883SecondSelectionMoments"
+    ],
+    "Erdos883SecondSixMean": [
+      "Erdos883SecondSixTensor",
+      "Erdos883SecondSixFractional",
+      "Erdos883SecondSpectralFull"
+    ],
+    "Erdos883SecondSpectralGlobal": [
+      "Erdos883SecondSpectralOdd",
+      "Erdos883SecondSixMean"
+    ],
+    "Erdos883SecondFarComplete": [
+      "Erdos883SecondAssembly",
+      "Erdos883SecondFarBudgets",
+      "Erdos883SecondSignatureBounds",
+      "Erdos883SecondSignatureTriangles",
+      "Erdos883SecondSpectralGlobal"
+    ],
+    "Erdos883SecondCompleteAudit": [
+      "Erdos883SecondFarComplete",
+      "Erdos883VerifiedCoverage"
+    ]
+  },
+  "external_direct_imports": [
+    "CanonicalTarget",
+    "Erdos883NeighborDiscrepancy",
+    "Erdos883TotientDensity",
+    "Erdos883TotientMoment",
+    "Erdos883VerifiedCoverage",
+    "Lean.Elab.Tactic.Omega",
+    "Mathlib.Algebra.BigOperators.Fin",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Sigma",
+    "Mathlib.Algebra.BigOperators.Intervals",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Order.Archimedean.Real.Basic",
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+    "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
+    "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Order.Ring.Pow",
+    "Mathlib.Analysis.Real.Sqrt",
+    "Mathlib.Combinatorics.SimpleGraph.Maps",
+    "Mathlib.Data.Finset.Card",
+    "Mathlib.Data.Finset.Powerset",
+    "Mathlib.Data.Finset.Prod",
+    "Mathlib.Data.Fintype.BigOperators",
+    "Mathlib.Data.Fintype.EquivFin",
+    "Mathlib.Data.Fintype.Option",
+    "Mathlib.Data.Fintype.Pi",
+    "Mathlib.Data.Fintype.Prod",
+    "Mathlib.Data.Fintype.Sum",
+    "Mathlib.Data.Nat.ChineseRemainder",
+    "Mathlib.Data.Nat.Periodic",
+    "Mathlib.Data.Nat.Prime.Basic",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.NormNum.Prime",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring"
+  ],
+  "standard_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "reproduction_policy": "Run verify-second-question.sh from the repository lean directory. It rebuilds the unchanged first-question source sequence with the configurable 8192 MiB default, then the QII source-derived topology. Pinned Mathlib compiled caches may be used; no full Mathlib source rebuild is claimed."
+}

@@ -1,0 +1,22 @@
+import Erdos883SecondSignatureTriangles
+
+/-! Kernel-rechecked audit of the actual signature triangle-count bridge. -/
+
+#check Erdos883Second.Signature.mem_cutoffPrimes
+#check Erdos883Second.Signature.full_disjoint_reindex
+#check Erdos883Second.Signature.bits_disjoint_signature_cutoff
+#check Erdos883Second.Signature.selectedCount_triple_weighted_sum
+#check Erdos883Second.Signature.empiricalFullTriangleDensity_counts
+#check Erdos883Second.Signature.signature_triangle_count_cutoff
+#check Erdos883Second.Signature.empiricalFullTriangleDensity_eq_actual
+#check Erdos883Second.Signature.full_triangle_density_error
+#check Erdos883Second.Signature.full_triangle_density_le_actual
+
+#print axioms Erdos883Second.Signature.full_disjoint_reindex
+#print axioms Erdos883Second.Signature.bits_disjoint_signature_cutoff
+#print axioms Erdos883Second.Signature.selectedCount_triple_weighted_sum
+#print axioms Erdos883Second.Signature.empiricalFullTriangleDensity_counts
+#print axioms Erdos883Second.Signature.signature_triangle_count_cutoff
+#print axioms Erdos883Second.Signature.empiricalFullTriangleDensity_eq_actual
+#print axioms Erdos883Second.Signature.full_triangle_density_error
+#print axioms Erdos883Second.Signature.full_triangle_density_le_actual

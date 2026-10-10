@@ -1,0 +1,3 @@
+'Erdos883Second.Near.leftCandidates_card_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.rightCandidates_card_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.totientDensity_mul_ge' depends on axioms: [propext, Classical.choice, Quot.sound]

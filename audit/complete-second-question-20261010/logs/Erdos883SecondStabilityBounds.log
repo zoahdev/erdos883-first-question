@@ -1,0 +1,5 @@
+'Erdos883Second.Stability.spectral_polynomial_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Stability.spectral_errors_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Stability.mean_upper_of_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Stability.outside_mass_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Stability.quantitative_far_contradiction' depends on axioms: [propext, Classical.choice, Quot.sound]

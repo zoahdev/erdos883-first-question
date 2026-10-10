@@ -1,0 +1,5 @@
+'Erdos883Second.Link.multiplesPrefix_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.sharedDivisorPairs_card_le_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.reciprocal_square_tail_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.sharedDivisorPairs_card_real_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Link.largePrimeNoncoprimePairs_card_real_le' depends on axioms: [propext, Classical.choice, Quot.sound]

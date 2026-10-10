@@ -1,0 +1,9 @@
+Erdos883SecondGoodProfiles.lean:52:2: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+'Erdos883Second.Near.totient_below_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.good_totient_in_subset' depends on axioms: [propext, Classical.choice, Quot.sound]

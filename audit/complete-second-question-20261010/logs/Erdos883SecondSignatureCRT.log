@@ -1,0 +1,2 @@
+'Erdos883Second.Signature.residueMap_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.residueMap_bits' depends on axioms: [propext, Classical.choice, Quot.sound]
