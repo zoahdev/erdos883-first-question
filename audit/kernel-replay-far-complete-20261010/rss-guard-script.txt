@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -u
+cap_kib=1048576
+/usr/bin/time -v -o /audit/resources.txt /runtime/bin/leanchecker --verbose Erdos883SecondFarComplete > /audit/checker.log 2>&1 &
+checker_time_pid=$!
+peak_kib=0
+limited=0
+while kill -0 "$checker_time_pid" 2>/dev/null; do
+  rss_kib=$(/usr/bin/awk '/^VmRSS:/ { total += $2 } END { print total+0 }' /proc/[0-9]*/status 2>/dev/null)
+  if ((rss_kib > peak_kib)); then peak_kib=$rss_kib; fi
+  if ((rss_kib > cap_kib)); then
+    limited=1
+    /usr/bin/pkill -TERM -x leanchecker || true
+    break
+  fi
+  /usr/bin/sleep .2
+done
+wait "$checker_time_pid"
+rc=$?
+printf 'sandboxAggregatePeakRssKiB=%s\naggregateRssCapKiB=%s\nrssCapExceeded=%s\ncheckerReturnCode=%s\n' "$peak_kib" "$cap_kib" "$limited" "$rc" > /audit/guard.txt
+cat /audit/checker.log
+cat /audit/guard.txt
+if ((limited)); then exit 200; fi
+exit "$rc"

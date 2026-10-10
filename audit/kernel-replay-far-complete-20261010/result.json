@@ -1,0 +1,39 @@
+{
+  "selectedProofCommit": "92d8dedf3c2aca876a7e3e141aae874ac5669959",
+  "selectedProofTree": "84ea128d940fc14ecbc07e91b4978a64c83a8e32",
+  "targetModule": "Erdos883SecondFarComplete",
+  "command": "leanchecker --verbose Erdos883SecondFarComplete",
+  "mode": "normal import environment; not --fresh",
+  "startedAtUtc": "2026-10-10T15:52:04Z",
+  "finishedAtUtc": "2026-10-10T15:52:39Z",
+  "checkerExitCode": 0,
+  "outerExitCode": 0,
+  "checkerWallSeconds": 34.85,
+  "outerWallSeconds": 35.06,
+  "checkerMaxRssKiBReportedByGnuTime": 2374716,
+  "virtualAddressSpaceLimitKiB": 8388608,
+  "timeoutSeconds": 90,
+  "physicalRssGuardEffective": false,
+  "physicalRssGuardLimitation": "The aggregate monitor returned 0 despite the inner GNU time measurement. Its 1 GiB threshold was not enforced; do not interpret zero as actual RSS.",
+  "leanVersion": "4.33.1",
+  "leanCompilerCommit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "mathlibCommit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "sha256": {
+    "leanchecker": "84bc3e7cd6efa5bfecd1e7c37571fed9428fb2b3e16da0ddf62f2163573486d0",
+    "LeanChecker.lean": "eb5dee411837629f09c5c18d63cc833d30335a46048bc586642742e90aa65d5f",
+    "Erdos883SecondFarComplete.lean": "ee65672899ee594ddd61fafb320f8f62ae0e8f373c90a21de0b9207d03c97af8",
+    "Erdos883SecondFarComplete.olean": "41cbacb6c685467a93d083421b7935b2d8420d930495c90654925defcdf3a1b5"
+  },
+  "scope": "Lean kernel replay of new declarations in this module against existing imported environments. Imported declarations were not recursively replayed.",
+  "limitations": [
+    "Uses the bundled Lean kernel, not an independent kernel implementation.",
+    "No fresh full-import-closure replay and no new source compilation in this run.",
+    "No organizer verification, mathematical peer review, priority ruling, or award entitlement follows."
+  ],
+  "archivePathPlaceholders": {
+    "$SECOND_SOURCE_AND_OBJECTS": "Local second-question source and compiled-object directory",
+    "$TASK_WORKSPACE": "Local task scratch directory",
+    "$LEAN_RUNTIME": "Pinned Lean 4.33.1 installation directory",
+    "$PINNED_BASELINE": "Pinned first-question object and dependency cache directory"
+  }
+}

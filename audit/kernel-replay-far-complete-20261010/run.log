@@ -1,0 +1,20 @@
+selectedProofCommit=92d8dedf3c2aca876a7e3e141aae874ac5669959
+module=Erdos883SecondFarComplete
+mode=normal-import-environment
+startedAtUtc=2026-10-10T15:52:04Z
+virtualMemoryLimitKiB=8388608
+timeoutSeconds=90
+LEAN_STACK_SIZE_KB=16384
+LEAN_NUM_THREADS=1
+LEAN_MAIN_USE_THREAD=0
+84bc3e7cd6efa5bfecd1e7c37571fed9428fb2b3e16da0ddf62f2163573486d0  $LEAN_RUNTIME/bin/leanchecker
+eb5dee411837629f09c5c18d63cc833d30335a46048bc586642742e90aa65d5f  $LEAN_RUNTIME/src/lean/LeanChecker.lean
+ee65672899ee594ddd61fafb320f8f62ae0e8f373c90a21de0b9207d03c97af8  $SECOND_SOURCE_AND_OBJECTS/Erdos883SecondFarComplete.lean
+41cbacb6c685467a93d083421b7935b2d8420d930495c90654925defcdf3a1b5  $SECOND_SOURCE_AND_OBJECTS/Erdos883SecondFarComplete.olean
+replaying Erdos883SecondFarComplete
+sandboxAggregatePeakRssKiB=0
+aggregateRssCapKiB=1048576
+rssCapExceeded=0
+checkerReturnCode=0
+finishedAtUtc=2026-10-10T15:52:39Z
+returnCode=0

@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+set -euo pipefail
+module=${1:?Specify the permitted module}
+attempt=${2:-attempt1}
+case "$attempt" in attempt4) ;; *) exit 2 ;; esac
+case "$module" in
+  Erdos883SecondFarComplete) ;;
+  *) printf 'Module is outside this bounded replay scope\n' >&2; exit 2 ;;
+esac
+task=$TASK_WORKSPACE
+second=$SECOND_SOURCE_AND_OBJECTS
+baseline=$PINNED_BASELINE
+runtime=$LEAN_RUNTIME
+out="$task/work/erdos883-kernel-replay-20261010"
+mkdir -p "$out/attempt4-runtime"
+log="$out/$module.$attempt.log"
+resources="$out/$module.$attempt.resources.txt"
+test ! -e "$log"
+packages=(Cli batteries Qq aesop proofwidgets importGraph LeanSearchClient plausible mathlib)
+lean_path=/second:/objects
+mounts=()
+for package in "${packages[@]}"; do
+  dependency="$baseline/.lake/packages/$package/.lake/build/lib/lean"
+  if ! test -d "$dependency"; then
+    printf 'Skipped absent dependency search directory: %s\n' "$dependency"
+    continue
+  fi
+  mounts+=(--ro-bind "$dependency" "/deps/$package")
+  lean_path="$lean_path:/deps/$package"
+done
+lean_path="$lean_path:/runtime/lib/lean"
+args=(/usr/bin/bwrap --unshare-all --die-with-parent --new-session --clearenv
+  --ro-bind /usr /usr --ro-bind /lib /lib --ro-bind /lib64 /lib64
+  --ro-bind "$runtime" /runtime --ro-bind "$second" /second
+  --ro-bind "$baseline/independent-objects" /objects
+  "${mounts[@]}" --proc /proc --dev /dev --tmpfs /tmp
+  --ro-bind "$task/work/replay-rss-guard.sh" /runner/run.sh
+  --bind "$out/attempt4-runtime" /audit
+  --dir /workspace --chdir /workspace
+  --setenv PATH /runtime/bin:/usr/bin:/bin --setenv LEAN_PATH "$lean_path"
+  --setenv HOME /tmp --setenv LANG C.UTF-8
+  --setenv LEAN_STACK_SIZE_KB 16384 --setenv LEAN_NUM_THREADS 1
+  --setenv LEAN_MAIN_USE_THREAD 0
+  /usr/bin/bash /runner/run.sh)
+started=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
+printf 'selectedProofCommit=92d8dedf3c2aca876a7e3e141aae874ac5669959\nmodule=%s\nmode=normal-import-environment\nstartedAtUtc=%s\nvirtualMemoryLimitKiB=8388608\ntimeoutSeconds=90\nLEAN_STACK_SIZE_KB=16384\nLEAN_NUM_THREADS=1\nLEAN_MAIN_USE_THREAD=0\n' "$module" "$started" > "$log"
+sha256sum "$runtime/bin/leanchecker" "$runtime/src/lean/LeanChecker.lean" "$second/$module.lean" "$second/$module.olean" >> "$log"
+set +e
+(
+  ulimit -v 8388608
+  /usr/bin/time -v -o "$resources" /usr/bin/timeout --signal=TERM --kill-after=5s 90s "${args[@]}"
+) >> "$log" 2>&1
+rc=$?
+set -e
+finished=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
+printf 'finishedAtUtc=%s\nreturnCode=%s\n' "$finished" "$rc" >> "$log"
+printf 'module=%s returnCode=%s startedAtUtc=%s finishedAtUtc=%s\n' "$module" "$rc" "$started" "$finished"
+tail -n 8 "$log"
+printf '\nRESOURCE_SUMMARY\n'
+grep -E 'Elapsed|Maximum resident|Exit status' "$resources" || true
+exit "$rc"

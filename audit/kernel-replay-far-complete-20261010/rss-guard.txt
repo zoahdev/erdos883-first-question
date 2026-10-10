@@ -1,0 +1,4 @@
+sandboxAggregatePeakRssKiB=0
+aggregateRssCapKiB=1048576
+rssCapExceeded=0
+checkerReturnCode=0
