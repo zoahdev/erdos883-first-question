@@ -1,0 +1,4 @@
+'Erdos883Second.Signature.prefixCount_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.signature_frequency_l1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.prefixCount_card_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.signature_frequency_l1_primes' depends on axioms: [propext, Classical.choice, Quot.sound]

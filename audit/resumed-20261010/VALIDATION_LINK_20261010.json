@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-10",
+  "lean_version": "4.33.1",
+  "runner": "../run_lean.sh",
+  "flags": ["-o MODULE.olean", "-M4096"],
+  "modules": [
+    {"file": "Erdos883SecondLinkTriangles.lean", "exit_code": 0, "audited_theorems": 3},
+    {"file": "Erdos883SecondLinkRealDensity.lean", "exit_code": 0, "audited_theorems": 2},
+    {"file": "Erdos883SecondLinkTailPairs.lean", "exit_code": 0, "audited_theorems": 5},
+    {"file": "Erdos883SecondLinkTailTriangles.lean", "exit_code": 0, "audited_theorems": 5,
+     "raw_log": "LINK_TAIL_TRIANGLES_20261010.log"}
+  ],
+  "printed_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "source_scan_for_sorry_admit_new_axiom": "no matches",
+  "full_second_question_proved": false,
+  "remaining_bridge": [
+    "finite CRT signature frequencies and eta <= M/n",
+    "product-frequency replacement error <= 3*eta",
+    "arithmetic occupancy/coupling/spectral composition"
+  ],
+  "dependency_rebuild": "reuses pinned existing Mathlib and first-question compiled closure"
+}

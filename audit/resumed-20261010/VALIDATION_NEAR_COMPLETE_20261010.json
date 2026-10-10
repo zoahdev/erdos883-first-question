@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-10",
+  "toolchain": "Lean 4.33.1",
+  "validation_scope": "Rebuilt NearComplete and independent import/audit module against pinned compiled dependency objects; not a fresh rebuild of complete dependency closure.",
+  "near_branch_verified": true,
+  "full_second_question_verified": false,
+  "theorem": "Erdos883Second.Near.near_tripartite_eventually",
+  "quantified_scope": "For every natural l, there exist rational delta > 0 and a natural N. For n >= N and A contained in [1,n], if A.card > n/2 + n/3 - n/6 and (A minus standardUniverse n).card <= delta*n, then A contains K_(1,l,l) in its coprimality graph.",
+  "near_assumption": "The positive-density upper bound on A minus U(n), U(n) = {1 <= v <= n : 2 divides v or 3 divides v}, remains required.",
+  "limitations": [
+    "The near theorem does not handle sets farther from U(n).",
+    "The complete second-question conclusion still requires a complementary far branch or another valid reduction.",
+    "Thresholds and density constants are extremely large; no numerical efficiency is claimed."
+  ],
+  "repair": "Replaced expansive dsimp/norm_cast with simp only on momentConstant and cast_pow/cast_ofNat.",
+  "modules": [
+    {
+      "file": "Erdos883SecondNearComplete.lean",
+      "sha256": "3a0a7f96e9d585d76bdcc894b1f8d30686c5c5cd6ce4b4250b8356d2dcd34f63",
+      "command": "wsl -d Ubuntu-24.04 -- bash <workspace>/work/run_lean.sh Erdos883SecondNearComplete.lean -o Erdos883SecondNearComplete.olean -M4096",
+      "exit_code": 0,
+      "log": "logs/near-complete-attempt-01.log",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_placeholder_scan": "No sorry, admit, or axiom declaration",
+      "theorem_audits": [
+        "Erdos883Second.Near.near_tripartite",
+        "Erdos883Second.Near.near_tripartite_eventually"
+      ]
+    },
+    {
+      "file": "Erdos883SecondNearCompleteAudit.lean",
+      "sha256": "cd791ff1ff286c3aa12de8eef99bf41bf4bafb915308a4295cdc1fbce5becdc2",
+      "command": "wsl -d Ubuntu-24.04 -- bash <workspace>/work/run_lean.sh Erdos883SecondNearCompleteAudit.lean -o Erdos883SecondNearCompleteAudit.olean -M4096",
+      "exit_code": 0,
+      "log": "logs/near-complete-audit-01.log",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+Erdos883Second.Near.near_tripartite {n l : ℕ} {A : Finset ℕ} (hA : A ⊆ Finset.Icc 1 n)
+  (hcard : n / 2 + n / 3 - n / 6 < A.card) (hN : Erdos883Second.Near.nearThreshold l ≤ n)
+  (hnear : (A \ Erdos883Second.Near.standardUniverse n).card * Erdos883Second.Near.nearMultiplier l ≤ n) :
+  Erdos883Second.ContainsTripartite A l
+Erdos883Second.Near.near_tripartite_eventually (l : ℕ) :
+  ∃ δ,
+    0 < δ ∧
+      ∃ N,
+        ∀ n ≥ N,
+          ∀ A ⊆ Finset.Icc 1 n,
+            n / 2 + n / 3 - n / 6 < A.card →
+              ↑(A \ Erdos883Second.Near.standardUniverse n).card ≤ δ * ↑n → Erdos883Second.ContainsTripartite A l
+'Erdos883Second.Near.near_tripartite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Near.near_tripartite_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]

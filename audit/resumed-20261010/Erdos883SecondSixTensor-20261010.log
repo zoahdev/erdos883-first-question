@@ -1,0 +1,9 @@
+Erdos883SecondSixTensor.lean:28:0: warning: automatically included section variable(s) unused in theorem `Erdos883Second.Far.sixTensorMass_nonneg`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'Erdos883Second.Far.sixTensorMass_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Far.sixTensor_signature_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Far.sixTensor_triangle_expectation' depends on axioms: [propext, Classical.choice, Quot.sound]

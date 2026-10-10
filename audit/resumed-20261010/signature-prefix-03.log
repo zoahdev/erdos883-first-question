@@ -1,0 +1,5 @@
+Erdos883SecondSignaturePrefix.lean:74:2: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'Erdos883Second.Signature.residuePrefixCount_decomposition' depends on axioms: [propext, Quot.sound]
+'Erdos883Second.Signature.residuePrefixCount_error' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'Erdos883Second.Far.six_block_pointwise' depends on axioms: [propext]
+'Erdos883Second.Far.six_bad_union_bound' depends on axioms: [propext]
+'Erdos883Second.Far.six_block_even_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]

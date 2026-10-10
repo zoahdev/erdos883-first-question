@@ -1,0 +1,2 @@
+'Erdos883Second.Signature.periodCount_eq_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.periodCount_div_modulus' depends on axioms: [propext, Classical.choice, Quot.sound]

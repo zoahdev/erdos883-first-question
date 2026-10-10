@@ -1,0 +1,3 @@
+'Erdos883Second.Signature.signatureEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.full_weight_reindex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Signature.full_signature_frequency_l1' depends on axioms: [propext, Classical.choice, Quot.sound]

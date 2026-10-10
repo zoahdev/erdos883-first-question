@@ -1,0 +1,5 @@
+Erdos883SecondSixMean.lean:80:60: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'Erdos883Second.Far.blockTriangleMean_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos883Second.Far.sixMean_even_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
