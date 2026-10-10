@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-10",
+  "lean_version": "4.33.1",
+  "status": "Partial number-theory infrastructure; not a proof of the full second question",
+  "method": "Source compilation with run_lean.sh, pinned Mathlib dependencies and read-only previously verified first-question compiled objects",
+  "caveat": "This receipt records final successful tool outputs; it is not a fresh rebuild of the prior first-question dependency closure. API trials and failed intermediate source versions are not marked passed.",
+  "files": [
+    {
+      "file": "Erdos883SecondPrimeSupport.lean",
+      "sha256": "9CEB6C8018866FA9834D7B115737AD87B1C8D08923B09ADEA38285D9E751A14D",
+      "command": "Lean source compilation: Erdos883SecondPrimeSupport.lean -> matching .olean; see reproduction script",
+      "exit_code": 0,
+      "axiom_output": [
+        "'Erdos883Second.Near.prime_support_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Erdos883Second.Near.prime_support_power_bound_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "file": "Erdos883SecondMoment.lean",
+      "sha256": "CD1FC17532E4D5B90BB4DD1D742A1EC043C80F6A8EA90345C2AFB58D3DDA2959",
+      "command": "Lean source compilation: Erdos883SecondMoment.lean -> matching .olean; see reproduction script",
+      "exit_code": 0,
+      "axiom_output": [
+        "'Erdos883Second.Near.inverse_totient_moment_le_euler' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Erdos883Second.Near.momentWeight_div_le' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "file": "Erdos883SecondMomentBound.lean",
+      "sha256": "709322A60F7A688730202078F36DDC2228A3FDCD002CBC21D6D128241869A27A",
+      "command": "Lean source compilation: Erdos883SecondMomentBound.lean -> matching .olean; see reproduction script",
+      "exit_code": 0,
+      "axiom_output": [
+        "'Erdos883Second.Near.inverse_totient_moment_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Erdos883Second.Near.moment_euler_prod_le_constant' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "file": "Erdos883SecondCounts.lean",
+      "sha256": "CD81548567DED37A1004645B3C672630807FED7B2C02F650E4BAA24A6EE6BDBD",
+      "command": "Lean source compilation: Erdos883SecondCounts.lean -> matching .olean; see reproduction script",
+      "exit_code": 0,
+      "axiom_output": [
+        "'Erdos883Second.Near.leftCandidates_card_ge' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Erdos883Second.Near.rightCandidates_card_ge' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Erdos883Second.Near.totientDensity_mul_ge' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "bound_precision": "left >= n*rho(a)/6 - 2*2^omega(a) - 1; right >= n*rho(q)/2 - 2^omega(q) - 1. Final assembly must accommodate the left error 2*K+1, rather than a sharper manuscript bound."
+    },
+    {
+      "file": "Erdos883SecondGoodProfiles.lean",
+      "sha256": "C0FE072FD51428538CF643560E5B227FFA9A1649E4960C4573E5C33418BD42AC",
+      "command": "Lean source compilation: Erdos883SecondGoodProfiles.lean -> matching .olean; see reproduction script",
+      "exit_code": 0,
+      "axiom_output": [
+        "'Erdos883Second.Near.totient_below_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Erdos883Second.Near.good_totient_in_subset' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "warnings": [
+        "push_neg has been deprecated; prefer push Not. This warning does not change the verified theorem."
+      ]
+    }
+  ],
+  "pending_files": [
+    "Near-U eventual construction and its uniform parameter choices",
+    "Far-U CRT/coupling/spectral formalization",
+    "Full SecondQuestion theorem and combined original-problem Lean theorem"
+  ]
+}

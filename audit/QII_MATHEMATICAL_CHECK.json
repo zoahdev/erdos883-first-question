@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-10",
+  "manuscript": "paper/second-question/independent-proof-20261010.md",
+  "sha256": "f3d582ce3772818f2fffa64b0f501f869dbde8f7ea29c54a9901062665339ac8",
+  "theorem_scope": "Every fixed positive l; all sufficiently large n; every A with the exact strict density threshold; non-induced K(1,l,l).",
+  "checks": [
+    "Primary AI agent checked the near-U constants, progression errors, uniform t=1 bound, finite CRT frequencies, coupling L2 constants, six-position inequality, tensor spectral gap, conditional variance identity, dense-link counting and final quantifiers.",
+    "A separate collaborating AI agent independently rederived the near-U powers and selection budgets, finite signature and coupling steps, spectral stability and dense-link K(l,l) argument; no core gap was found."
+  ],
+  "external_human_expert_review": "No evidence supplied; these are AI-assisted mathematical checks.",
+  "complete_second_question_lean_verified": false,
+  "historical_priority": "Gabor N. Sarkozy's 1999 resolution is acknowledged. No first-discovery claim for question (ii).",
+  "prior_qii_proof_or_code_reused": false
+}
